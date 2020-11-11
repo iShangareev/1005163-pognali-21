@@ -1,7 +1,7 @@
 # Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Ильнар Шангареев](https://up.htmlacademy.ru/adaptive/21/user/1005163).
-* Наставник: `Неизвестно`.
+- Студент: [Ильнар Шангареев](https://up.htmlacademy.ru/adaptive/21/user/1005163).
+- Наставник: [Михин Юрий](https://htmlacademy.ru/profile/undgrnd).
 
 ---
 
