@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Academy: Погнали</title>
+  </head>
+  <body class="page__body">
+    <header class="header">
+      <div class="page-margin">
+        <div class="navbar">
+          <a href="" class="company-logo">
+            <img
+              src="https://via.placeholder.com/96x15"
+              alt="Логотип сервиса 'Погнали?'"
+              class="company-logo__image"
+            />
+          </a>
+          <button type="button" class="navbar__menu-button"></button>
+        </div>
+        <h2 class="header__title">Направления</h2>
+      </div>
+    </header>
+    <main>
+      <section class="companion-card companion-card_profile">
+        <div class="companion-card__level">
+          <span class="companion-card__level-num">99</span>
+          <span class="companion-card__level-text">Level</span>
+        </div>
+        <!-- /.companion-card-level -->
+        <img
+          src="https://via.placeholder.com/270x270"
+          class="companion-card__user-photo"
+          alt="Фото пользователя"
+        />
+        <a href="" class="change-photo-button">Cменить фото</a>
+        <div class="companion-card__info">
+          <p class="companion-card__hashtags-title">ТЭГИ</p>
+          <textarea name="hashtags" id="" cols="30" rows="10">
+#бургер #бар #футбол#крафт
+          </textarea>
+          <p class="companion-card__transport-title">Транспорт</p>
+          <ul class="type-travel-list">
+            <li class="type-travel-list__item">
+              <img
+                src="https://via.placeholder.com/22x22"
+                alt=""
+                class="type-travel-list__item-status"
+              />
+            </li>
+            <li class="type-travel-list__item">
+              <img
+                src="https://via.placeholder.com/22x22"
+                alt=""
+                class="type-travel-list__item-status type-travel-list__item-status_disabled"
+              />
+            </li>
+            <li class="type-travel-list__item">
+              <img
+                src="https://via.placeholder.com/22x22"
+                alt=""
+                class="type-travel-list__item-status type-travel-list__item-status_disabled"
+              />
+            </li>
+            <li class="type-travel-list__item">
+              <img
+                src="https://via.placeholder.com/22x22"
+                alt=""
+                class="type-travel-list__item-status type-travel-list__item-status_disabled"
+              />
+            </li>
+          </ul>
+        </div>
+        <!-- /.companion-card__info -->
+      </section>
+      <section class="user-travel-plan">
+        <h2 class="user-travel-plan__title">Мои планы:</h2>
+        <ul class="user-travel-plan__list">
+          <li class="user-travel-plan__direction">
+            <p class="user-travel-plan__direction-country">
+              1. Франция, Италия
+            </p>
+            <p class="user-travel-plan__direction-companion">3 попутчика</p>
+            <p class="user-travel-plan__direction-date">26 мар — 29 мар</p>
+            <a href="" class="user-travel-plan__direction-change">изменить</a>
+          </li>
+          <li class="user-travel-plan__direction">
+            <p class="user-travel-plan__direction-country">
+              2. Таиланд, Индонезия
+            </p>
+            <p class="user-travel-plan__direction-companion">1 попутчик</p>
+            <p class="user-travel-plan__direction-date">1 июл — 15 июл</p>
+            <a href="" class="user-travel-plan__direction-change">изменить</a>
+          </li>
+        </ul>
+      </section>
+      <section class="card-travel-plan">
+        <form class="travel-plan-form" action="https://echo.htmlacademy.ru">
+          <h2 class="travel-plan-form__title">Добавить план:</h2>
+          <div class="travel-card">
+            <p class="travel-card__title">Шаг 1. Даты пребывания</p>
+            <p class="travel-card__instructions">
+              Укажите предпочтительное количество попутчиков, которых вы хотели
+              бы позвать в поездку и ее предполагаемую длительность.
+            </p>
+            <div class="number-companions">
+              <button class="number-companions__button-minus"></button
+              ><input
+                class="number-companions__num"
+                type="number"
+                name="number-companions"
+                id=""
+              />
+              <button class="number-companions__button-plus"></button>
+            </div>
+            <div class="travel-duration">
+              <button class="travel-duration__button-minus"></button
+              ><input
+                class="travel-duration__num"
+                type="number"
+                name="travel-duration"
+                id=""
+              />
+              <button class="travel-duration__button-plus"></button>
+            </div>
+            <input
+              class="children-allow"
+              type="checkbox"
+              id="children-allow"
+              name="children-allow"
+            />
+            <label for="children-allow">Можно с детьми</label>
+            <input class="travel-calendar" type="date" name="calendar" />
+            <a href="" class="next-step button">Следующий шаг</a>
+          </div>
+          <div class="travel-card">
+            <p class="travel-card__title">Шаг 2. Маршрут</p>
+            <p class="travel-card__instructions">
+              Укажите страны, которые вы хотели посетить. Это может быть одна
+              или сразу несколько.
+            </p>
+            <div class="choosen-country">
+              <p class="choosen-country__name">Босния и герцеговина</p>
+              <span class="choosen-country__flag"></span>
+            </div>
+            <!-- /.choosen-country -->
+            <div class="choosen-country">
+              <p class="choosen-country__name">Чехия</p>
+              <span class="choosen-country__flag"></span>
+            </div>
+            <div class="choosen-country">
+              <p class="choosen-country__name">Выберите страну</p>
+              <span class="choosen-country__flag"></span>
+            </div>
+            <div class="choosen-country choosen-country_add">
+              <p class="choosen-country__name">Добавьте страну</p>
+              <span class="choosen-country__flag"></span>
+            </div>
+            <!-- /.choosen-country -->
+            <a href="" class="next-step button">Следующий шаг</a>
+            <a href="" class="previus-step">Yа шаг назад</a>
+          </div>
+          <div class="travel-card">
+            <p class="travel-card__title">Шаг 3. Развлечения</p>
+            <p class="travel-card__instructions">
+              Наконец, расскажите о своих планахвремяпровождения. Можно писать в
+              свободной форме и ставить тэги.
+            </p>
+            <div class="travel-card__action-plan">
+              <p class="travel-card__action-plan-title">Босния и Герцеговина</p>
+              <textarea
+                class="travel-card__action-plan-text"
+                name="action-plan_bosnia"
+                id=""
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+            <div class="travel-card__action-plan">
+              <p class="travel-card__action-plan-title">Чехия</p>
+              <textarea
+                class="travel-card__action-plan-text"
+                name="action-plan_czech"
+                id=""
+                cols="30"
+                rows="10"
+              >
+                Пить пиво и лазить 
+                по старым замкам, наслаждаться архитектурой и вот это все.
+              </textarea>
+            </div>
+            <button type="submit" class="finish-step button">Отправить</button>
+            <a href="" class="previus-step">Yа шаг назад</a>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <a class="company-logo">
+        <img
+          src="https://via.placeholder.com/96x15"
+          alt="Логотип Погнали?"
+          class="company-logo__pic"
+        />
+      </a>
+      <ul class="social-list social-list_theme_yellow">
+        <li class="social-list__item">
+          <a href="https://facebook.com" class="social-list__link"></a>
+        </li>
+        <li class="social-list__item">
+          <a href="https://vk.com" class="social-list__link"></a>
+        </li>
+        <li class="social-list__item">
+          <a href="https://www.instagram.com" class="social-list__link"></a>
+        </li>
+      </ul>
+      <!-- / footer__social -->
+      <div class="footer__author">
+        <p class="footer__author-text">Разработано</p>
+        <a href="https://htmlacademy.ru" class="footer__author-logo"></a>
+      </div>
+      <!-- /.footer__author -->
+    </footer>
+  </body>
+</html>
