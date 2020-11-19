@@ -19,28 +19,88 @@
           <button type="button" class="navbar__menu-button"></button>
         </div>
         <h2 class="header__title">Направления</h2>
+        <div class="menu-box">
+          <div class="navbar-menu">
+            <a href="" class="company-logo">
+              <img
+                src="https://via.placeholder.com/100x15"
+                alt="Погнали?"
+                class="company-logo__image"
+            /></a>
+            <a href="" class="navbar-menu__close">
+              <img
+                class="navbar-menu__close-image"
+                src="https://via.placeholder.com/19x19"
+                alt=""
+              />
+            </a>
+          </div>
+          <nav class="navbar-menu-navigation">
+            <ul class="navbar-menu-navigation__list">
+              <li class="navbar-menu-navigation__item">
+                <a href="" class="navbar-menu-navigation__link">О сервисе</a>
+              </li>
+              <li class="navbar-menu-navigation__item">
+                <a href="" class="navbar-menu-navigation__link">Направления</a>
+              </li>
+              <li class="navbar-menu-navigation__item">
+                <a href="" class="navbar-menu-navigation__link">Попутчики</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="navbar-menu__list">
+            <li class="navbar-menu__item">
+              <a href="" class="navbar-menu__authorization button">
+                Авторизация
+              </a>
+            </li>
+            <li class="navbar-menu__item">
+              <a href="tel:88005558628" class="navbar-menu__phone"
+                >8 800 555-86-28</a
+              >
+            </li>
+            <li class="navbar-menu__item">
+              <a href="mailto:mail@htmlacademy.ru" class="navbar-menu__mail"
+                >mail@htmlacademy.ru</a
+              >
+            </li>
+          </ul>
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a href="https://facebook.com" class="social-list__link"></a>
+            </li>
+            <li class="social-list__item">
+              <a href="https://vk.com" class="social-list__link"></a>
+            </li>
+            <li class="social-list__item">
+              <a href="https://www.instagram.com" class="social-list__link"></a>
+            </li>
+          </ul>
+          <!-- /.navbar-menu -->
+        </div>
+        <!-- /.menu-box -->
       </div>
     </header>
     <main>
-      <section class="companion-card companion-card_profile">
+      <section class="card-profile">
         <h2 class="visually-hidden">Профиль пользователя</h2>
-        <div class="companion-card__level">
-          <span class="companion-card__level-num">99</span>
-          <span class="companion-card__level-text">Level</span>
+        <div class="card-profile__level">
+          <span class="card-profile__level-num">99</span>
+          <span class="card-profile__level-text">Level</span>
         </div>
-        <!-- /.companion-card-level -->
+        <!-- /.card-profile__level -->
         <img
           src="https://via.placeholder.com/270x270"
-          class="companion-card__user-photo"
+          class="card-profile__user-photo"
           alt="Фото пользователя"
         />
-        <a href="" class="change-photo-button">Cменить фото</a>
-        <div class="companion-card__info">
-          <p class="companion-card__hashtags-title">ТЭГИ</p>
+        <button type="button" class="change-photo-button">Cменить фото</button>
+        <div class="card-profile__info">
+          <h3 class="card-profile__hashtags-title">Тэги</h3>
           <textarea name="hashtags" cols="30" rows="10">
 #бургер #бар #футбол#крафт
           </textarea>
-          <p class="companion-card__transport-title">Транспорт</p>
+          <h3 class="card-profile__transport-title">Транспорт</h3>
           <ul class="type-travel-list">
             <li class="type-travel-list__item">
               <img
@@ -72,26 +132,22 @@
             </li>
           </ul>
         </div>
-        <!-- /.companion-card__info -->
+        <!-- /.card-profile__info -->
       </section>
       <section class="user-travel-plan">
-        <h2 class="user-travel-plan__title">Мои планы:</h2>
-        <ul class="user-travel-plan__list">
-          <li class="user-travel-plan__direction">
-            <p class="user-travel-plan__direction-country">
-              1. Франция, Италия
-            </p>
-            <p class="user-travel-plan__direction-companion">3 попутчика</p>
-            <p class="user-travel-plan__direction-date">26 мар — 29 мар</p>
-            <a href="" class="user-travel-plan__direction-change">изменить</a>
+        <h3 class="user-travel-plan__title">Мои планы:</h3>
+        <ul class="travel-plan-box">
+          <li class="travel-card__direction">
+            <p class="travel-card-direction__country">Франция, Италия</p>
+            <p class="travel-card-direction__companion">3 попутчика</p>
+            <p class="travel-card-direction__date">26 мар — 29 мар</p>
+            <a href="" class="travel-card-direction__change">Изменить</a>
           </li>
-          <li class="user-travel-plan__direction">
-            <p class="user-travel-plan__direction-country">
-              2. Таиланд, Индонезия
-            </p>
-            <p class="user-travel-plan__direction-companion">1 попутчик</p>
-            <p class="user-travel-plan__direction-date">1 июл — 15 июл</p>
-            <a href="" class="user-travel-plan__direction-change">изменить</a>
+          <li class="travel-card-direction">
+            <p class="travel-card-direction__country">Таиланд, Индонезия</p>
+            <p class="travel-card-direction__companion">1 попутчик</p>
+            <p class="travel-card-direction__date">1 июл — 15 июл</p>
+            <a href="" class="travel-card-direction__change">Изменить</a>
           </li>
         </ul>
       </section>
@@ -99,38 +155,100 @@
         <form class="travel-plan-form" action="https://echo.htmlacademy.ru">
           <h2 class="travel-plan-form__title">Добавить план:</h2>
           <div class="travel-card">
-            <p class="travel-card__title">Шаг 1. Даты пребывания</p>
+            <h3 class="travel-card__title">Шаг 1. Даты пребывания</h3>
             <p class="travel-card__instructions">
               Укажите предпочтительное количество попутчиков, которых вы хотели
               бы позвать в поездку и ее предполагаемую длительность.
             </p>
             <div class="number-companions">
-              <button class="number-companions__button-minus"></button
+              <button class="button-minus"></button
               ><input
-                class="number-companions__num"
+                class="input-value"
                 type="number"
                 name="number-companions"
               />
-              <button class="number-companions__button-plus"></button>
+              <button class="button-plus"></button>
             </div>
             <div class="travel-duration">
-              <button class="travel-duration__button-minus"></button
+              <button class="button-minus"></button
               ><input
-                class="travel-duration__num"
+                class="input-value"
                 type="number"
                 name="travel-duration"
               />
-              <button class="travel-duration__button-plus"></button>
+              <button class="button-plus"></button>
             </div>
             <input
-              class="children-allow"
+              class="checkbox-allow"
               type="checkbox"
               id="children-allow"
               name="children-allow"
             />
-            <label for="children-allow">Можно с детьми</label>
-            <input class="travel-calendar" type="date" name="calendar" />
-            <a href="" class="next-step button">Следующий шаг</a>
+            <label class="checkbox-allow-name" for="children-allow"
+              >Можно с детьми</label
+            >
+            <div class="calendar">
+              <div class="calendar__month-box">
+                <ul class="calendar__buttons">
+                  <li class="prev-month"></li>
+                  <li class="next-month"></li>
+                  <li class="calendar__month">
+                    Март<span class="calendar__year"></span>2019</span>
+                  </li>
+                </ul>
+              </div>
+
+              <ul class="calendar__weekdays">
+                <li class="calendar__weekday">П</li>
+                <li class="calendar__weekday">В</li>
+                <li class="calendar__weekday">C</li>
+                <li class="calendar__weekday">Ч</li>
+                <li class="calendar__weekday">П</li>
+                <li class="calendar__weekday">С</li>
+                <li class="calendar__weekday">В</li>
+              </ul>
+
+              <ul class="calendar__days">
+                <li class="calendar__day">1</li>
+                <li class="calendar__day">2</li>
+                <li class="calendar__day">3</li>
+                <li class="calendar__day">4</li>
+                <li class="calendar__day">5</li>
+                <li class="calendar__day">6</li>
+                <li class="calendar__day">7</li>
+                <li class="calendar__day">8</li>
+                <li class="calendar__day">9</li>
+                <li class="calendar__day">10</li>
+                <li class="calendar__day">11</li>
+                <li class="calendar__day">12</li>
+                <li class="calendar__day">13</li>
+                <li class="calendar__day">14</li>
+                <li class="calendar__day">15</li>
+                <li class="calendar__day">16</li>
+                <li class="calendar__day">17</li>
+                <li class="calendar__day">18</li>
+                <li class="calendar__day">19</li>
+                <li class="calendar__day">20</li>
+                <li class="calendar__day">21</li>
+                <li class="calendar__day">22</li>
+                <li class="calendar__day">23</li>
+                <li class="calendar__day">24</li>
+                <li class="calendar__day">25</li>
+                <li class="calendar__day calendar__day-active">26</li>
+                <li class="calendar__day calendar__day-active">27</li>
+                <li class="calendar__day calendar__day-active">28</li>
+                <li class="calendar__day calendar__day-diactive">29</li>
+                <li class="calendar__day calendar__day-diactive">30</li>
+                <li class="calendar__day calendar__day-diactive">31</li>
+                <li class="calendar__day calendar__day-diactive">1</li>
+                <li class="calendar__day calendar__day-diactive">2</li>
+                <li class="calendar__day calendar__day-diactive">3</li>
+                <li class="calendar__day calendar__day-diactive">4</li>
+                <li class="calendar__day calendar__day-diactive">5</li>
+              </ul>
+            </div>
+            <!-- /.calendar -->
+            <a href="" class="next-card button">Следующий шаг</a>
           </div>
           <div class="travel-card">
             <p class="travel-card__title">Шаг 2. Маршрут</p>
@@ -141,23 +259,26 @@
             <div class="choosen-country">
               <p class="choosen-country__name">Босния и герцеговина</p>
               <span class="choosen-country__flag"></span>
+              <button class="choosen-country__close"></button>
             </div>
             <!-- /.choosen-country -->
             <div class="choosen-country">
               <p class="choosen-country__name">Чехия</p>
               <span class="choosen-country__flag"></span>
+              <button class="choosen-country__close"></button>
             </div>
             <div class="choosen-country">
               <p class="choosen-country__name">Выберите страну</p>
               <span class="choosen-country__flag"></span>
+              <button class="choosen-country__close"></button>
             </div>
             <div class="choosen-country choosen-country_add">
               <p class="choosen-country__name">Добавьте страну</p>
               <span class="choosen-country__flag"></span>
             </div>
             <!-- /.choosen-country -->
-            <a href="" class="next-step button">Следующий шаг</a>
-            <a href="" class="previus-step">Yа шаг назад</a>
+            <a href="" class="next-card button">Следующий шаг</a>
+            <a href="" class="previus-card">Шаг назад</a>
           </div>
           <div class="travel-card">
             <p class="travel-card__title">Шаг 3. Развлечения</p>
@@ -165,29 +286,24 @@
               Наконец, расскажите о своих планахвремяпровождения. Можно писать в
               свободной форме и ставить тэги.
             </p>
-            <div class="travel-card__action-plan">
-              <p class="travel-card__action-plan-title">Босния и Герцеговина</p>
+            <div class="travel-action-plan">
+              <p class="travel-action-plan__title">Босния и Герцеговина</p>
               <textarea
-                class="travel-card__action-plan-text"
+                class="travel-action-plan__text"
                 name="action-plan_bosnia"
-                cols="30"
-                rows="10"
               ></textarea>
             </div>
-            <div class="travel-card__action-plan">
-              <p class="travel-card__action-plan-title">Чехия</p>
+            <div class="travel-action-plan">
+              <p class="travel-action-plan__title">Чехия</p>
               <textarea
-                class="travel-card__action-plan-text"
-                name="action-plan_czech"
-                cols="30"
-                rows="10"
-              >
-                Пить пиво и лазить 
+                class="travel-action-plan__text"
+                name="action-plan_czech">
+                Пить пиво и лазить
                 по старым замкам, наслаждаться архитектурой и вот это все.
               </textarea>
             </div>
             <button type="submit" class="finish-step button">Отправить</button>
-            <a href="" class="previus-step">Yа шаг назад</a>
+            <a href="" class="previus-card">Yа шаг назад</a>
           </div>
         </form>
       </section>
