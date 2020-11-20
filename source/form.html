@@ -184,16 +184,20 @@
               id="children-allow"
               name="children-allow"
             />
-            <label class="checkbox-allow-name" for="children-allow"
+            <label class="checkbox-allow__name" for="children-allow"
               >Можно с детьми</label
             >
             <div class="calendar">
               <div class="calendar__month-box">
                 <ul class="calendar__buttons">
-                  <li class="prev-month"></li>
-                  <li class="next-month"></li>
+                  <li class="prev-month">
+                    <button type="button" class="prev-month-button"></button>
+                  </li>
+                  <li class="next-month">
+                    <button type="button" class="next-month-button"></button>
+                  </li>
                   <li class="calendar__month">
-                    Март<span class="calendar__year"></span>2019</span>
+                    Март<span class="calendar__year">2019</span>
                   </li>
                 </ul>
               </div>
@@ -209,42 +213,96 @@
               </ul>
 
               <ul class="calendar__days">
-                <li class="calendar__day">1</li>
-                <li class="calendar__day">2</li>
-                <li class="calendar__day">3</li>
-                <li class="calendar__day">4</li>
-                <li class="calendar__day">5</li>
-                <li class="calendar__day">6</li>
-                <li class="calendar__day">7</li>
-                <li class="calendar__day">8</li>
-                <li class="calendar__day">9</li>
-                <li class="calendar__day">10</li>
-                <li class="calendar__day">11</li>
-                <li class="calendar__day">12</li>
-                <li class="calendar__day">13</li>
-                <li class="calendar__day">14</li>
-                <li class="calendar__day">15</li>
-                <li class="calendar__day">16</li>
-                <li class="calendar__day">17</li>
-                <li class="calendar__day">18</li>
-                <li class="calendar__day">19</li>
-                <li class="calendar__day">20</li>
-                <li class="calendar__day">21</li>
-                <li class="calendar__day">22</li>
-                <li class="calendar__day">23</li>
-                <li class="calendar__day">24</li>
-                <li class="calendar__day">25</li>
-                <li class="calendar__day calendar__day-active">26</li>
-                <li class="calendar__day calendar__day-active">27</li>
-                <li class="calendar__day calendar__day-active">28</li>
-                <li class="calendar__day calendar__day-diactive">29</li>
-                <li class="calendar__day calendar__day-diactive">30</li>
-                <li class="calendar__day calendar__day-diactive">31</li>
-                <li class="calendar__day calendar__day-diactive">1</li>
-                <li class="calendar__day calendar__day-diactive">2</li>
-                <li class="calendar__day calendar__day-diactive">3</li>
-                <li class="calendar__day calendar__day-diactive">4</li>
-                <li class="calendar__day calendar__day-diactive">5</li>
+                <li class="calendar__day"><button typ>1e="button"</button></li>
+                <li class="calendar__day"><button typ>2e="button"</button></li>
+                <li class="calendar__day"><button typ>3e="button"</button></li>
+                <li class="calendar__day"><button typ>4e="button"</button></li>
+                <li class="calendar__day"><button typ>5e="button"</button></li>
+                <li class="calendar__day"><button typ>6e="button"</button></li>
+                <li class="calendar__day"><button typ>7e="button"</button></li>
+                <li class="calendar__day"><button typ>8e="button"</button></li>
+                <li class="calendar__day"><button typ>9e="button"</button></li>
+                <li class="calendar__day">
+                  <button class="calendar__day-button" type="button">10</button>
+                </li>
+                <li class="calendar__day">
+                  <button class="calendar__day-button" type="button">11</button>
+                </li>
+                <li class="calendar__day">
+                  <button class="calendar__day-button" type="button">12</button>
+                </li>
+                <li class="calendar__day">
+                  <button class="calendar__day-button" type="button">13</button>
+                </li>
+                <li class="calendar__day">
+                  <button class="calendar__day-button" type="button">14</button>
+                </li>
+                <li class="calendar__day">
+                  <button class="calendar__day-button" type="button">15</button>
+                </li>
+                <li class="calendar__day">
+                  <button class="calendar__day-button" type="button">16</button>
+                </li>
+                <li class="calendar__day">
+                  <button class="calendar__day-button" type="button">17</button>
+                </li>
+                <li class="calendar__day">
+                  <button class="calendar__day-button" type="button">18</button>
+                </li>
+                <li class="calendar__day">
+                  <button class="calendar__day-button" type="button">19</button>
+                </li>
+                <li class="calendar__day">
+                  <button class="calendar__day-button" type="button">20</button>
+                </li>
+                <li class="calendar__day">
+                  <button class="calendar__day-button" type="button">21</button>
+                </li>
+                <li class="calendar__day">
+                  <button class="calendar__day-button" type="button">22</button>
+                </li>
+                <li class="calendar__day">
+                  <button class="calendar__day-button" type="button">23</button>
+                </li>
+                <li class="calendar__day">
+                  <button class="calendar__day-button" type="button">24</button>
+                </li>
+                <li class="calendar__day">
+                  <button class="calendar__day-button" type="button">25</button>
+                </li>
+                <li class="calendar__day calendar__day_active">
+                  <button class="calendar__day-button" type="button">26</button>
+                </li>
+                <li class="calendar__day calendar__day_active">
+                  <button class="calendar__day-button" type="button">27</button>
+                </li>
+                <li class="calendar__day calendar__day_active">
+                  <button class="calendar__day-button" type="button">28</button>
+                </li>
+                <li class="calendar__day calendar__day_diactive">
+                  <button class="calendar__day-button" type="button">29</button>
+                </li>
+                <li class="calendar__day calendar__day_diactive">
+                  <button class="calendar__day-button" type="button">30</button>
+                </li>
+                <li class="calendar__day calendar__day_diactive">
+                  <button class="calendar__day-button" type="button">31</button>
+                </li>
+                <li class="calendar__day calendar__day_diactive">
+                  <button class="calendar__day-button" type="button">1</button>
+                </li>
+                <li class="calendar__day calendar__day_diactive">
+                  <button class="calendar__day-button" type="button">2</button>
+                </li>
+                <li class="calendar__day calendar__day_diactive">
+                  <button class="calendar__day-button" type="button">3</button>
+                </li>
+                <li class="calendar__day calendar__day_diactive">
+                  <button class="calendar__day-button" type="button">4</button>
+                </li>
+                <li class="calendar__day calendar__day_diactive">
+                  <button class="calendar__day-button" type="button">5</button>
+                </li>
               </ul>
             </div>
             <!-- /.calendar -->
@@ -278,7 +336,7 @@
             </div>
             <!-- /.choosen-country -->
             <a href="" class="next-card button">Следующий шаг</a>
-            <a href="" class="previus-card">Шаг назад</a>
+            <a href="" class="previous-card">На шаг назад</a>
           </div>
           <div class="travel-card">
             <p class="travel-card__title">Шаг 3. Развлечения</p>
@@ -297,13 +355,14 @@
               <p class="travel-action-plan__title">Чехия</p>
               <textarea
                 class="travel-action-plan__text"
-                name="action-plan_czech">
+                name="action-plan_czech"
+              >
                 Пить пиво и лазить
                 по старым замкам, наслаждаться архитектурой и вот это все.
               </textarea>
             </div>
             <button type="submit" class="finish-step button">Отправить</button>
-            <a href="" class="previus-card">Yа шаг назад</a>
+            <a href="" class="previous-card">Yа шаг назад</a>
           </div>
         </form>
       </section>
