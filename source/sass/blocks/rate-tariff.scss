@@ -1,0 +1,23 @@
+.rate-tariff {
+  background-color: var(--basic-grey);
+}
+
+.rate-tariff__start {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  color: var(--special-orange);
+}
+.rate-tariff__list {
+  list-style-type: none;
+}
+.rate-tariff__item {
+  color: var(--special-grey);
+}
+.rate-tariff__company-show {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--basic-link);
+  text-decoration: none;
+}

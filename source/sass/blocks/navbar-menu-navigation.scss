@@ -1,0 +1,17 @@
+.navbar-menu-navigation__list {
+  list-style-type: none;
+}
+.navbar-menu-navigation__item {
+  text-align: center;
+}
+.navbar-menu-navigation__link {
+  font-family: "Bloggersans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+
+  text-transform: uppercase;
+  color: var(--main-blue-text);
+  text-decoration: none;
+}
