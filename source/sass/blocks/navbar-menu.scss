@@ -4,7 +4,9 @@
 .navbar-menu__item {
   text-align: center;
 }
-.navbar-menu__item a {
+.navbar-menu__authorization,
+.navbar-menu__phone,
+.navbar-menu__mail {
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
