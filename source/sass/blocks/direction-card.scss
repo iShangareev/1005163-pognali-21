@@ -1,0 +1,39 @@
+.direction-card__box {
+  background-color: var(--basic-white);
+}
+
+.direction-card__link {
+  text-decoration: none;
+}
+
+.direction-card__country {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-black);
+}
+
+.direction-card__tourist {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.direction-card__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.direction-card__button-more {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: var(--main-blue-title);
+  text-decoration: none;
+  background-color: var(--basic-yellow);
+}

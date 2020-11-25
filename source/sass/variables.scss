@@ -1,0 +1,27 @@
+// colors
+
+:root {
+  --basic-black: #000000;
+  --light-blue: #1d2e5b;
+  --main-blue: #182044;
+  --main-blue-text: #192144;
+  --main-blue-title: #161c35;
+  --basic-white: #ffffff;
+  --basic-grey: #edeff6;
+  --basic-yellow: #ffd74b;
+  --basic-link: #132576;
+  --special-orange: #ff8d30;
+  --special-orange-2: #ffa530;
+  --special-yellow-dark: #ffbd30;
+  --special-grey: #444444;
+}
+
+// settings
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}

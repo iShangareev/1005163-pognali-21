@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>HTML Academy: Погнали</title>
   </head>
   <body class="page__body">
@@ -86,7 +87,9 @@
       <section class="promo-board">
         <div class="page-margin">
           <h2 class="promo-board__title">
-            В путешествие с крутыми попутчиками!
+            В путешествие<br />
+            с крутыми<br />
+            попутчиками!
           </h2>
           <ul class="promo-board__contact-list">
             <li class="promo-board__contact-item">
@@ -107,22 +110,25 @@
           </ul>
           <!-- /.promo-board__nav-box -->
           <p class="promo-board__quote">
-            «Лучшее приложение, что я видел в жизни!»
+            «Лучшее приложение,<br />
+            что я видел в жизни!»
           </p>
           <p class="promo-board__quote-author">
-            Мурат Эльтазин главный редактор газеты «гаджетлайф»
+            Мурат Эльтазин<br />
+            главный редактор газеты<br />
+            «гаджетлайф»
           </p>
           <ul class="step-list">
-            <li class="step-list__item">
+            <li class="step-list__item step-list__item_direction">
               <p class="step-list__text">Выберите направление</p>
             </li>
-            <li class="step-list__item">
+            <li class="step-list__item step-list__item_idea">
               <p class="step-list__text">Изучите идеи путешественников</p>
             </li>
-            <li class="step-list__item">
+            <li class="step-list__item step-list__item_similar">
               <p class="step-list__text">Находите тех, кто похож на вас</p>
             </li>
-            <li class="step-list__item">
+            <li class="step-list__item step-list__item_together">
               <p class="step-list__text">Путешествуйте вместе!</p>
             </li>
           </ul>
@@ -148,8 +154,11 @@
           <div class="short-info short-info_theme_light">
             <h2 class="short-info__title">Направления</h2>
             <p class="short-info__text">
-              Мы не продаем туры и ничего не рекламируем. Люди сами пишут о
-              странах, куда хотели бы отправиться и чем можно там заняться.
+              Мы не продаем туры<br />
+              и ничего не рекламируем. <br />
+              Люди сами пишут о странах, <br />
+              куда хотели бы отправиться <br />
+              и чем можно там заняться.
             </p>
           </div>
           <!-- /.short-info -->
@@ -161,9 +170,12 @@
                 alt="Тайланд"
                 class="direction-card__pic"
               />
-              <p class="direction-card__country">Таиланд</p>
-              <span class="direction-card__tourist">18321</span>
-              <p class="direction-card__text">Джунгли зовут!</p>
+              <div class="direction-card__box">
+                <p class="direction-card__country">Таиланд</p>
+                <span class="direction-card__tourist">18321</span>
+                <p class="direction-card__text">Джунгли зовут!</p>
+              </div>
+              <!-- /.direction-card__box -->
             </a>
           </div>
           <div class="direction-card">
@@ -173,9 +185,12 @@
                 alt="Франция"
                 class="direction-card__pic"
               />
-              <p class="direction-card__country">Франция</p>
-              <span class="direction-card__tourist">12518</span>
-              <p class="direction-card__text">Трэ бьен, манифик!</p>
+              <div class="direction-card__box">
+                <p class="direction-card__country">Франция</p>
+                <span class="direction-card__tourist">12518</span>
+                <p class="direction-card__text">Трэ бьен, манифик!</p>
+              </div>
+              <!-- /.direction-card__box -->
             </a>
           </div>
           <div class="direction-card">
@@ -185,9 +200,12 @@
                 alt="Чехия"
                 class="direction-card__pic"
               />
-              <p class="direction-card__country">Чехия</p>
-              <span class="direction-card__tourist">5326</span>
-              <p class="direction-card__text">Закоулки старой Европы</p>
+              <div class="direction-card__box">
+                <p class="direction-card__country">Чехия</p>
+                <span class="direction-card__tourist">5326</span>
+                <p class="direction-card__text">Закоулки старой Европы</p>
+              </div>
+              <!-- /.direction-card__box -->
             </a>
           </div>
           <a href="" class="direction-card__button-more button">Показать все</a>
@@ -201,7 +219,7 @@
               Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
               Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
             </p>
-            <p class="short-info__important">
+            <p class="short-info__text-important">
               Теперь можно легко найти единомышленников!
             </p>
           </div>
@@ -304,18 +322,22 @@
             </div>
             <!-- /.companion-card__level -->
             <div class="companion-card__info">
-              <div class="companion-card__info-country">
-                <img
-                  src="https://via.placeholder.com/35x25"
-                  class="companion-card__country-pic"
-                  alt=""
-                />
-                <img
-                  src="https://via.placeholder.com/35x25"
-                  class="companion-card__country-pic"
-                  alt=""
-                />
-              </div>
+              <ul class="companion-card__country-list">
+                <li class="companion-card__country-item">
+                  <img
+                    src="https://via.placeholder.com/35x25"
+                    class="companion-card__country-pic"
+                    alt=""
+                  />
+                </li>
+                <li class="companion-card__country-item">
+                  <img
+                    src="https://via.placeholder.com/35x25"
+                    class="companion-card__country-pic"
+                    alt=""
+                  />
+                </li>
+              </ul>
               <!-- /.companion-card__info-country -->
               <h4 class="companion-card__info-username">Петя Демин</h4>
               <ul class="hashtags-box">
@@ -370,28 +392,32 @@
             <!-- /.companion-card__info -->
           </a>
           <!-- /.companion-card -->
-          <a href="" class="companion__show-more button"></a>
+          <a href="" class="companion-travel__show-more button">
+            Показать всех
+          </a>
         </div>
         <!-- /.page-margin -->
       </section>
-      <section class="rate">
+      <section class="rate-tariff">
         <div class="page-margin">
-          <h2 class="rate__start">Добавьте свой профиль</h2>
-          <ul class="rate__list">
-            <li class="rate__item">
-              <p class="rate__item-content">Базовое размещение</p>
-              <p class="rate__item-content">Бесплатно</p>
+          <h2 class="rate-tariff__start">Добавьте свой профиль</h2>
+          <ul class="rate-tariff__list">
+            <li class="rate-tariff__item">
+              <p class="rate-tariff__item-content">Базовое размещение</p>
+              <p class="rate-tariff__item-content">Бесплатно</p>
             </li>
-            <li class="rate__item">
-              <p class="rate__item-content">Вывод на первых позициях</p>
-              <p class="rate__item-content">99 руб./мес</p>
+            <li class="rate-tariff__item">
+              <p class="rate-tariff__item-content">Вывод на первых позициях</p>
+              <p class="rate-tariff__item-content">99 руб./мес</p>
             </li>
-            <li class="rate__item">
-              <p class="rate__item-content">Кастомный цвет карточки</p>
-              <p class="rate__item-content">59 руб./мес</p>
+            <li class="rate-tariff__item">
+              <p class="rate-tariff__item-content">Кастомный цвет карточки</p>
+              <p class="rate-tariff__item-content">59 руб./мес</p>
             </li>
           </ul>
-          <a href="" class="rate__company-show">Показать тарифы для бизнеса</a>
+          <a href="" class="rate-tariff__company-show"
+            >Показать тарифы для бизнеса</a
+          >
         </div>
       </section>
       <section class="contacts">
@@ -439,7 +465,9 @@
       </section>
       <section class="map">
         <h2 class="visually-hidden">Мое местоположение</h2>
-        <div class="map__info"></div>
+        <div class="map__info">
+          <a href="" class="map__link"></a>
+        </div>
         <!-- /.map__info -->
       </section>
     </main>

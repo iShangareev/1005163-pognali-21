@@ -1,0 +1,41 @@
+.promo-board {
+  background-image: url("../img/promo-bckg-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--basic-white);
+}
+
+.promo-board__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.promo-board__contact-list {
+  list-style-type: none;
+}
+
+.promo-board__contact-authorization {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--main-blue-title);
+  background-color: var(--basic-yellow);
+}
+
+.promo-board__quote {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.promo-board__quote-author {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+}

@@ -1,0 +1,33 @@
+.companion-card {
+  text-decoration: none;
+}
+
+.companion-card__level-num {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  color: var(--basic-white);
+}
+
+.companion-card__level-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: var(--basic-white);
+}
+
+.companion-card__country-list {
+  list-style-type: none;
+}
+
+.companion-card__info {
+  background-color: var(--basic-white);
+}
+
+.companion-card__info-username {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+  color: var(--light-blue);
+}
