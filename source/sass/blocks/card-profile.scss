@@ -1,0 +1,48 @@
+.card-profile {
+  background-color: var(--basic-grey-dark);
+}
+
+.card-profile__level-num {
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 38px;
+  text-align: center;
+  color: var(--main-blue-title);
+}
+
+.card-profile__level-text {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  color: var(--special-grey);
+}
+
+.card-profile__button_change-photo {
+  font-family: "Bloggersans", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--main-blue-title);
+  background-color: var(--special-blue);
+}
+
+.card-profile__hashtags-title,
+.card-profile__transport-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--light-blue);
+}
+
+.card-profile__hashtags-text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--special-grey);
+  background-color: var(--basic-grey-dark);
+  border: none;
+}

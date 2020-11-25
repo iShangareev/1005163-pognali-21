@@ -1,0 +1,48 @@
+.calendar__buttons {
+  list-style-type: none;
+}
+
+.calendar__month,
+.calendar__year {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  color: var(--light-blue);
+}
+
+.calendar__weekdays {
+  list-style-type: none;
+}
+
+.calendar__weekday {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--special-grey);
+}
+
+.calendar__weekday_holiday {
+  color: var(--normal-orange);
+}
+
+.calendar__day {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--special-grey);
+  opacity: 0.3;
+}
+
+.calendar__days {
+  list-style-type: none;
+}
+
+.calendar__day-button {
+  font-family: "Bloggersans", "Arial", sans-serif;
+  background-color: var(--basic-white);
+}
+
+.calendar__day-button_disabled {
+  background-color: var(--basic-grey);
+  color: var(--light-blue);
+}
