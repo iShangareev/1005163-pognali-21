@@ -1,0 +1,76 @@
+.public-card-profile {
+  background-color: var(--basic-white);
+}
+
+.public-card-profile__user-name {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  color: var(--light-blue);
+}
+
+.public-card-profile__subscribers {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: var(--main-blue-title);
+}
+
+.public-card-profile__hashtags {
+  font-size: 15px;
+  line-height: 18px;
+  color: var(--special-grey);
+}
+
+.public-card-profile__text {
+  font-size: 15px;
+  line-height: 16px;
+  color: var(--special-grey);
+}
+
+.public-card-profile__list {
+  list-style-type: none;
+}
+
+.public-card-profile__country-name {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: var(--light-blue);
+}
+
+.public-card-profile__transport-title,
+.public-card-profile__level-title {
+  font-size: 15px;
+  line-height: 16px;
+  color: var(--special-grey);
+}
+
+.public-card-profile__level-num {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  color: var(--light-blue);
+}
+
+.public-card-profile__signal-button {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--main-blue-title);
+  background-color: var(--basic-yellow);
+  border: none;
+}
+
+.public-cards__show-more {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--light-blue);
+  text-decoration: none;
+}

@@ -82,7 +82,7 @@
         <!-- /.menu-box -->
       </div>
     </header>
-    <main>
+    <main class="page-catalog">
       <section class="filtering-country">
         <div class="filtering-country__nav">
           <h3 class="filtering-country__title">Фильтрация по странам:</h3>
@@ -111,7 +111,11 @@
           <div class="alphabet-wrapper">
             <ul class="alphabet-wrapper__list">
               <li class="alphabet-wrapper__item">
-                <a href="" class="alphabet-wrapper__word">А</a>
+                <a
+                  href=""
+                  class="alphabet-wrapper__word alphabet-wrapper__word_selected"
+                  >А</a
+                >
               </li>
               <li class="alphabet-wrapper__item">
                 <a href="" class="alphabet-wrapper__word">Б</a>
@@ -225,214 +229,214 @@
               <a href="" class="countries-list__country-name">Афганистан</a>
             </li>
           </ul>
-          <button class="filtering-country__menu-close-bottom"></button>
+          <button class="filtering-country__menu-close-bottom">Свернуть</button>
         </div>
         <!-- /.country-card -->
       </section>
       <section class="filtering-companions">
         <div class="filter-wrapper">
-          <h2 class="filter__title">Подберите идеального попутчика</h2>
-        </div>
-        <form action="https://echo.htmlacademy.ru" class="filter-form">
-          <fieldset class="filter-form__item">
-            <legend class="filter-form__item-title">Хобби</legend>
-            <button
-              class="filter-form__item-show-button"
-              type="button"
-            ></button>
-            <div class="filter-form__checkboxes">
-              <input
-                type="checkbox"
-                name="gym"
-                id="gym-checkbox"
-                class="filter-form__checkbox"
-              />
-              <label
-                for="gym-checkbox"
-                class="filter-form__checkbox-name"
-              ></label>
-              <input
-                type="checkbox"
-                name="hookah"
-                id="hookah-checkbox"
-                class="filter-form__checkbox"
-              />
-              <label
-                for="hookah-checkbox"
-                class="filter-form__checkbox-name"
-              ></label>
-              <input
-                type="checkbox"
-                name="sofa"
-                id="sofa-checkbox"
-                class="filter-form__checkbox"
-              />
-              <label
-                for="sofa-checkbox"
-                class="filter-form__checkbox-name"
-              ></label>
-            </div>
-            <!-- /.filter-form__checkboxes -->
-          </fieldset>
-          <fieldset class="filter-form__item">
-            <legend class="filter-form__item-title">Музыка</legend>
-            <button
-              class="filter-form__item-show-button"
-              type="button"
-            ></button>
-            <div class="filter-form__checkboxes">
-              <input
-                type="checkbox"
-                name="hard-rock"
-                id="hard-rock-checkbox"
-                class="filter-form__checkbox"
-              />
-              <label
-                for="hard-rock-checkbox"
-                class="filter-form__checkbox-name"
-              ></label>
-              <input
-                type="checkbox"
-                name="rus-rap"
-                id="rus-rap-checkbox"
-                class="filter-form__checkbox"
-              />
-              <label
-                for="rus-rap-checkbox"
-                class="filter-form__checkbox-name"
-              ></label>
-              <input
-                type="checkbox"
-                name="euro-dance"
-                id="euro-dance-checkbox"
-                class="filter-form__checkbox"
-              />
-              <label
-                for="euro-dance-checkbox"
-                class="filter-form__checkbox-name"
-              ></label>
-            </div>
-            <!-- /.filter-form__checkboxes -->
-          </fieldset>
-          <fieldset class="filter-form__item">
-            <legend class="filter-form__item-title">Еда</legend>
-            <button
-              class="filter-form__item-show-button"
-              type="button"
-            ></button>
-            <div class="filter-form__checkboxes">
-              <input
-                type="checkbox"
-                name="meat-eater"
-                id="meat-eater-checkbox"
-                class="filter-form__checkbox"
-              />
-              <label
-                for="meat-eater-checkbox"
-                class="filter-form__checkbox-name"
-              ></label>
-              <input
-                type="checkbox"
-                name="proper-nutrition"
-                id="proper-nutrition-checkbox"
-                class="filter-form__checkbox"
-              />
-              <label
-                for="proper-nutrition-checkbox"
-                class="filter-form__checkbox-name"
-              ></label>
-              <input
-                type="checkbox"
-                name="vegan"
-                id="vegan-checkbox"
-                class="filter-form__checkbox"
-              />
-              <label
-                for="vegan-checkbox"
-                class="filter-form__checkbox-name"
-              ></label>
-            </div>
-            <!-- /.filter-form__checkboxes -->
-          </fieldset>
-          <fieldset class="filter-form__item">
-            <legend class="filter-form__item-title">Транспорт</legend>
-            <button
-              class="filter-form__item-show-button"
-              type="button"
-            ></button>
-            <ul class="type-travel-list">
-              <li class="type-travel-list__item">
-                <img
-                  src="https://via.placeholder.com/22x22"
-                  alt=""
-                  class="type-travel-list__item-status"
+          <h2 class="filter-wrapper__title">Подберите идеального попутчика</h2>
+
+          <form action="https://echo.htmlacademy.ru" class="filter-form">
+            <fieldset class="filter-form__item">
+              <legend class="filter-form__item-title">Хобби</legend>
+              <button
+                class="filter-form__item-show-button"
+                type="button"
+              ></button>
+              <div class="filter-form__checkboxes">
+                <input
+                  type="checkbox"
+                  name="gym"
+                  id="gym-checkbox"
+                  class="filter-form__checkbox"
                 />
-              </li>
-              <li class="type-travel-list__item">
-                <img
-                  src="https://via.placeholder.com/22x22"
-                  alt=""
-                  class="type-travel-list__item-status type-travel-list__item-status_disabled"
+                <label for="gym-checkbox" class="filter-form__checkbox-name"
+                  >Спортзал</label
+                >
+                <input
+                  type="checkbox"
+                  name="hookah"
+                  id="hookah-checkbox"
+                  class="filter-form__checkbox"
                 />
-              </li>
-              <li class="type-travel-list__item">
-                <img
-                  src="https://via.placeholder.com/22x22"
-                  alt=""
-                  class="type-travel-list__item-status type-travel-list__item-status_disabled"
+                <label for="hookah-checkbox" class="filter-form__checkbox-name"
+                  >Кальян</label
+                >
+                <input
+                  type="checkbox"
+                  name="sofa"
+                  id="sofa-checkbox"
+                  class="filter-form__checkbox"
                 />
-              </li>
-              <li class="type-travel-list__item">
-                <img
-                  src="https://via.placeholder.com/22x22"
-                  alt=""
-                  class="type-travel-list__item-status type-travel-list__item-status_disabled"
-                />
-              </li>
-            </ul>
-            <!-- /.filter-form__checkboxes -->
-          </fieldset>
-          <fieldset class="filter-form__item">
-            <legend class="filter-form__item-title">Левел</legend>
-            <button
-              class="filter-form__item-show-button"
-              type="button"
-            ></button>
-            <div class="filter__cost-controls">
-              <label for="min-price-value" class="filter__min-price"
-                ><input
-                  type="number"
-                  name="min-price"
-                  value="30"
-                  id="min-price-value"
-                  class="filter__min-price-input"
-              /></label>
-              <label for="max-price-value" class="filter__max-price"
-                ><input
-                  type="number"
-                  name="max-price"
-                  value="100"
-                  id="max-price-value"
-                  class="filter__max-price-input"
-              /></label>
-            </div>
-            <!-- /.filter__cost-controls -->
-            <div class="filter__range-controls">
-              <div class="filter__cost-scale">
-                <div class="filter__cost-bar"></div>
-                <button
-                  class="filter__cost-toggle toggle-min"
-                  aria-label="минимальная цена"
-                ></button>
-                <button
-                  class="filter__cost-toggle toggle-max"
-                  aria-label="максимальная цена"
-                ></button>
+                <label for="sofa-checkbox" class="filter-form__checkbox-name"
+                  >Диван</label
+                >
               </div>
-            </div>
-          </fieldset>
-          <button class="show-button" type="submit"></button>
-        </form>
+              <!-- /.filter-form__checkboxes -->
+            </fieldset>
+            <fieldset class="filter-form__item">
+              <legend class="filter-form__item-title">Музыка</legend>
+              <button
+                class="filter-form__item-show-button"
+                type="button"
+              ></button>
+              <div class="filter-form__checkboxes">
+                <input
+                  type="checkbox"
+                  name="hard-rock"
+                  id="hard-rock-checkbox"
+                  class="filter-form__checkbox"
+                />
+                <label
+                  for="hard-rock-checkbox"
+                  class="filter-form__checkbox-name"
+                  >Тяжелый рок</label
+                >
+                <input
+                  type="checkbox"
+                  name="rus-rap"
+                  id="rus-rap-checkbox"
+                  class="filter-form__checkbox"
+                />
+                <label for="rus-rap-checkbox" class="filter-form__checkbox-name"
+                  >Русский рэп</label
+                >
+                <input
+                  type="checkbox"
+                  name="euro-dance"
+                  id="euro-dance-checkbox"
+                  class="filter-form__checkbox"
+                />
+                <label
+                  for="euro-dance-checkbox"
+                  class="filter-form__checkbox-name"
+                  >Евродэнс</label
+                >
+              </div>
+              <!-- /.filter-form__checkboxes -->
+            </fieldset>
+            <fieldset class="filter-form__item">
+              <legend class="filter-form__item-title">Еда</legend>
+              <button
+                class="filter-form__item-show-button"
+                type="button"
+              ></button>
+              <div class="filter-form__checkboxes">
+                <input
+                  type="checkbox"
+                  name="meat-eater"
+                  id="meat-eater-checkbox"
+                  class="filter-form__checkbox"
+                />
+                <label
+                  for="meat-eater-checkbox"
+                  class="filter-form__checkbox-name"
+                  >Мясоед</label
+                >
+                <input
+                  type="checkbox"
+                  name="proper-nutrition"
+                  id="proper-nutrition-checkbox"
+                  class="filter-form__checkbox"
+                />
+                <label
+                  for="proper-nutrition-checkbox"
+                  class="filter-form__checkbox-name"
+                  >Сидит на ПП</label
+                >
+                <input
+                  type="checkbox"
+                  name="vegan"
+                  id="vegan-checkbox"
+                  class="filter-form__checkbox"
+                />
+                <label for="vegan-checkbox" class="filter-form__checkbox-name"
+                  >Веган-сыроед</label
+                >
+              </div>
+              <!-- /.filter-form__checkboxes -->
+            </fieldset>
+            <fieldset class="filter-form__item">
+              <legend class="filter-form__item-title">Транспорт</legend>
+              <button
+                class="filter-form__item-show-button"
+                type="button"
+              ></button>
+              <ul class="type-travel-list">
+                <li class="type-travel-list__item">
+                  <img
+                    src="https://via.placeholder.com/22x22"
+                    alt=""
+                    class="type-travel-list__item-status"
+                  />
+                </li>
+                <li class="type-travel-list__item">
+                  <img
+                    src="https://via.placeholder.com/22x22"
+                    alt=""
+                    class="type-travel-list__item-status type-travel-list__item-status_disabled"
+                  />
+                </li>
+                <li class="type-travel-list__item">
+                  <img
+                    src="https://via.placeholder.com/22x22"
+                    alt=""
+                    class="type-travel-list__item-status type-travel-list__item-status_disabled"
+                  />
+                </li>
+                <li class="type-travel-list__item">
+                  <img
+                    src="https://via.placeholder.com/22x22"
+                    alt=""
+                    class="type-travel-list__item-status type-travel-list__item-status_disabled"
+                  />
+                </li>
+              </ul>
+              <!-- /.filter-form__checkboxes -->
+            </fieldset>
+            <fieldset class="filter-form__item">
+              <legend class="filter-form__item-title">Левел</legend>
+              <button
+                class="filter-form__item-show-button"
+                type="button"
+              ></button>
+              <div class="filter__cost-controls">
+                <label for="min-price-value" class="filter__min-price"
+                  ><input
+                    type="number"
+                    name="min-price"
+                    value="30"
+                    id="min-price-value"
+                    class="filter__min-price-input"
+                /></label>
+                <label for="max-price-value" class="filter__max-price"
+                  ><input
+                    type="number"
+                    name="max-price"
+                    value="100"
+                    id="max-price-value"
+                    class="filter__max-price-input"
+                /></label>
+              </div>
+              <!-- /.filter__cost-controls -->
+              <div class="filter__range-controls">
+                <div class="filter__cost-scale">
+                  <div class="filter__cost-bar"></div>
+                  <button
+                    class="filter__cost-toggle toggle-min"
+                    aria-label="минимальная цена"
+                  ></button>
+                  <button
+                    class="filter__cost-toggle toggle-max"
+                    aria-label="максимальная цена"
+                  ></button>
+                </div>
+              </div>
+            </fieldset>
+            <button class="show-button" type="submit">Показать</button>
+          </form>
+        </div>
       </section>
       <section class="public-cards">
         <h2 class="visually-hidden">Карточки попутчиков</h2>

@@ -1,0 +1,23 @@
+.regions-list {
+  list-style-type: none;
+}
+
+.regions-list__region-name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--main-blue-text);
+  text-decoration: none;
+  opacity: 0.3;
+}
+
+.regions-list__region-name_selected {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--main-blue-text);
+  text-decoration: none;
+  opacity: 1;
+}
