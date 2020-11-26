@@ -4,7 +4,7 @@
 
 .calendar__month,
 .calendar__year {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 20px;
   line-height: 20px;
   color: var(--light-blue);
@@ -15,7 +15,6 @@
 }
 
 .calendar__weekday {
-  font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   color: var(--special-grey);
@@ -26,7 +25,6 @@
 }
 
 .calendar__day {
-  font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   color: var(--special-grey);

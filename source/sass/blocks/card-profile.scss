@@ -3,7 +3,7 @@
 }
 
 .card-profile__level-num {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 38px;
   line-height: 38px;
   text-align: center;
@@ -11,7 +11,6 @@
 }
 
 .card-profile__level-text {
-  font-weight: normal;
   font-size: 18px;
   line-height: 18px;
   text-align: center;
@@ -30,7 +29,7 @@
 
 .card-profile__hashtags-title,
 .card-profile__transport-title {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 16px;
   line-height: 18px;
   text-align: center;
@@ -39,7 +38,6 @@
 }
 
 .card-profile__hashtags-text {
-  font-weight: normal;
   font-size: 16px;
   line-height: 18px;
   color: var(--special-grey);

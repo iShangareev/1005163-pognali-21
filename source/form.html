@@ -103,9 +103,14 @@
         </button>
         <div class="card-profile__info">
           <h3 class="card-profile__hashtags-title">Тэги</h3>
-          <textarea class="card-profile__hashtags-text" name="hashtags">
+          <form class="card-profile__form" action="https://echo.htmlacademy.ru">
+            <label class="card-profile__hashtags-label">
+              <textarea class="card-profile__hashtags-text" name="hashtags">
 #бургер#бар#футбол#крафт
-          </textarea>
+          </textarea
+              >
+            </label>
+          </form>
           <h3 class="card-profile__transport-title">Транспорт</h3>
           <ul class="type-travel-list">
             <li class="type-travel-list__item">
@@ -169,23 +174,27 @@
             <div class="number-companions">
               <p class="number-companions__title">Ищу попутчиков:</p>
               <p class="number-companions__text">Чел</p>
-              <button class="button-minus" type="button"></button
-              ><input
-                class="input-value"
-                type="number"
-                name="number-companions"
-              />
+              <button class="button-minus" type="button"></button>
+              <label class="input-label">
+                <input
+                  class="input-value"
+                  type="number"
+                  name="number-companions"
+                />
+              </label>
               <button class="button-plus" type="button"></button>
             </div>
             <div class="travel-duration">
               <p class="travel-duration__title">Длительность</p>
               <p class="travel-duration__text">Чел</p>
-              <button class="button-minus" type="button"></button
-              ><input
-                class="input-value"
-                type="number"
-                name="travel-duration"
-              />
+              <button class="button-minus" type="button"></button>
+              <label class="input-label">
+                <input
+                  class="input-value"
+                  type="number"
+                  name="travel-duration"
+                />
+              </label>
               <button class="button-plus" type="button"></button>
             </div>
             <input
@@ -414,22 +423,28 @@
             </p>
             <div class="travel-action-plan">
               <p class="travel-action-plan__title">Босния и Герцеговина</p>
-              <textarea
-                class="travel-action-plan__text"
-                name="action-plan_bosnia"
-              >
-План действий</textarea
-              >
+              <label class="travel-action-plan__text-label">
+                <textarea
+                  class="travel-action-plan__text"
+                  name="action-plan_bosnia"
+                >
+План действий
+              </textarea
+                >
+              </label>
             </div>
             <div class="travel-action-plan">
               <p class="travel-action-plan__title">Чехия</p>
-              <textarea
-                class="travel-action-plan__text"
-                name="action-plan_czech"
-              >
+              <label class="travel-action-plan__text-label">
+                <textarea
+                  class="travel-action-plan__text"
+                  name="action-plan_czech"
+                >
 Пить пиво и лазить
 по старым замкам, наслаждаться архитектурой и вот это все.
-              </textarea>
+              </textarea
+                >
+              </label>
             </div>
             <button type="submit" class="finish-step button">Отправить</button>
             <a href="" class="previous-card">На шаг назад</a>
