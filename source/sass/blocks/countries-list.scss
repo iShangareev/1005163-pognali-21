@@ -1,0 +1,10 @@
+.countries-list {
+  list-style-type: none;
+}
+
+.countries-list__country-name {
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration: none;
+  color: var(--special-grey);
+}

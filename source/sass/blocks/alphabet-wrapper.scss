@@ -1,0 +1,19 @@
+.alphabet-wrapper__list {
+  list-style-type: none;
+}
+
+.alphabet-wrapper__word {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--light-blue);
+  background-color: var(--basic-white);
+}
+
+.alphabet-wrapper__word_selected {
+  color: var(--basic-white);
+  background-color: var(--light-blue);
+}

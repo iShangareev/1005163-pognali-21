@@ -1,7 +1,5 @@
 @import "variables.scss";
 @import "fonts.scss";
-// Blocks
-
 @import "blocks/page__body.scss";
 @import "blocks/page-margin.scss";
 @import "blocks/header.scss";
@@ -41,3 +39,13 @@
 @import "blocks/previous-card.scss";
 @import "blocks/finish-step.scss";
 @import "blocks/footer.scss";
+@import "blocks/filtering-country.scss";
+@import "blocks/countries-card.scss";
+@import "blocks/regions-list.scss";
+@import "blocks/alphabet-wrapper.scss";
+@import "blocks/countries-list.scss";
+@import "blocks/filter-wrapper.scss";
+@import "blocks/filter-form.scss";
+@import "blocks/show-button.scss";
+@import "blocks/page-catalog.scss";
+@import "blocks//public-card-profile.scss";
