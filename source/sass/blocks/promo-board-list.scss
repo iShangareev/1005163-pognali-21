@@ -1,0 +1,41 @@
+.promo-board-list {
+  list-style-type: none;
+}
+
+.promo-board-list__contact-item {
+  font-size: 0;
+}
+
+.promo-board-list__contact-list {
+  list-style-type: none;
+}
+
+.promo-board-list__contact-authorization {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--main-blue-title);
+  background-color: var(--basic-yellow);
+}
+
+@media (min-width: $mobile-width-only) {
+  .promo-board-list {
+    display: flex;
+    padding: 0;
+  }
+  .promo-board-list_header {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .promo-board-list {
+    display: none;
+  }
+  .promo-board-list_header {
+    display: flex;
+  }
+}

@@ -1,5 +1,7 @@
 .step-list {
   list-style-type: none;
+  grid-area: step-list;
+  padding: 0;
 }
 
 .step-list__item_direction {
@@ -23,4 +25,25 @@
   font-size: 18px;
   line-height: 18px;
   color: var(--main-blue-title);
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .step-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .step-list__item {
+    width: 50%;
+  }
+  .step-list__text {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .step-list__item {
+    width: 25%;
+  }
 }

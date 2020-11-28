@@ -1,0 +1,20 @@
+.button-detail {
+  width: 276px;
+  height: 80px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  color: var(--light-blue);
+  text-decoration: none;
+}
+@media (min-width: $mobile-width-only) {
+  .button-detail {
+    display: none;
+  }
+}
+@media (min-width: $tablet-width) {
+  .button-detail {
+    display: block;
+    background-color: var(--basic-yellow);
+  }
+}

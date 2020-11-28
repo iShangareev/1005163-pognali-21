@@ -1,3 +1,18 @@
 .menu-box {
   background-color: var(--basic-white);
 }
+
+@media (min-width: $mobile-width-only) {
+  .menu-box {
+    padding: 26px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .menu-box {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+}

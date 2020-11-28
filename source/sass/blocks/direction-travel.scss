@@ -1,3 +1,12 @@
 .direction-travel {
   background-color: var(--basic-grey);
 }
+@media (min-width: $desktop-width) {
+  .direction-travel .page-margin {
+    display: grid;
+    grid-template-areas:
+      "direction-card-2 short-info_theme_light"
+      "direction-card-3 short-info_theme_light"
+      "direction-card-1  direction-card__button-more";
+  }
+}

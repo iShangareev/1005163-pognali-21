@@ -1,5 +1,8 @@
 .hashtags-box {
+  display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
+  padding: 0;
 }
 
 .hashtags-box__tag {
@@ -7,4 +10,10 @@
   line-height: 18px;
   text-align: center;
   color: var(--special-grey);
+}
+@media (min-width: $tablet-width) {
+  .hashtags-box__tag {
+    font-size: 20px;
+    line-height: 23px;
+  }
 }

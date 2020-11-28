@@ -1,5 +1,13 @@
 @import "variables.scss";
 @import "fonts.scss";
+
+// Viewports
+
+$tablet-width: 768px;
+$desktop-width: 1200px;
+$mobile-width-only: 320px;
+
+// Блоки
 @import "blocks/page__body.scss";
 @import "blocks/page-margin.scss";
 @import "blocks/header.scss";
@@ -9,6 +17,7 @@
 @import "blocks/navbar-menu-navigation.scss";
 @import "blocks/social-list.scss";
 @import "blocks/promo-board.scss";
+@import "blocks/promo-board-list.scss";
 @import "blocks/step-list.scss";
 @import "blocks/about-service.scss";
 @import "blocks/short-info.scss";
@@ -48,4 +57,5 @@
 @import "blocks/filter-form.scss";
 @import "blocks/show-button.scss";
 @import "blocks/page-catalog.scss";
-@import "blocks//public-card-profile.scss";
+@import "blocks/public-card-profile.scss";
+@import "blocks/button-detail.scss";
