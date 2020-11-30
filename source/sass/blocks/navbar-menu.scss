@@ -1,5 +1,11 @@
+.navbar-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
 .navbar-menu__list {
   list-style-type: none;
+  padding: 0;
 }
 
 .navbar-menu__item {
@@ -16,4 +22,32 @@
   text-transform: uppercase;
   text-decoration: none;
   color: var(--main-blue-text);
+}
+
+.navbar-menu__authorization {
+  background-color: var(--basic-yellow);
+}
+
+@media (min-width: $tablet-width) {
+  .navbar-menu {
+    width: 100%;
+  }
+
+  .navbar-menu__item {
+    text-align: left;
+  }
+
+  .navbar-menu__authorization {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .navbar__menu-button {
+    display: none;
+  }
+
+  .navbar-menu {
+    width: 100%;
+  }
 }

@@ -10,21 +10,7 @@
   font-size: 36px;
   line-height: 40px;
   text-align: center;
-}
-
-.promo-board__contact-list {
-  list-style-type: none;
-}
-
-.promo-board__contact-authorization {
-  font-weight: 600;
-  font-size: 17px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: var(--main-blue-title);
-  background-color: var(--basic-yellow);
+  grid-area: promo-board__title;
 }
 
 .promo-board__quote {
@@ -32,10 +18,52 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
+  grid-area: promo-board__quote;
 }
 
 .promo-board__quote-author {
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
+  grid-area: promo-board__quote-author;
+}
+
+@media (min-width: $tablet-width) {
+  .promo-board {
+    background-image: url("../img/promo-bckg-tablet.png");
+  }
+
+  .promo-board__title {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .promo-board__quote {
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .promo-board__quote-author {
+    font-size: 21px;
+    line-height: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo-board__wrapper {
+    display: grid;
+    grid-template-areas:
+      "promo-board__title promo-board__title  promo-board__quote"
+      "promo-board__title promo-board__title  promo-board__quote-author"
+      "step-list step-list step-list";
+  }
+
+  .promo-board__title {
+    text-align: left;
+  }
+
+  .promo-board__quote,
+  .promo-board__quote-author {
+    text-align: right;
+  }
 }

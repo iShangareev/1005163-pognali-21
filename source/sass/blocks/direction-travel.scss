@@ -1,3 +1,21 @@
 .direction-travel {
   background-color: var(--basic-grey);
 }
+
+@media (min-width: $desktop-width) {
+  .direction-travel__info {
+    grid-area: direction-travel__info;
+  }
+
+  .direction-travel__card-wrapper {
+    grid-area: direction-travel__card-wrapper;
+  }
+
+  .direction-travel__wrapper {
+    display: grid;
+    grid-template-areas:
+      "direction-travel__card-wrapper direction-travel__info"
+      "direction-travel__card-wrapper direction-travel__info"
+      "direction-travel__card-wrapper  direction-travel__button";
+  }
+}

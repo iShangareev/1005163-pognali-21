@@ -1,5 +1,10 @@
+.navbar-menu-navigation_horizontal {
+  display: none;
+}
+
 .navbar-menu-navigation__list {
   list-style-type: none;
+  padding-left: 0;
 }
 
 .navbar-menu-navigation__item {
@@ -14,4 +19,20 @@
   text-transform: uppercase;
   color: var(--main-blue-text);
   text-decoration: none;
+}
+
+@media (min-width: $desktop-width) {
+  .navbar-menu-navigation {
+    display: flex;
+  }
+
+  .navbar-menu-navigation__list {
+    display: flex;
+  }
+
+  .navbar-menu-navigation__link {
+    font-size: 20px;
+    line-height: 20px;
+    color: var(--basic-white);
+  }
 }

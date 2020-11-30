@@ -30,3 +30,52 @@
   color: var(--light-blue);
   text-decoration: none;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts__subscribe {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacts__text {
+    font-size: 28px;
+    line-height: 30px;
+  }
+
+  .contacts__phone {
+    display: block;
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .contacts__mail {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .contacts__address {
+    width: 100%;
+    background-color: var(--basic-yellow);
+  }
+
+  .contacts__address-link {
+    display: block;
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .contacts__address-route {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__phone {
+    display: inline;
+  }
+
+  .contacts__address-link {
+    display: inline;
+  }
+}

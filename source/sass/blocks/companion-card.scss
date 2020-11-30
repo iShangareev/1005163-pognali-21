@@ -16,7 +16,10 @@
 }
 
 .companion-card__country-list {
+  display: flex;
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .companion-card__info {
@@ -29,4 +32,11 @@
   line-height: 21px;
   text-align: center;
   color: var(--light-blue);
+}
+
+@media (min-width: $tablet-width) {
+  .companion-card__info-username {
+    font-size: 24px;
+    line-height: 22px;
+  }
 }

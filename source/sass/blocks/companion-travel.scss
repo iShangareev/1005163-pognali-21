@@ -3,10 +3,31 @@
 }
 
 .companion-travel__show-more {
+  width: 100%;
   font-weight: 600;
   font-size: 18px;
   line-height: 18px;
   color: var(--light-blue);
   background-color: var(--basic-yellow);
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .companion-travel__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .companion-travel__show-more {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .companion-travel__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
