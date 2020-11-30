@@ -47,7 +47,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .promo-board .page-margin {
+  .promo-board__wrapper {
     display: grid;
     grid-template-areas:
       "promo-board__title promo-board__title  promo-board__quote"

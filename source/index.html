@@ -18,7 +18,7 @@
             />
           </a>
           <button type="button" class="navbar__menu-button"></button>
-          <nav class="navbar-menu-navigation navbar-menu-navigation_desktop">
+          <nav class="navbar-menu-navigation navbar-menu-navigation_horizontal">
             <ul class="navbar-menu-navigation__list">
               <li class="navbar-menu-navigation__item">
                 <a href="" class="navbar-menu-navigation__link">О сервисе</a>
@@ -31,7 +31,7 @@
               </li>
             </ul>
           </nav>
-          <ul class="promo-board-list promo-board-list_header">
+          <ul class="promo-board-list navbar__contact-list">
             <li class="promo-board-list__contact-item">
               <a href="" class="promo-board-list__contact-button">
                 кнопка позвонить нам
@@ -118,7 +118,7 @@
         Сервис подбора попутчиков для путешествий "Погнали?"
       </h1>
       <section class="promo-board">
-        <div class="page-margin">
+        <div class="page-margin promo-board__wrapper">
           <h2 class="promo-board__title">
             В путешествие<br />
             с крутыми<br />
@@ -184,8 +184,8 @@
         </div>
       </section>
       <section class="direction-travel">
-        <div class="page-margin">
-          <div class="short-info short-info_theme_light">
+        <div class="page-margin direction-travel__wrapper">
+          <div class="short-info short-info_theme_light direction-travel__info">
             <h2 class="short-info__title">Направления</h2>
             <p class="short-info__text">
               Мы не продаем туры<br />
@@ -196,60 +196,65 @@
             </p>
           </div>
           <!-- /.short-info -->
+          <div class="direction-travel__card-wrapper">
+            <div class="direction-card direction-travel-card">
+              <a href="" class="direction-card__link">
+                <img
+                  src="https://via.placeholder.com/270x110"
+                  alt="Тайланд"
+                  class="direction-card__pic"
+                />
+                <div class="direction-card__box">
+                  <p class="direction-card__country">Таиланд</p>
+                  <span class="direction-card__tourist">18321</span>
+                  <p class="direction-card__text">Джунгли зовут!</p>
+                </div>
+                <!-- /.direction-card__box -->
+              </a>
+            </div>
+            <div class="direction-card direction-travel-card">
+              <a href="" class="direction-card__link">
+                <img
+                  src="https://via.placeholder.com/270x110"
+                  alt="Франция"
+                  class="direction-card__pic"
+                />
+                <div class="direction-card__box">
+                  <p class="direction-card__country">Франция</p>
+                  <span class="direction-card__tourist">12518</span>
+                  <p class="direction-card__text">Трэ бьен, манифик!</p>
+                </div>
+                <!-- /.direction-card__box -->
+              </a>
+            </div>
+            <div class="direction-card direction-travel-card">
+              <a href="" class="direction-card__link">
+                <img
+                  src="https://via.placeholder.com/270x110"
+                  alt="Чехия"
+                  class="direction-card__pic"
+                />
+                <div class="direction-card__box">
+                  <p class="direction-card__country">Чехия</p>
+                  <span class="direction-card__tourist">5326</span>
+                  <p class="direction-card__text">Закоулки старой Европы</p>
+                </div>
+                <!-- /.direction-card__box -->
+              </a>
+            </div>
+          </div>
+          <!-- /.direction-travel__card-wrapper -->
 
-          <div class="direction-card">
-            <a href="" class="direction-card__link">
-              <img
-                src="https://via.placeholder.com/270x110"
-                alt="Тайланд"
-                class="direction-card__pic"
-              />
-              <div class="direction-card__box">
-                <p class="direction-card__country">Таиланд</p>
-                <span class="direction-card__tourist">18321</span>
-                <p class="direction-card__text">Джунгли зовут!</p>
-              </div>
-              <!-- /.direction-card__box -->
-            </a>
-          </div>
-          <div class="direction-card">
-            <a href="" class="direction-card__link">
-              <img
-                src="https://via.placeholder.com/270x110"
-                alt="Франция"
-                class="direction-card__pic"
-              />
-              <div class="direction-card__box">
-                <p class="direction-card__country">Франция</p>
-                <span class="direction-card__tourist">12518</span>
-                <p class="direction-card__text">Трэ бьен, манифик!</p>
-              </div>
-              <!-- /.direction-card__box -->
-            </a>
-          </div>
-          <div class="direction-card">
-            <a href="" class="direction-card__link">
-              <img
-                src="https://via.placeholder.com/270x110"
-                alt="Чехия"
-                class="direction-card__pic"
-              />
-              <div class="direction-card__box">
-                <p class="direction-card__country">Чехия</p>
-                <span class="direction-card__tourist">5326</span>
-                <p class="direction-card__text">Закоулки старой Европы</p>
-              </div>
-              <!-- /.direction-card__box -->
-            </a>
-          </div>
-          <a href="form.html" class="direction-card__button-more button"
+          <a
+            href="form.html"
+            class="direction-card__button-more direction-travel__button button"
             >Показать все
           </a>
         </div>
       </section>
       <section class="companion-travel">
-        <div class="page-margin">
-          <div class="short-info short-info_companion">
+        <div class="page-margin companion-travel__wrapper">
+          <div class="short-info">
             <h2 class="short-info__title">Попутчики</h2>
             <p class="short-info__text">
               Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.

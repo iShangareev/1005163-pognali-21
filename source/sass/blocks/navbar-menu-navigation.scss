@@ -1,3 +1,7 @@
+.navbar-menu-navigation_horizontal {
+  display: none;
+}
+
 .navbar-menu-navigation__list {
   list-style-type: none;
   padding-left: 0;
@@ -17,11 +21,6 @@
   text-decoration: none;
 }
 
-@media (min-width: $mobile-width-only) {
-  .navbar-menu-navigation_desktop {
-    display: none;
-  }
-}
 @media (min-width: $desktop-width) {
   .navbar-menu-navigation {
     display: flex;

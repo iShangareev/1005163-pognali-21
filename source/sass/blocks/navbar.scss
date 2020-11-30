@@ -5,16 +5,11 @@
   align-items: center;
 }
 
-@media (min-width: $mobile-width-only) {
-  .navbar {
-    margin: 0 26px;
-  }
+.navbar__contact-list {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
-  .navbar {
-    margin: 0 40px;
-  }
   .promo-board-list__contact-button {
     font-size: 0px;
     display: none;

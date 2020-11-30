@@ -76,20 +76,3 @@
     width: 100%;
   }
 }
-@media (min-width: $desktop-width) {
-  .short-info_theme_light {
-    grid-area: short-info_theme_light;
-  }
-  .direction-card:nth-child(1) {
-    grid-area: direction-card-1;
-  }
-  .direction-card:nth-child(2) {
-    grid-area: direction-card-2;
-  }
-  .direction-card:nth-child(3) {
-    grid-area: direction-card-3;
-  }
-  .direction-card__button-more {
-    grid-area: direction-card__button-more;
-  }
-}

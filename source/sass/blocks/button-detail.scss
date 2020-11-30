@@ -1,4 +1,5 @@
 .button-detail {
+  display: none;
   width: 276px;
   height: 80px;
   font-weight: bold;
@@ -7,11 +8,7 @@
   color: var(--light-blue);
   text-decoration: none;
 }
-@media (min-width: $mobile-width-only) {
-  .button-detail {
-    display: none;
-  }
-}
+
 @media (min-width: $tablet-width) {
   .button-detail {
     display: block;
