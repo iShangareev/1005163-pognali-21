@@ -32,15 +32,18 @@
     line-height: 45px;
     text-align: center;
   }
+
   .rate-tariff__item {
     display: flex;
     justify-content: space-between;
     font-size: 28px;
     line-height: 28px;
   }
+
   .rate-tariff__item .rate-tariff__item-content:nth-child(2) {
     background-color: var(--lilac-light);
   }
+
   .rate-tariff__company-show {
     font-size: 20px;
     line-height: 20px;

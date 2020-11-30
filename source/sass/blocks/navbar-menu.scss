@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
 }
+
 .navbar-menu__list {
   list-style-type: none;
   padding: 0;
@@ -31,9 +32,11 @@
   .navbar-menu {
     width: 100%;
   }
+
   .navbar-menu__item {
     text-align: left;
   }
+
   .navbar-menu__authorization {
     display: none;
   }
@@ -43,6 +46,7 @@
   .navbar__menu-button {
     display: none;
   }
+
   .navbar-menu {
     width: 100%;
   }
