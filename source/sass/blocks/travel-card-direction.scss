@@ -37,6 +37,7 @@
     align-items: center;
     justify-content: space-around;
   }
+
   .travel-card-direction__country {
     width: 100%;
   }
@@ -48,11 +49,13 @@
     font-size: 24px;
     line-height: 24px;
   }
+
   .travel-card-direction__companion {
     font-weight: 500;
     font-size: 20px;
     line-height: 20px;
   }
+
   .travel-card-direction__date,
   .travel-card-direction__change {
     font-size: 20px;

@@ -107,12 +107,15 @@
   .card-profile__level {
     display: none;
   }
+
   .card-profile__button {
     display: none;
   }
+
   .card-profile__user-photo {
     display: none;
   }
+
   .card-profile__wrapper {
     grid-template-areas: "card-profile__wrapper-tags card-profile__wrapper-tags card-profile__wrapper-transport ";
   }
