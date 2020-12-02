@@ -1,0 +1,38 @@
+.profile-info {
+  display: none;
+}
+@media (min-width: $desktop-width) {
+  .profile-info {
+    display: block;
+    width: 40%;
+    display: flex;
+    align-items: center;
+  }
+  .profile-info__level {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile-info__level-num {
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 38px;
+    text-align: center;
+    color: var(--basic-white);
+  }
+  .profile-info__level-text {
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: var(--basic-white);
+  }
+  .profile-info__link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--main-blue-title);
+    background-color: var(--special-choose);
+  }
+}

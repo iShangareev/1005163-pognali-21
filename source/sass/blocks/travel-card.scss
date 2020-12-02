@@ -1,4 +1,6 @@
-.travel-card__title {
+.travel-card__title,
+.travel-card__text {
+  margin: 0;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -10,4 +12,107 @@
   font-size: 16px;
   line-height: 22px;
   color: var(--special-grey);
+}
+
+.travel-card__filter {
+  display: none;
+}
+
+.travel-card__filter-link {
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  opacity: 0.6;
+  text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .travel-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .travel-card__title,
+  .travel-card__text {
+    font-size: 36px;
+    line-height: 36px;
+  }
+  .travel-card__title {
+    width: 45%;
+  }
+  .travel-card__instructions {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .travel-card__buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .travel-card__title {
+    width: 50%;
+    grid-area: travel-card__title;
+  }
+
+  .travel-card__text {
+    grid-area: travel-card__text;
+  }
+
+  .travel-card__instructions {
+    grid-area: travel-card__instructions;
+  }
+  .travel-card__filter {
+    grid-area: travel-card__filter;
+  }
+
+  .travel-card__companions {
+    grid-area: travel-card__companions;
+  }
+
+  .travel-card__duration {
+    grid-area: travel-card__duration;
+  }
+
+  .travel-card__checkbox {
+    grid-area: travel-card__checkbox;
+  }
+
+  .travel-card__calendar {
+    grid-area: travel-card__calendar;
+  }
+
+  .travel-card__button {
+    grid-area: travel-card__button;
+    width: 30%;
+  }
+
+  .travel-card_arrival {
+    display: grid;
+    grid-template-areas:
+      "travel-card__title travel-card__text travel-card__filter"
+      "travel-card__instructions travel-card__instructions travel-card__filter"
+      "travel-card__companions travel-card__companions travel-card__checkbox"
+      "travel-card__duration travel-card__duration travel-card__duration"
+      "travel-card__calendar travel-card__calendar travel-card__calendar"
+      "travel-card__button travel-card__button travel-card__button ";
+  }
+
+  .travel-card__filter {
+    display: block;
+  }
+
+  .travel-card_route {
+    display: flex;
+  }
+
+  .travel-card__info-box {
+    display: flex;
+  }
+  .travel-card__buttons_reverse {
+    flex-direction: row-reverse;
+  }
 }

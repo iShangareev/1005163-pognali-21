@@ -1,4 +1,11 @@
+.number-companions {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .number-companions__title {
+  width: 70%;
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
@@ -7,10 +14,19 @@
 }
 
 .number-companions__text {
+  width: 30%;
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
   text-align: right;
   text-transform: uppercase;
   opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .number-companions__title,
+  .number-companions__text {
+    font-size: 20px;
+    line-height: 18px;
+  }
 }

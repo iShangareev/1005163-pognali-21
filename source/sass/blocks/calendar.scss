@@ -1,4 +1,13 @@
+.calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .calendar__buttons {
+  display: flex;
+  justify-content: center;
+  padding: 0;
   list-style-type: none;
 }
 
@@ -11,10 +20,17 @@
 }
 
 .calendar__weekdays {
+  display: flex;
+  padding: 0;
+
+  justify-content: space-between;
   list-style-type: none;
 }
 
 .calendar__weekday {
+  width: 33px;
+  height: 32px;
+  text-align: center;
   font-size: 14px;
   line-height: 18px;
   color: var(--special-grey);
@@ -32,6 +48,10 @@
 }
 
 .calendar__days {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
   list-style-type: none;
 }
 
@@ -43,4 +63,37 @@
 .calendar__day-button_disabled {
   background-color: var(--basic-grey);
   color: var(--light-blue);
+}
+
+@media (min-width: $tablet-width) {
+  .calendar {
+    order: 6;
+  }
+
+  .calendar__month,
+  .calendar__year {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .calendar__weekday {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .calendar__day {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .calendar__weekdays {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .calendar__day-button {
+    width: 148px;
+    height: 76px;
+  }
 }

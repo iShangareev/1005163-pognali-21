@@ -3,9 +3,17 @@
 }
 
 .user-travel-plan__title {
+  margin: 0;
   font-weight: 600;
   font-size: 24px;
   line-height: 24px;
-  text-align: center;
+  text-align: left;
   color: var(--light-blue);
+}
+
+@media (min-width: $desktop-width) {
+  .user-travel-plan__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }

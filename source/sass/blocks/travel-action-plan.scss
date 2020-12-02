@@ -14,3 +14,16 @@
   color: var(--special-grey);
   opacity: 0.3;
 }
+
+@media (min-width: $tablet-width) {
+  .travel-action-plan__title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .travel-action-plan__text {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

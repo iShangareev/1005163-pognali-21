@@ -1,9 +1,20 @@
 .next-card-button {
+  display: block;
   font-weight: 600;
   font-size: 17px;
   line-height: 30px;
   text-transform: uppercase;
+  text-align: center;
   color: var(--light-blue);
   background-color: var(--basic-yellow);
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .next-card-button_small {
+    display: block;
+    order: 7;
+    font-size: 24px;
+    line-height: 24px;
+  }
 }

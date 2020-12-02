@@ -11,3 +11,9 @@
     align-items: start;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .menu-box {
+    display: none;
+  }
+}

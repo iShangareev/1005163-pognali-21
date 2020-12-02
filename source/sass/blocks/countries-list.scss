@@ -8,3 +8,19 @@
   text-decoration: none;
   color: var(--special-grey);
 }
+
+@media (min-width: $tablet-width) {
+  .countries-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 184px;
+    height: 420px;
+    padding: 0;
+  }
+
+  .countries-list__country-name {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

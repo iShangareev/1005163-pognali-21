@@ -3,8 +3,17 @@
 }
 
 .header__title {
+  margin: 0;
   font-weight: 600;
   font-size: 36px;
   line-height: 36px;
   color: var(--basic-white);
+}
+
+@media (min-width: $desktop-width) {
+  .header__title {
+    width: 60%;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }

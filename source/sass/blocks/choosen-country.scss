@@ -1,7 +1,29 @@
+.choosen-country {
+  display: flex;
+}
+
 .choosen-country__name {
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   color: var(--light-blue);
+}
+
+@media (min-width: $tablet-width) {
+  .choosen-country_add {
+    width: 80%;
+    background-color: var(--special-choose);
+  }
+
+  .choosen-country_choose {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .choosen-country__name {
+    width: 80%;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
