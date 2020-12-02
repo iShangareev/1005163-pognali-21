@@ -8,7 +8,7 @@
   </head>
   <body class="page__body">
     <header class="header">
-      <div class="page-margin header__wrapper">
+      <div class="page-margin header__content">
         <div class="navbar">
           <a href="" class="company-logo">
             <img
@@ -71,7 +71,7 @@
           <a href="" class="company-logo">
             <img
               src="https://via.placeholder.com/100x15"
-              alt="Погнали?"
+              alt="Логотип сервиса 'Погнали?"
               class="company-logo__image"
           /></a>
           <a href="" class="navbar-menu__close">
@@ -102,9 +102,9 @@
             </a>
           </li>
           <li class="navbar-menu__item">
-            <a href="tel:88005558628" class="navbar-menu__phone"
-              >8 800 555-86-28</a
-            >
+            <a href="tel:88005558628" class="navbar-menu__phone">
+              8 800 555-86-28
+            </a>
           </li>
           <li class="navbar-menu__item">
             <a href="mailto:mail@htmlacademy.ru" class="navbar-menu__mail"
@@ -114,13 +114,19 @@
         </ul>
         <ul class="social-list">
           <li class="social-list__item">
-            <a href="https://facebook.com" class="social-list__link"></a>
+            <a href="https://facebook.com" class="social-list__link">
+              Ссылка на facebook
+            </a>
           </li>
           <li class="social-list__item">
-            <a href="https://vk.com" class="social-list__link"></a>
+            <a href="https://vk.com" class="social-list__link">
+              Ссылка на вконтакте
+            </a>
           </li>
           <li class="social-list__item">
-            <a href="https://www.instagram.com" class="social-list__link"></a>
+            <a href="https://www.instagram.com" class="social-list__link">
+              Ссылка на instagram
+            </a>
           </li>
         </ul>
         <!-- /.navbar-menu -->
@@ -226,62 +232,74 @@
           <h2 class="travel-plan-form__title">Добавить план:</h2>
           <form class="travel-plan-form" action="https://echo.htmlacademy.ru">
             <div class="travel-card travel-card_arrival">
-              <h3 class="travel-card__title">Шаг 1.</h3>
-              <p class="travel-card__text">Даты пребывания</p>
-              <p class="travel-card__instructions">
-                Укажите предпочтительное количество попутчиков, которых вы
-                хотели бы позвать в поездку и ее предполагаемую длительность.
-              </p>
-              <ul class="travel-card__filter">
-                <li class="travel-card__filter-item">
-                  <a href="" class="travel-card__filter-link">Даты</a>
-                </li>
-                <li class="travel-card__filter-item">
-                  <a href="" class="travel-card__filter-link">Маршрут</a>
-                </li>
-                <li class="travel-card__filter-item">
-                  <a href="" class="travel-card__filter-link">Развлечения</a>
-                </li>
-              </ul>
-              <!-- /.travel-card__filter -->
-              <div class="number-companions travel-card__companions">
-                <p class="number-companions__title">Ищу попутчиков:</p>
-                <p class="number-companions__text">Чел</p>
-                <button class="button-minus" type="button"></button>
-                <label class="input-label">
-                  <input
-                    class="input-value"
-                    type="number"
-                    name="number-companions"
-                  />
-                </label>
-                <button class="button-plus" type="button"></button>
+              <div class="travel-card__info-box">
+                <div class="travel-card__info-wrapper">
+                  <h3 class="travel-card__title">Шаг 1.</h3>
+                  <div class="travel-card__text">Даты пребывания</div>
+                  <p class="travel-card__instructions">
+                    Укажите предпочтительное количество попутчиков, которых вы
+                    хотели бы позвать в поездку и ее предполагаемую
+                    длительность.
+                  </p>
+                </div>
+                <!-- /.travel-card__info-wrapper -->
+                <ul class="travel-card__filter">
+                  <li class="travel-card__filter-item">
+                    <a href="" class="travel-card__filter-link">Даты</a>
+                  </li>
+                  <li class="travel-card__filter-item">
+                    <a href="" class="travel-card__filter-link">Маршрут</a>
+                  </li>
+                  <li class="travel-card__filter-item">
+                    <a href="" class="travel-card__filter-link">Развлечения</a>
+                  </li>
+                </ul>
+                <!-- /.travel-card__filter -->
               </div>
-              <div class="travel-duration travel-card__duration">
-                <p class="travel-duration__title">Длительность</p>
-                <p class="travel-duration__text">Чел</p>
-                <button class="button-minus" type="button"></button>
-                <label class="input-label">
+              <!-- /.travel-card__info-box -->
+              <div class="travel-card__count-box">
+                <div class="number-companions travel-card__companions">
+                  <p class="number-companions__title">Ищу попутчиков:</p>
+                  <p class="number-companions__text">Чел</p>
+                  <button class="button-minus" type="button"></button>
+                  <label class="input-label">
+                    <input
+                      class="input-value"
+                      type="number"
+                      name="number-companions"
+                      value="2"
+                    />
+                  </label>
+                  <button class="button-plus" type="button"></button>
+                </div>
+                <label
+                  class="checkbox-allow travel-card__checkbox"
+                  for="children-allow"
+                >
                   <input
-                    class="input-value"
-                    type="number"
-                    name="travel-duration"
-                  />
-                </label>
-                <button class="button-plus" type="button"></button>
+                    class="checkbox-allow__input"
+                    type="checkbox"
+                    id="children-allow"
+                    name="children-allow"
+                  />Можно с детьми</label
+                >
+                <div class="travel-duration travel-card__duration">
+                  <p class="travel-duration__title">Длительность</p>
+                  <p class="travel-duration__text">Чел</p>
+                  <button class="button-minus" type="button"></button>
+                  <label class="input-label">
+                    <input
+                      class="input-value"
+                      type="number"
+                      name="travel-duration"
+                      value="2"
+                    />
+                  </label>
+                  <button class="button-plus" type="button"></button>
+                </div>
               </div>
+              <!-- /.travel-card__count-box -->
 
-              <label
-                class="checkbox-allow travel-card__checkbox"
-                for="children-allow"
-              >
-                <input
-                  class="checkbox-allow__input"
-                  type="checkbox"
-                  id="children-allow"
-                  name="children-allow"
-                />Можно с детьми</label
-              >
               <div class="calendar travel-card__calendar">
                 <div class="calendar__month-box">
                   <ul class="calendar__buttons">
@@ -844,13 +862,19 @@
       </a>
       <ul class="social-list social-list_theme_yellow">
         <li class="social-list__item">
-          <a href="https://facebook.com" class="social-list__link"></a>
+          <a href="https://facebook.com" class="social-list__link">
+            Ссылка на facebook
+          </a>
         </li>
         <li class="social-list__item">
-          <a href="https://vk.com" class="social-list__link"></a>
+          <a href="https://vk.com" class="social-list__link">
+            Ссылка на вконтакте
+          </a>
         </li>
         <li class="social-list__item">
-          <a href="https://www.instagram.com" class="social-list__link"></a>
+          <a href="https://www.instagram.com" class="social-list__link">
+            Ссылка на instagram
+          </a>
         </li>
       </ul>
       <!-- / footer__social -->

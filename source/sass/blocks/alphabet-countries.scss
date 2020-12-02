@@ -1,5 +1,29 @@
+.alphabet-countries {
+  display: flex;
+  flex-direction: column;
+}
+.alphabet-wrapper__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.alphabet-wrapper__word,
+.alphabet-wrapper__item {
+  width: 43px;
+  height: 41px;
+}
+
 @media (min-width: $tablet-width) {
   .alphabet-countries {
-    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (min-width: $desktop-width) {
+  .alphabet-countries {
+    width: 730px;
+    height: 546px;
   }
 }

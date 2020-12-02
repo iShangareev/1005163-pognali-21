@@ -1,5 +1,7 @@
 .choosen-country {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .choosen-country__name {
@@ -9,11 +11,13 @@
   text-transform: uppercase;
   color: var(--light-blue);
 }
+.choosen-country_add {
+  background-color: var(--special-choose);
+}
 
 @media (min-width: $tablet-width) {
   .choosen-country_add {
     width: 80%;
-    background-color: var(--special-choose);
   }
 
   .choosen-country_choose {

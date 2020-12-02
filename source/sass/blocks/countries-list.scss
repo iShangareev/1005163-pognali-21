@@ -1,5 +1,6 @@
 .countries-list {
   list-style-type: none;
+  padding: 0;
 }
 
 .countries-list__country-name {
@@ -17,6 +18,7 @@
     width: 184px;
     height: 420px;
     padding: 0;
+    margin: 0;
   }
 
   .countries-list__country-name {

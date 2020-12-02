@@ -11,6 +11,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .header__content {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .header__title {
     width: 60%;
     font-size: 60px;

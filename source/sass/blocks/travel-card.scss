@@ -26,6 +26,21 @@
   opacity: 0.6;
   text-decoration: none;
 }
+.travel-card__count-box {
+  display: flex;
+  flex-direction: column;
+}
+.travel-card__companions {
+  order: 0;
+}
+
+.travel-card__duration {
+  order: 1;
+}
+
+.travel-card__checkbox {
+  order: 2;
+}
 
 @media (min-width: $tablet-width) {
   .travel-card {
@@ -52,57 +67,46 @@
     display: flex;
     justify-content: space-between;
   }
-}
-
-@media (min-width: $desktop-width) {
-  .travel-card__title {
-    width: 50%;
-    grid-area: travel-card__title;
-  }
-
-  .travel-card__text {
-    grid-area: travel-card__text;
-  }
-
-  .travel-card__instructions {
-    grid-area: travel-card__instructions;
-  }
-
-  .travel-card__filter {
-    display: block;
-    grid-area: travel-card__filter;
-  }
 
   .travel-card__companions {
-    grid-area: travel-card__companions;
+    order: 0;
   }
 
   .travel-card__duration {
-    grid-area: travel-card__duration;
+    order: 2;
   }
 
   .travel-card__checkbox {
-    grid-area: travel-card__checkbox;
+    order: 1;
   }
-
-  .travel-card__calendar {
-    grid-area: travel-card__calendar;
-  }
-
   .travel-card__button {
-    grid-area: travel-card__button;
-    width: 30%;
+    width: 40%;
   }
+}
 
-  .travel-card_arrival {
-    display: grid;
-    grid-template-areas:
-      "travel-card__title travel-card__text travel-card__filter"
-      "travel-card__instructions travel-card__instructions travel-card__filter"
-      "travel-card__companions travel-card__companions travel-card__checkbox"
-      "travel-card__duration travel-card__duration travel-card__duration"
-      "travel-card__calendar travel-card__calendar travel-card__calendar"
-      "travel-card__button travel-card__button travel-card__button ";
+@media (min-width: $desktop-width) {
+  .travel-card__info-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .travel-card__title {
+    width: 20%;
+  }
+  .travel-card__text {
+    width: 70%;
+  }
+  .travel-card__count-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .travel-card__companions {
+    width: 70%;
+    margin-right: auto;
+  }
+  .travel-card__filter {
+    display: block;
   }
 
   .travel-card_route {
@@ -111,9 +115,5 @@
 
   .travel-card__info-box {
     display: flex;
-  }
-
-  .travel-card__buttons_reverse {
-    flex-direction: row-reverse;
   }
 }
