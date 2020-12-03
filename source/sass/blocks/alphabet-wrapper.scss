@@ -17,3 +17,24 @@
   color: var(--basic-white);
   background-color: var(--light-blue);
 }
+
+@media (min-width: $tablet-width) {
+  .alphabet-wrapper__list {
+    width: 262px;
+    height: 346px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .alphabet-wrapper__item {
+    width: 53px;
+    height: 70px;
+  }
+
+  .alphabet-wrapper__word {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

@@ -1,4 +1,10 @@
+.travel-duration {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .travel-duration__title {
+  width: 70%;
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
@@ -7,10 +13,19 @@
 }
 
 .travel-duration__text {
+  width: 30%;
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
   text-align: right;
   text-transform: uppercase;
   opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .travel-duration__title,
+  .travel-duration__text {
+    font-size: 20px;
+    line-height: 18px;
+  }
 }

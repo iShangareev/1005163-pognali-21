@@ -6,7 +6,7 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 16px;
-  text-align: center;
+  text-align: left;
   color: var(--light-blue);
 }
 
@@ -15,7 +15,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 14px;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   color: var(--light-blue);
 }
@@ -28,4 +28,37 @@
   text-transform: uppercase;
   text-decoration: none;
   color: var(--hashtag-color);
+}
+
+@media (min-width: $tablet-width) {
+  .travel-card-direction {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .travel-card-direction__country {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .travel-card-direction__country {
+    width: 30%;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .travel-card-direction__companion {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .travel-card-direction__date,
+  .travel-card-direction__change {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

@@ -1,4 +1,5 @@
 .finish-step {
+  width: 100%;
   font-weight: 600;
   font-size: 17px;
   line-height: 30px;
@@ -6,4 +7,10 @@
   color: var(--light-blue);
   background-color: var(--basic-yellow);
   border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .finish-step {
+    width: 50%;
+  }
 }

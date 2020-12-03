@@ -8,7 +8,7 @@
   </head>
   <body class="page__body">
     <header class="header">
-      <div class="page-margin">
+      <div class="page-margin header__content">
         <div class="navbar">
           <a href="" class="company-logo">
             <img
@@ -18,25 +18,7 @@
             />
           </a>
           <button type="button" class="navbar__menu-button"></button>
-        </div>
-        <h2 class="header__title">Направления</h2>
-        <div class="menu-box">
-          <div class="navbar-menu">
-            <a href="" class="company-logo">
-              <img
-                src="https://via.placeholder.com/100x15"
-                alt="Погнали?"
-                class="company-logo__image"
-            /></a>
-            <a href="" class="navbar-menu__close">
-              <img
-                class="navbar-menu__close-image"
-                src="https://via.placeholder.com/19x19"
-                alt=""
-              />
-            </a>
-          </div>
-          <nav class="navbar-menu-navigation">
+          <nav class="navbar-menu-navigation navbar-menu-navigation_horizontal">
             <ul class="navbar-menu-navigation__list">
               <li class="navbar-menu-navigation__item">
                 <a href="" class="navbar-menu-navigation__link">О сервисе</a>
@@ -49,407 +31,825 @@
               </li>
             </ul>
           </nav>
-          <ul class="navbar-menu__list">
-            <li class="navbar-menu__item">
-              <a href="" class="navbar-menu__authorization button">
+          <ul class="promo-board-list navbar__contact-list">
+            <li class="promo-board-list__contact-item">
+              <a href="" class="promo-board-list__contact-button">
+                кнопка позвонить нам
+              </a>
+            </li>
+            <li class="promo-board-list__contact-item">
+              <a href="" class="promo-board-list__contact-button">
+                кнопка написать нам
+              </a>
+            </li>
+            <li class="promo-board-list__contact-item">
+              <a href="" class="promo-board-list__contact-authorization button">
                 Авторизация
               </a>
             </li>
-            <li class="navbar-menu__item">
-              <a href="tel:88005558628" class="navbar-menu__phone"
-                >8 800 555-86-28</a
-              >
-            </li>
-            <li class="navbar-menu__item">
-              <a href="mailto:mail@htmlacademy.ru" class="navbar-menu__mail"
-                >mail@htmlacademy.ru</a
-              >
-            </li>
           </ul>
-          <ul class="social-list">
-            <li class="social-list__item">
-              <a href="https://facebook.com" class="social-list__link"></a>
-            </li>
-            <li class="social-list__item">
-              <a href="https://vk.com" class="social-list__link"></a>
-            </li>
-            <li class="social-list__item">
-              <a href="https://www.instagram.com" class="social-list__link"></a>
-            </li>
-          </ul>
-          <!-- /.navbar-menu -->
         </div>
-        <!-- /.menu-box -->
+        <!-- navbar -->
+        <h2 class="header__title">Направления</h2>
+        <div class="profile-info">
+          <div class="profile-info__level profile-info__level_top">
+            <span class="profile-info__level-num">80</span>
+            <span class="profile-info__level-text">Level</span>
+          </div>
+          <!-- /.profile-info__level -->
+          <img
+            src="https://via.placeholder.com/100x100"
+            class="profile-info__user-photo"
+            alt="Фото пользователя"
+          />
+          <a href="" class="profile-info__link">Фото</a>
+        </div>
+        <!-- /.profile-info -->
       </div>
+      <div class="menu-box">
+        <div class="navbar-menu">
+          <a href="" class="company-logo">
+            <img
+              src="https://via.placeholder.com/100x15"
+              alt="Логотип сервиса 'Погнали?"
+              class="company-logo__image"
+          /></a>
+          <a href="" class="navbar-menu__close">
+            <img
+              class="navbar-menu__close-image"
+              src="https://via.placeholder.com/19x19"
+              alt=""
+            />
+          </a>
+        </div>
+        <nav class="navbar-menu-navigation">
+          <ul class="navbar-menu-navigation__list">
+            <li class="navbar-menu-navigation__item">
+              <a href="" class="navbar-menu-navigation__link">О сервисе</a>
+            </li>
+            <li class="navbar-menu-navigation__item">
+              <a href="" class="navbar-menu-navigation__link">Направления</a>
+            </li>
+            <li class="navbar-menu-navigation__item">
+              <a href="" class="navbar-menu-navigation__link">Попутчики</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="navbar-menu__list">
+          <li class="navbar-menu__item">
+            <a href="" class="navbar-menu__authorization button">
+              Авторизация
+            </a>
+          </li>
+          <li class="navbar-menu__item">
+            <a href="tel:88005558628" class="navbar-menu__phone">
+              8 800 555-86-28
+            </a>
+          </li>
+          <li class="navbar-menu__item">
+            <a href="mailto:mail@htmlacademy.ru" class="navbar-menu__mail"
+              >mail@htmlacademy.ru</a
+            >
+          </li>
+        </ul>
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a href="https://facebook.com" class="social-list__link">
+              Ссылка на facebook
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a href="https://vk.com" class="social-list__link">
+              Ссылка на вконтакте
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a href="https://www.instagram.com" class="social-list__link">
+              Ссылка на instagram
+            </a>
+          </li>
+        </ul>
+        <!-- /.navbar-menu -->
+      </div>
+      <!-- /.menu-box -->
     </header>
     <main>
       <section class="card-profile">
         <h2 class="visually-hidden">Профиль пользователя</h2>
-        <div class="card-profile__level">
-          <span class="card-profile__level-num">80</span>
-          <span class="card-profile__level-text">Level</span>
-        </div>
-        <!-- /.card-profile__level -->
-        <img
-          src="https://via.placeholder.com/270x270"
-          class="card-profile__user-photo"
-          alt="Фото пользователя"
-        />
-        <button
-          type="button"
-          class="card-profile__button card-profile__button_change-photo"
-        >
-          Cменить фото
-        </button>
-        <div class="card-profile__info">
-          <h3 class="card-profile__hashtags-title">Тэги</h3>
-          <form class="card-profile__form" action="https://echo.htmlacademy.ru">
-            <label class="card-profile__hashtags-label">
-              <textarea class="card-profile__hashtags-text" name="hashtags">
+        <div class="page-margin card-profile__wrapper">
+          <div class="card-profile__level">
+            <span class="card-profile__level-num">80</span>
+            <span class="card-profile__level-text">Level</span>
+          </div>
+          <!-- /.card-profile__level -->
+          <img
+            src="https://via.placeholder.com/100x100"
+            class="card-profile__user-photo"
+            alt="Фото пользователя"
+          />
+          <button
+            type="button"
+            class="card-profile__button card-profile__button_change-photo"
+          >
+            Cменить фото
+          </button>
+
+          <div class="card-profile__wrapper-tags">
+            <h3 class="card-profile__hashtags-title">Тэги</h3>
+            <form
+              class="card-profile__form"
+              action="https://echo.htmlacademy.ru"
+            >
+              <label class="card-profile__hashtags-label">
+                <textarea class="card-profile__hashtags-text" name="hashtags">
 #бургер#бар#футбол#крафт
           </textarea
-              >
-            </label>
-          </form>
-          <h3 class="card-profile__transport-title">Транспорт</h3>
-          <ul class="type-travel-list">
-            <li class="type-travel-list__item">
-              <img
-                src="https://via.placeholder.com/22x22"
-                alt=""
-                class="type-travel-list__item-status"
-              />
+                >
+              </label>
+            </form>
+          </div>
+          <!-- /.card-profile__wrapper-tags -->
+
+          <div class="card-profile__wrapper-transport">
+            <h3 class="card-profile__transport-title">Транспорт</h3>
+            <ul class="type-travel-list">
+              <li class="type-travel-list__item">
+                <img
+                  src="https://via.placeholder.com/22x22"
+                  alt=""
+                  class="type-travel-list__item-status"
+                />
+              </li>
+              <li class="type-travel-list__item">
+                <img
+                  src="https://via.placeholder.com/22x22"
+                  alt=""
+                  class="type-travel-list__item-status type-travel-list__item-status_disabled"
+                />
+              </li>
+              <li class="type-travel-list__item">
+                <img
+                  src="https://via.placeholder.com/22x22"
+                  alt=""
+                  class="type-travel-list__item-status type-travel-list__item-status_disabled"
+                />
+              </li>
+              <li class="type-travel-list__item">
+                <img
+                  src="https://via.placeholder.com/22x22"
+                  alt=""
+                  class="type-travel-list__item-status type-travel-list__item-status_disabled"
+                />
+              </li>
+            </ul>
+          </div>
+          <!-- /.card-profile__wrapper-transport -->
+        </div>
+        <!-- /.page-margin -->
+      </section>
+      <section class="user-travel-plan">
+        <div class="page-margin">
+          <h3 class="user-travel-plan__title">Мои планы:</h3>
+          <ul class="travel-plan-box">
+            <li class="travel-card-direction">
+              <p class="travel-card-direction__country">Франция, Италия</p>
+              <p class="travel-card-direction__companion">3 попутчика</p>
+              <p class="travel-card-direction__date">26 мар — 29 мар</p>
+              <a href="" class="travel-card-direction__change">Изменить</a>
             </li>
-            <li class="type-travel-list__item">
-              <img
-                src="https://via.placeholder.com/22x22"
-                alt=""
-                class="type-travel-list__item-status type-travel-list__item-status_disabled"
-              />
-            </li>
-            <li class="type-travel-list__item">
-              <img
-                src="https://via.placeholder.com/22x22"
-                alt=""
-                class="type-travel-list__item-status type-travel-list__item-status_disabled"
-              />
-            </li>
-            <li class="type-travel-list__item">
-              <img
-                src="https://via.placeholder.com/22x22"
-                alt=""
-                class="type-travel-list__item-status type-travel-list__item-status_disabled"
-              />
+            <li class="travel-card-direction">
+              <p class="travel-card-direction__country">Таиланд, Индонезия</p>
+              <p class="travel-card-direction__companion">1 попутчик</p>
+              <p class="travel-card-direction__date">1 июл — 15 июл</p>
+              <a href="" class="travel-card-direction__change">Изменить</a>
             </li>
           </ul>
         </div>
-        <!-- /.card-profile__info -->
-      </section>
-      <section class="user-travel-plan">
-        <h3 class="user-travel-plan__title">Мои планы:</h3>
-        <ul class="travel-plan-box">
-          <li class="travel-card-direction">
-            <p class="travel-card-direction__country">Франция, Италия</p>
-            <p class="travel-card-direction__companion">3 попутчика</p>
-            <p class="travel-card-direction__date">26 мар — 29 мар</p>
-            <a href="" class="travel-card-direction__change">Изменить</a>
-          </li>
-          <li class="travel-card-direction">
-            <p class="travel-card-direction__country">Таиланд, Индонезия</p>
-            <p class="travel-card-direction__companion">1 попутчик</p>
-            <p class="travel-card-direction__date">1 июл — 15 июл</p>
-            <a href="" class="travel-card-direction__change">Изменить</a>
-          </li>
-        </ul>
+        <!-- /.page-margin -->
       </section>
       <section class="card-travel-plan">
-        <form class="travel-plan-form" action="https://echo.htmlacademy.ru">
+        <div class="page-margin">
           <h2 class="travel-plan-form__title">Добавить план:</h2>
-          <div class="travel-card">
-            <h3 class="travel-card__title">Шаг 1. Даты пребывания</h3>
-            <p class="travel-card__instructions">
-              Укажите предпочтительное количество попутчиков, которых вы хотели
-              бы позвать в поездку и ее предполагаемую длительность.
-            </p>
-            <div class="number-companions">
-              <p class="number-companions__title">Ищу попутчиков:</p>
-              <p class="number-companions__text">Чел</p>
-              <button class="button-minus" type="button"></button>
-              <label class="input-label">
-                <input
-                  class="input-value"
-                  type="number"
-                  name="number-companions"
-                />
-              </label>
-              <button class="button-plus" type="button"></button>
-            </div>
-            <div class="travel-duration">
-              <p class="travel-duration__title">Длительность</p>
-              <p class="travel-duration__text">Чел</p>
-              <button class="button-minus" type="button"></button>
-              <label class="input-label">
-                <input
-                  class="input-value"
-                  type="number"
-                  name="travel-duration"
-                />
-              </label>
-              <button class="button-plus" type="button"></button>
-            </div>
-            <input
-              class="checkbox-allow"
-              type="checkbox"
-              id="children-allow"
-              name="children-allow"
-            />
-            <label class="checkbox-allow__name" for="children-allow"
-              >Можно с детьми</label
-            >
-            <div class="calendar">
-              <div class="calendar__month-box">
-                <ul class="calendar__buttons">
-                  <li class="prev-month">
-                    <button type="button" class="prev-month-button"></button>
+          <form class="travel-plan-form" action="https://echo.htmlacademy.ru">
+            <div class="travel-card travel-card_arrival">
+              <div class="travel-card__info-box">
+                <div class="travel-card__info-wrapper">
+                  <h3 class="travel-card__title">Шаг 1.</h3>
+                  <div class="travel-card__text">Даты пребывания</div>
+                  <p class="travel-card__instructions">
+                    Укажите предпочтительное количество попутчиков, которых вы
+                    хотели бы позвать в поездку и ее предполагаемую
+                    длительность.
+                  </p>
+                </div>
+                <!-- /.travel-card__info-wrapper -->
+                <ul class="travel-card__filter">
+                  <li class="travel-card__filter-item">
+                    <a href="" class="travel-card__filter-link">Даты</a>
                   </li>
-                  <li class="next-month">
-                    <button type="button" class="next-month-button"></button>
+                  <li class="travel-card__filter-item">
+                    <a href="" class="travel-card__filter-link">Маршрут</a>
                   </li>
-                  <li class="calendar__month">
-                    Март<span class="calendar__year">2019</span>
+                  <li class="travel-card__filter-item">
+                    <a href="" class="travel-card__filter-link">Развлечения</a>
+                  </li>
+                </ul>
+                <!-- /.travel-card__filter -->
+              </div>
+              <!-- /.travel-card__info-box -->
+              <div class="travel-card__count-box">
+                <div class="number-companions travel-card__companions">
+                  <p class="number-companions__title">Ищу попутчиков:</p>
+                  <p class="number-companions__text">Чел</p>
+                  <button class="button-minus" type="button"></button>
+                  <label class="input-label">
+                    <input
+                      class="input-value"
+                      type="number"
+                      name="number-companions"
+                      value="2"
+                    />
+                  </label>
+                  <button class="button-plus" type="button"></button>
+                </div>
+                <label
+                  class="checkbox-allow travel-card__checkbox"
+                  for="children-allow"
+                >
+                  <input
+                    class="checkbox-allow__input"
+                    type="checkbox"
+                    id="children-allow"
+                    name="children-allow"
+                  />Можно с детьми</label
+                >
+                <div class="travel-duration travel-card__duration">
+                  <p class="travel-duration__title">Длительность</p>
+                  <p class="travel-duration__text">Чел</p>
+                  <button class="button-minus" type="button"></button>
+                  <label class="input-label">
+                    <input
+                      class="input-value"
+                      type="number"
+                      name="travel-duration"
+                      value="2"
+                    />
+                  </label>
+                  <button class="button-plus" type="button"></button>
+                </div>
+              </div>
+              <!-- /.travel-card__count-box -->
+
+              <div class="calendar travel-card__calendar">
+                <div class="calendar__month-box">
+                  <ul class="calendar__buttons">
+                    <li class="prev-month">
+                      <button type="button" class="prev-month-button"></button>
+                    </li>
+                    <li class="calendar__month">
+                      Март<span class="calendar__year">2019</span>
+                    </li>
+                    <li class="next-month">
+                      <button type="button" class="next-month-button"></button>
+                    </li>
+                  </ul>
+                </div>
+
+                <ul class="calendar__weekdays">
+                  <li class="calendar__weekday">П</li>
+                  <li class="calendar__weekday">В</li>
+                  <li class="calendar__weekday">C</li>
+                  <li class="calendar__weekday">Ч</li>
+                  <li class="calendar__weekday">П</li>
+                  <li class="calendar__weekday calendar__weekday_holiday">С</li>
+                  <li class="calendar__weekday calendar__weekday_holiday">В</li>
+                </ul>
+
+                <ul class="calendar__days">
+                  <li class="calendar__day">
+                    <button type="button" class="calendar__day-button">
+                      23
+                    </button>
+                  </li>
+                  <li class="calendar__day">
+                    <button type="button" class="calendar__day-button">
+                      24
+                    </button>
+                  </li>
+                  <li class="calendar__day">
+                    <button type="button" class="calendar__day-button">
+                      25
+                    </button>
+                  </li>
+                  <li class="calendar__day">
+                    <button type="button" class="calendar__day-button">
+                      26
+                    </button>
+                  </li>
+                  <li class="calendar__day">
+                    <button type="button" class="calendar__day-button">
+                      27
+                    </button>
+                  </li>
+                  <li class="calendar__day">
+                    <button type="button" class="calendar__day-button">
+                      28
+                    </button>
+                  </li>
+                  <li class="calendar__day">
+                    <button type="button" class="calendar__day-button">
+                      1
+                    </button>
+                  </li>
+                  <li class="calendar__day">
+                    <button type="button" class="calendar__day-button">
+                      2
+                    </button>
+                  </li>
+                  <li class="calendar__day">
+                    <button type="button" class="calendar__day-button">
+                      3
+                    </button>
+                  </li>
+                  <li class="calendar__day">
+                    <button class="calendar__day-button" type="button">
+                      4
+                    </button>
+                  </li>
+                  <li class="calendar__day">
+                    <button class="calendar__day-button" type="button">
+                      5
+                    </button>
+                  </li>
+                  <li class="calendar__day">
+                    <button class="calendar__day-button" type="button">
+                      6
+                    </button>
+                  </li>
+                  <li class="calendar__day">
+                    <button class="calendar__day-button" type="button">
+                      7
+                    </button>
+                  </li>
+                  <li class="calendar__day">
+                    <button class="calendar__day-button" type="button">
+                      8
+                    </button>
+                  </li>
+                  <li class="calendar__day">
+                    <button class="calendar__day-button" type="button">
+                      9
+                    </button>
+                  </li>
+                  <li class="calendar__day">
+                    <button class="calendar__day-button" type="button">
+                      10
+                    </button>
+                  </li>
+                  <li class="calendar__day">
+                    <button class="calendar__day-button" type="button">
+                      11
+                    </button>
+                  </li>
+                  <li class="calendar__day">
+                    <button class="calendar__day-button" type="button">
+                      12
+                    </button>
+                  </li>
+                  <li class="calendar__day">
+                    <button class="calendar__day-button" type="button">
+                      13
+                    </button>
+                  </li>
+                  <li class="calendar__day">
+                    <button class="calendar__day-button" type="button">
+                      14
+                    </button>
+                  </li>
+                  <li class="calendar__day">
+                    <button class="calendar__day-button" type="button">
+                      15
+                    </button>
+                  </li>
+                  <li class="calendar__day">
+                    <button class="calendar__day-button" type="button">
+                      16
+                    </button>
+                  </li>
+                  <li class="calendar__day">
+                    <button class="calendar__day-button" type="button">
+                      17
+                    </button>
+                  </li>
+                  <li class="calendar__day">
+                    <button class="calendar__day-button" type="button">
+                      18
+                    </button>
+                  </li>
+                  <li class="calendar__day">
+                    <button class="calendar__day-button" type="button">
+                      19
+                    </button>
+                  </li>
+                  <li class="calendar__day calendar__day_active">
+                    <button class="calendar__day-button" type="button">
+                      20
+                    </button>
+                  </li>
+                  <li class="calendar__day calendar__day_active">
+                    <button class="calendar__day-button" type="button">
+                      21
+                    </button>
+                  </li>
+                  <li class="calendar__day calendar__day_active">
+                    <button class="calendar__day-button" type="button">
+                      22
+                    </button>
+                  </li>
+                  <li class="calendar__day calendar__day_diactive">
+                    <button
+                      class="calendar__day-button calendar__day-button_disabled"
+                      type="button"
+                    >
+                      23
+                    </button>
+                  </li>
+                  <li class="calendar__day calendar__day_diactive">
+                    <button
+                      class="calendar__day-button calendar__day-button_disabled"
+                      type="button"
+                    >
+                      24
+                    </button>
+                  </li>
+                  <li class="calendar__day calendar__day_diactive">
+                    <button
+                      class="calendar__day-button calendar__day-button_disabled"
+                      type="button"
+                    >
+                      25
+                    </button>
+                  </li>
+                  <li class="calendar__day calendar__day_diactive">
+                    <button
+                      class="calendar__day-button calendar__day-button_disabled"
+                      type="button"
+                    >
+                      26
+                    </button>
+                  </li>
+                  <li class="calendar__day calendar__day_diactive">
+                    <button
+                      class="calendar__day-button calendar__day-button_disabled"
+                      type="button"
+                    >
+                      27
+                    </button>
+                  </li>
+                  <li class="calendar__day calendar__day_diactive">
+                    <button
+                      class="calendar__day-button calendar__day-button_disabled"
+                      type="button"
+                    >
+                      28
+                    </button>
+                  </li>
+                  <li class="calendar__day calendar__day_diactive">
+                    <button
+                      class="calendar__day-button calendar__day-button_disabled"
+                      type="button"
+                    >
+                      29
+                    </button>
+                  </li>
+                  <li class="calendar__day calendar__day_diactive">
+                    <button
+                      class="calendar__day-button calendar__day-button_disabled"
+                      type="button"
+                    >
+                      30
+                    </button>
+                  </li>
+                  <li class="calendar__day calendar__day_diactive">
+                    <button
+                      class="calendar__day-button calendar__day-button_disabled"
+                      type="button"
+                    >
+                      31
+                    </button>
+                  </li>
+                  <li class="calendar__day calendar__day_diactive">
+                    <button
+                      class="calendar__day-button calendar__day-button_disabled"
+                      type="button"
+                    >
+                      1
+                    </button>
+                  </li>
+                  <li class="calendar__day calendar__day_diactive">
+                    <button
+                      class="calendar__day-button calendar__day-button_disabled"
+                      type="button"
+                    >
+                      2
+                    </button>
+                  </li>
+                  <li class="calendar__day calendar__day_diactive">
+                    <button
+                      class="calendar__day-button calendar__day-button_disabled"
+                      type="button"
+                    >
+                      3
+                    </button>
+                  </li>
+                  <li class="calendar__day calendar__day_diactive">
+                    <button
+                      class="calendar__day-button calendar__day-button_disabled"
+                      type="button"
+                    >
+                      4
+                    </button>
+                  </li>
+                  <li class="calendar__day calendar__day_diactive">
+                    <button
+                      class="calendar__day-button calendar__day-button_disabled"
+                      type="button"
+                    >
+                      5
+                    </button>
                   </li>
                 </ul>
               </div>
+              <!-- /.calendar -->
+              <a
+                href=""
+                class="next-card-button next-card-button_small travel-card__button button"
+                >Следующий шаг</a
+              >
+            </div>
+            <div class="travel-card travel-card_route">
+              <div class="travel-card__info-box">
+                <div class="travel-card__info-wrapper">
+                  <p class="travel-card__title">Шаг 2. Маршрут</p>
+                  <p class="travel-card__instructions">
+                    Укажите страны, которые вы хотели посетить. Это может быть
+                    одна или сразу несколько.
+                  </p>
+                </div>
+                <!-- /.travel-card__info-wrapper -->
+                <ul class="travel-card__filter">
+                  <li class="travel-card__filter-item">
+                    <a href="" class="travel-card__filter-link">Даты</a>
+                  </li>
+                  <li class="travel-card__filter-item">
+                    <a href="" class="travel-card__filter-link">Маршрут</a>
+                  </li>
+                  <li class="travel-card__filter-item">
+                    <a href="" class="travel-card__filter-link">Развлечения</a>
+                  </li>
+                </ul>
+                <!-- /.travel-card__filter -->
+              </div>
+              <!-- /.travel-card__info-box -->
 
-              <ul class="calendar__weekdays">
-                <li class="calendar__weekday">П</li>
-                <li class="calendar__weekday">В</li>
-                <li class="calendar__weekday">C</li>
-                <li class="calendar__weekday">Ч</li>
-                <li class="calendar__weekday">П</li>
-                <li class="calendar__weekday calendar__weekday_holiday">С</li>
-                <li class="calendar__weekday calendar__weekday_holiday">В</li>
-              </ul>
-
-              <ul class="calendar__days">
-                <li class="calendar__day">
-                  <button type="button" class="calendar__day-button">1</button>
-                </li>
-                <li class="calendar__day">
-                  <button type="button" class="calendar__day-button">2</button>
-                </li>
-                <li class="calendar__day">
-                  <button type="button" class="calendar__day-button">3</button>
-                </li>
-                <li class="calendar__day">
-                  <button type="button" class="calendar__day-button">4</button>
-                </li>
-                <li class="calendar__day">
-                  <button type="button" class="calendar__day-button">5</button>
-                </li>
-                <li class="calendar__day">
-                  <button type="button" class="calendar__day-button">6</button>
-                </li>
-                <li class="calendar__day">
-                  <button type="button" class="calendar__day-button">7</button>
-                </li>
-                <li class="calendar__day">
-                  <button type="button" class="calendar__day-button">8</button>
-                </li>
-                <li class="calendar__day">
-                  <button type="button" class="calendar__day-button">9</button>
-                </li>
-                <li class="calendar__day">
-                  <button class="calendar__day-button" type="button">10</button>
-                </li>
-                <li class="calendar__day">
-                  <button class="calendar__day-button" type="button">11</button>
-                </li>
-                <li class="calendar__day">
-                  <button class="calendar__day-button" type="button">12</button>
-                </li>
-                <li class="calendar__day">
-                  <button class="calendar__day-button" type="button">13</button>
-                </li>
-                <li class="calendar__day">
-                  <button class="calendar__day-button" type="button">14</button>
-                </li>
-                <li class="calendar__day">
-                  <button class="calendar__day-button" type="button">15</button>
-                </li>
-                <li class="calendar__day">
-                  <button class="calendar__day-button" type="button">16</button>
-                </li>
-                <li class="calendar__day">
-                  <button class="calendar__day-button" type="button">17</button>
-                </li>
-                <li class="calendar__day">
-                  <button class="calendar__day-button" type="button">18</button>
-                </li>
-                <li class="calendar__day">
-                  <button class="calendar__day-button" type="button">19</button>
-                </li>
-                <li class="calendar__day">
-                  <button class="calendar__day-button" type="button">20</button>
-                </li>
-                <li class="calendar__day">
-                  <button class="calendar__day-button" type="button">21</button>
-                </li>
-                <li class="calendar__day">
-                  <button class="calendar__day-button" type="button">22</button>
-                </li>
-                <li class="calendar__day">
-                  <button class="calendar__day-button" type="button">23</button>
-                </li>
-                <li class="calendar__day">
-                  <button class="calendar__day-button" type="button">24</button>
-                </li>
-                <li class="calendar__day">
-                  <button class="calendar__day-button" type="button">25</button>
-                </li>
-                <li class="calendar__day calendar__day_active">
-                  <button class="calendar__day-button" type="button">26</button>
-                </li>
-                <li class="calendar__day calendar__day_active">
-                  <button class="calendar__day-button" type="button">27</button>
-                </li>
-                <li class="calendar__day calendar__day_active">
-                  <button class="calendar__day-button" type="button">28</button>
-                </li>
-                <li class="calendar__day calendar__day_diactive">
-                  <button
-                    class="calendar__day-button calendar__day-button_disabled"
-                    type="button"
-                  >
-                    29
-                  </button>
-                </li>
-                <li class="calendar__day calendar__day_diactive">
-                  <button
-                    class="calendar__day-button calendar__day-button_disabled"
-                    type="button"
-                  >
-                    30
-                  </button>
-                </li>
-                <li class="calendar__day calendar__day_diactive">
-                  <button
-                    class="calendar__day-button calendar__day-button_disabled"
-                    type="button"
-                  >
-                    31
-                  </button>
-                </li>
-                <li class="calendar__day calendar__day_diactive">
-                  <button
-                    class="calendar__day-button calendar__day-button_disabled"
-                    type="button"
-                  >
-                    1
-                  </button>
-                </li>
-                <li class="calendar__day calendar__day_diactive">
-                  <button
-                    class="calendar__day-button calendar__day-button_disabled"
-                    type="button"
-                  >
-                    2
-                  </button>
-                </li>
-                <li class="calendar__day calendar__day_diactive">
-                  <button
-                    class="calendar__day-button calendar__day-button_disabled"
-                    type="button"
-                  >
-                    3
-                  </button>
-                </li>
-                <li class="calendar__day calendar__day_diactive">
-                  <button
-                    class="calendar__day-button calendar__day-button_disabled"
-                    type="button"
-                  >
-                    4
-                  </button>
-                </li>
-                <li class="calendar__day calendar__day_diactive">
-                  <button
-                    class="calendar__day-button calendar__day-button_disabled"
-                    type="button"
-                  >
-                    5
-                  </button>
-                </li>
-              </ul>
-            </div>
-            <!-- /.calendar -->
-            <a href="" class="next-card-button button">Следующий шаг</a>
-          </div>
-          <div class="travel-card">
-            <p class="travel-card__title">Шаг 2. Маршрут</p>
-            <p class="travel-card__instructions">
-              Укажите страны, которые вы хотели посетить. Это может быть одна
-              или сразу несколько.
-            </p>
-            <div class="choosen-country">
-              <p class="choosen-country__name">Босния и герцеговина</p>
-              <span class="choosen-country__flag"></span>
-              <button class="choosen-country__close"></button>
-            </div>
-            <!-- /.choosen-country -->
-            <div class="choosen-country">
-              <p class="choosen-country__name">Чехия</p>
-              <span class="choosen-country__flag"></span>
-              <button class="choosen-country__close"></button>
-            </div>
-            <div class="choosen-country">
-              <p class="choosen-country__name">Выберите страну</p>
-              <span class="choosen-country__flag"></span>
-              <button class="choosen-country__close"></button>
-            </div>
-            <div class="choosen-country choosen-country_add">
-              <p class="choosen-country__name">Добавьте страну</p>
-              <span class="choosen-country__flag"></span>
-            </div>
-            <!-- /.choosen-country -->
-            <a href="" class="next-card-button button">Следующий шаг</a>
-            <a href="" class="previous-card">На шаг назад</a>
-          </div>
-          <div class="travel-card">
-            <p class="travel-card__title">Шаг 3. Развлечения</p>
-            <p class="travel-card__instructions">
-              Наконец, расскажите о своих планахвремяпровождения. Можно писать в
-              свободной форме и ставить тэги.
-            </p>
-            <div class="travel-action-plan">
-              <p class="travel-action-plan__title">Босния и Герцеговина</p>
-              <label class="travel-action-plan__text-label">
-                <textarea
-                  class="travel-action-plan__text"
-                  name="action-plan_bosnia"
+              <div class="choosen-country">
+                <p class="choosen-country__name">Босния и герцеговина</p>
+                <span class="choosen-country__flag"></span>
+                <button class="choosen-country__close"></button>
+              </div>
+              <!-- /.choosen-country -->
+              <div class="choosen-country">
+                <p class="choosen-country__name">Чехия</p>
+                <span class="choosen-country__flag"></span>
+                <button class="choosen-country__close"></button>
+              </div>
+              <div class="choosen-country choosen-country_choose">
+                <p class="choosen-country__name">Выберите страну</p>
+                <span class="choosen-country__flag"></span>
+                <button class="choosen-country__close"></button>
+                <div class="alphabet-countries">
+                  <div class="alphabet-wrapper">
+                    <ul class="alphabet-wrapper__list">
+                      <li class="alphabet-wrapper__item">
+                        <a
+                          href=""
+                          class="alphabet-wrapper__word alphabet-wrapper__word_selected"
+                          >А</a
+                        >
+                      </li>
+                      <li class="alphabet-wrapper__item">
+                        <a href="" class="alphabet-wrapper__word">Б</a>
+                      </li>
+                      <li class="alphabet-wrapper__item">
+                        <a href="" class="alphabet-wrapper__word">В</a>
+                      </li>
+                      <li class="alphabet-wrapper__item">
+                        <a href="" class="alphabet-wrapper__word">Г</a>
+                      </li>
+                      <li class="alphabet-wrapper__item">
+                        <a href="" class="alphabet-wrapper__word">Д</a>
+                      </li>
+                      <li class="alphabet-wrapper__item">
+                        <a href="" class="alphabet-wrapper__word">Е</a>
+                      </li>
+                      <li class="alphabet-wrapper__item">
+                        <a href="" class="alphabet-wrapper__word">З</a>
+                      </li>
+                      <li class="alphabet-wrapper__item">
+                        <a href="" class="alphabet-wrapper__word">И</a>
+                      </li>
+                      <li class="alphabet-wrapper__item">
+                        <a href="" class="alphabet-wrapper__word">К</a>
+                      </li>
+                      <li class="alphabet-wrapper__item">
+                        <a href="" class="alphabet-wrapper__word">Л</a>
+                      </li>
+                      <li class="alphabet-wrapper__item">
+                        <a href="" class="alphabet-wrapper__word">М</a>
+                      </li>
+                      <li class="alphabet-wrapper__item">
+                        <a href="" class="alphabet-wrapper__word">Н</a>
+                      </li>
+                      <li class="alphabet-wrapper__item">
+                        <a href="" class="alphabet-wrapper__word">О</a>
+                      </li>
+                      <li class="alphabet-wrapper__item">
+                        <a href="" class="alphabet-wrapper__word">П</a>
+                      </li>
+                      <li class="alphabet-wrapper__item">
+                        <a href="" class="alphabet-wrapper__word">Р</a>
+                      </li>
+                      <li class="alphabet-wrapper__item">
+                        <a href="" class="alphabet-wrapper__word">С</a>
+                      </li>
+                      <li class="alphabet-wrapper__item">
+                        <a href="" class="alphabet-wrapper__word">Т</a>
+                      </li>
+                      <li class="alphabet-wrapper__item">
+                        <a href="" class="alphabet-wrapper__word">У</a>
+                      </li>
+                      <li class="alphabet-wrapper__item">
+                        <a href="" class="alphabet-wrapper__word">Ф</a>
+                      </li>
+                      <li class="alphabet-wrapper__item">
+                        <a href="" class="alphabet-wrapper__word">Х</a>
+                      </li>
+                      <li class="alphabet-wrapper__item">
+                        <a href="" class="alphabet-wrapper__word">Ч</a>
+                      </li>
+                      <li class="alphabet-wrapper__item">
+                        <a href="" class="alphabet-wrapper__word">Ш</a>
+                      </li>
+                      <li class="alphabet-wrapper__item">
+                        <a href="" class="alphabet-wrapper__word">Э</a>
+                      </li>
+                      <li class="alphabet-wrapper__item">
+                        <a href="" class="alphabet-wrapper__word">Ю</a>
+                      </li>
+                      <li class="alphabet-wrapper__item">
+                        <a href="" class="alphabet-wrapper__word">Я</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- /.alphabet-wrapper -->
+                  <ul class="countries-list countries-list_word-a">
+                    <li class="countries-list__item">
+                      <a href="" class="countries-list__country-name"
+                        >Австралия</a
+                      >
+                    </li>
+                    <li class="countries-list__item">
+                      <a href="" class="countries-list__country-name"
+                        >Австрия
+                      </a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a href="" class="countries-list__country-name"
+                        >Азербайджан
+                      </a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a href="" class="countries-list__country-name"
+                        >Албания
+                      </a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a href="" class="countries-list__country-name">Алжир</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a href="" class="countries-list__country-name"
+                        >Ангола
+                      </a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a href="" class="countries-list__country-name"
+                        >Андорра
+                      </a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a href="" class="countries-list__country-name"
+                        >Антигуа и Барбуда
+                      </a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a href="" class="countries-list__country-name"
+                        >Аргентина
+                      </a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a href="" class="countries-list__country-name"
+                        >Армения</a
+                      >
+                    </li>
+                    <li class="countries-list__item">
+                      <a href="" class="countries-list__country-name"
+                        >Афганистан</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- /.alphabet-countries -->
+              </div>
+              <div class="choosen-country choosen-country_add">
+                <p class="choosen-country__name">Добавьте страну</p>
+                <span class="choosen-country__flag"></span>
+              </div>
+              <!-- /.choosen-country -->
+              <div class="travel-card__buttons travel-card__buttons_reverse">
+                <a
+                  href=""
+                  class="next-card-button next-card-button_small button"
+                  >Следующий шаг</a
                 >
+                <a href="" class="previous-card previous-card_small"
+                  >На шаг назад</a
+                >
+              </div>
+              <!-- /.travel-card__buttons -->
+            </div>
+            <div class="travel-card">
+              <div class="travel-card__info-box">
+                <div class="travel-card__info-wrapper">
+                  <p class="travel-card__title">Шаг 3. Развлечения</p>
+                  <p class="travel-card__instructions">
+                    Наконец, расскажите о своих планахвремяпровождения. Можно
+                    писать в свободной форме и ставить тэги.
+                  </p>
+                </div>
+                <!-- /.travel-card__info-wrapper -->
+                <ul class="travel-card__filter">
+                  <li class="travel-card__filter-item">
+                    <a href="" class="travel-card__filter-link">Даты</a>
+                  </li>
+                  <li class="travel-card__filter-item">
+                    <a href="" class="travel-card__filter-link">Маршрут</a>
+                  </li>
+                  <li class="travel-card__filter-item">
+                    <a href="" class="travel-card__filter-link">Развлечения</a>
+                  </li>
+                </ul>
+                <!-- /.travel-card__filter -->
+              </div>
+              <!-- /.travel-card__info-box -->
+
+              <div class="travel-action-plan">
+                <p class="travel-action-plan__title">Босния и Герцеговина</p>
+                <label class="travel-action-plan__text-label">
+                  <textarea
+                    class="travel-action-plan__text"
+                    name="action-plan_bosnia"
+                  >
 План действий
               </textarea
-                >
-              </label>
-            </div>
-            <div class="travel-action-plan">
-              <p class="travel-action-plan__title">Чехия</p>
-              <label class="travel-action-plan__text-label">
-                <textarea
-                  class="travel-action-plan__text"
-                  name="action-plan_czech"
-                >
+                  >
+                </label>
+              </div>
+              <div class="travel-action-plan">
+                <p class="travel-action-plan__title">Чехия</p>
+                <label class="travel-action-plan__text-label">
+                  <textarea
+                    class="travel-action-plan__text"
+                    name="action-plan_czech"
+                  >
 Пить пиво и лазить
 по старым замкам, наслаждаться архитектурой и вот это все.
               </textarea
+                  >
+                </label>
+              </div>
+              <div class="travel-card__buttons">
+                <button type="submit" class="finish-step button">
+                  Отправить
+                </button>
+                <a href="" class="previous-card previous-card_small"
+                  >На шаг назад</a
                 >
-              </label>
+              </div>
+              <!-- /.travel-card__buttons -->
             </div>
-            <button type="submit" class="finish-step button">Отправить</button>
-            <a href="" class="previous-card">На шаг назад</a>
-          </div>
-        </form>
+          </form>
+        </div>
+        <!-- /.page-margin -->
       </section>
     </main>
     <footer class="footer">
@@ -462,13 +862,19 @@
       </a>
       <ul class="social-list social-list_theme_yellow">
         <li class="social-list__item">
-          <a href="https://facebook.com" class="social-list__link"></a>
+          <a href="https://facebook.com" class="social-list__link">
+            Ссылка на facebook
+          </a>
         </li>
         <li class="social-list__item">
-          <a href="https://vk.com" class="social-list__link"></a>
+          <a href="https://vk.com" class="social-list__link">
+            Ссылка на вконтакте
+          </a>
         </li>
         <li class="social-list__item">
-          <a href="https://www.instagram.com" class="social-list__link"></a>
+          <a href="https://www.instagram.com" class="social-list__link">
+            Ссылка на instagram
+          </a>
         </li>
       </ul>
       <!-- / footer__social -->
