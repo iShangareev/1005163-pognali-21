@@ -18,7 +18,6 @@
 }
 
 .alphabet-wrapper__word {
-  display: table-cell;
   font-weight: 500;
   font-size: 14px;
   line-height: 14px;
@@ -36,34 +35,31 @@
 
 @media (min-width: $tablet-width) {
   .alphabet-wrapper__list {
-    width: 262px;
-    height: 346px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0;
   }
 
-  .alphabet-wrapper__list_big {
-    width: 346px;
-    height: 378px;
-  }
-
-  .alphabet-wrapper__list_big .alphabet-wrapper__item {
-    background-color: transparent;
-  }
-
-  .alphabet-wrapper__list_big .alphabet-wrapper__word {
-    font-weight: 600;
-    font-size: 60px;
-    line-height: 60px;
-    background-color: transparent;
-    opacity: 0.3;
-  }
-
-  .alphabet-wrapper__list_big .alphabet-wrapper__word_selected {
-    color: var(--light-blue);
-    opacity: 1;
+  .alphabet-wrapper {
+    &__list_big {
+      width: 346px;
+      height: 378px;
+    }
+    &__item {
+      background-color: transparent;
+    }
+    .alphabet-wrapper__word {
+      font-weight: 600;
+      font-size: 60px;
+      line-height: 60px;
+      background-color: transparent;
+      opacity: 0.3;
+    }
+    .alphabet-wrapper__word_selected {
+      color: var(--light-blue);
+      opacity: 1;
+    }
   }
 
   .alphabet-wrapper__item {
@@ -78,7 +74,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .alphabet-wrapper {
+  .alphabet-wrapper__list_big {
     display: none;
   }
 }
