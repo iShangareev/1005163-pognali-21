@@ -1,3 +1,16 @@
 .countries-card {
+  padding: 0 25px;
   background-color: var(--lilac-light);
+}
+
+@media (min-width: $tablet-width) {
+  .countries-card {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .countries-card {
+    flex-wrap: wrap;
+  }
 }

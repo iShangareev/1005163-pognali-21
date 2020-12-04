@@ -95,7 +95,6 @@
   .card-profile__wrapper {
     display: grid;
     grid-template-columns: 25% 50% 25%;
-    // grid-template-rows: auto;
     grid-template-areas:
       "card-profile__level card-profile__wrapper-transport card-profile__user-photo"
       "card-profile__button card-profile__button card-profile__button"

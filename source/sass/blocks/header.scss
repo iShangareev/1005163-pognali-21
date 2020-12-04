@@ -10,13 +10,21 @@
   color: var(--basic-white);
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $tablet-width) {
   .header__content {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
   }
+
   .header__title {
-    width: 60%;
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header__title {
+    width: 50%;
     font-size: 60px;
     line-height: 60px;
   }
