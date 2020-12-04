@@ -46,9 +46,13 @@
       width: 346px;
       height: 378px;
     }
+
     &__item {
+      width: 53px;
+      height: 70px;
       background-color: transparent;
     }
+
     .alphabet-wrapper__word {
       font-weight: 600;
       font-size: 60px;
@@ -56,15 +60,11 @@
       background-color: transparent;
       opacity: 0.3;
     }
+
     .alphabet-wrapper__word_selected {
       color: var(--light-blue);
       opacity: 1;
     }
-  }
-
-  .alphabet-wrapper__item {
-    width: 53px;
-    height: 70px;
   }
 
   .alphabet-wrapper__word {
