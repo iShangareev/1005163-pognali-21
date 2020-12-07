@@ -33,6 +33,10 @@
     background-image: url("../img/promo-bckg-tablet.png");
   }
 
+  .promo-board__authorization {
+    display: none;
+  }
+
   .promo-board__title {
     font-size: 60px;
     line-height: 70px;
@@ -55,7 +59,7 @@
     grid-template-areas:
       "promo-board__title promo-board__title  promo-board__quote"
       "promo-board__title promo-board__title  promo-board__quote-author"
-      "step-list step-list step-list";
+      "step-list          step-list           step-list";
   }
 
   .promo-board__title {

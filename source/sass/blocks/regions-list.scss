@@ -3,10 +3,6 @@
   padding: 0;
 }
 
-.regions-list-condition {
-  display: none;
-}
-
 .regions-list__region-name {
   font-weight: 600;
   font-size: 16px;
@@ -18,7 +14,6 @@
 }
 
 .regions-list__region-name_selected {
-  font-weight: 600;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -32,14 +27,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .regions-list {
-    display: none;
-  }
-
-  .regions-list-condition {
-    display: flex;
-  }
-
   .region-list__show-all {
     display: block;
     background-color: transparent;

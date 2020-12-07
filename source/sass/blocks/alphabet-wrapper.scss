@@ -42,12 +42,12 @@
   }
 
   .alphabet-wrapper {
-    &__list_big {
+    .alphabet-wrapper__list_big {
       width: 346px;
       height: 378px;
     }
 
-    &__item {
+    .alphabet-wrapper__item {
       width: 53px;
       height: 70px;
       background-color: transparent;
@@ -70,11 +70,5 @@
   .alphabet-wrapper__word {
     font-size: 20px;
     line-height: 20px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .alphabet-wrapper__list_big {
-    display: none;
   }
 }

@@ -71,34 +71,34 @@
 
 @media (min-width: $tablet-width) {
   .card-profile__level {
-    grid-area: card-profile__level;
+    grid-area: profile-level;
   }
 
   .card-profile__user-photo {
-    grid-area: card-profile__user-photo;
+    grid-area: user-photo;
   }
 
   .card-profile__button {
-    grid-area: card-profile__button;
+    grid-area: profile-button;
   }
 
   .card-profile__wrapper-tags {
-    grid-area: card-profile__wrapper-tags;
+    grid-area: profile-tags;
     flex-direction: column-reverse;
   }
 
   .card-profile__wrapper-transport {
     flex-direction: column-reverse;
-    grid-area: card-profile__wrapper-transport;
+    grid-area: profile-transport;
   }
 
   .card-profile__wrapper {
     display: grid;
     grid-template-columns: 25% 50% 25%;
     grid-template-areas:
-      "card-profile__level card-profile__wrapper-transport card-profile__user-photo"
-      "card-profile__button card-profile__button card-profile__button"
-      " card-profile__wrapper-tags card-profile__wrapper-tags card-profile__wrapper-tags";
+      "profile-level  profile-transport user-photo"
+      "profile-button profile-button    profile-button"
+      "profile-tags   profile-tags      profile-tags";
   }
 }
 
@@ -116,7 +116,7 @@
   }
 
   .card-profile__wrapper {
-    grid-template-areas: "card-profile__wrapper-tags card-profile__wrapper-tags card-profile__wrapper-transport ";
+    grid-template-areas: "profile-tags profile-tags profile-transport";
   }
 
   .card-profile__hashtags-text {

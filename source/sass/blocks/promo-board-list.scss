@@ -4,10 +4,6 @@
   list-style-type: none;
 }
 
-.promo-board-list_top {
-  display: none;
-}
-
 .promo-board-list__contact-item {
   font-size: 0;
 }
@@ -25,16 +21,6 @@
   text-decoration: none;
   color: var(--main-blue-title);
   background-color: var(--basic-yellow);
-}
-
-@media (min-width: $tablet-width) {
-  .promo-board-list {
-    display: none;
-  }
-
-  .navbar__contact-list {
-    display: flex;
-  }
 }
 
 @media (min-width: $desktop-width) {

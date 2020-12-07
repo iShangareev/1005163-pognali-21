@@ -6,22 +6,10 @@
   .page-margin {
     padding: 0 75px;
   }
-
-  .page-margin_companions {
-    padding: 0 40px;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .page-margin {
     padding: 0 60px;
-  }
-
-  .page-margin_companions {
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
   }
 }

@@ -3,6 +3,10 @@
   padding: 0 25px;
 }
 
+.filtering-country__list {
+  display: none;
+}
+
 .filtering-country__title {
   font-weight: 600;
   font-size: 16px;
@@ -35,6 +39,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .filtering-country__list {
+    display: flex;
+  }
+
   .filtering-country__title {
     display: none;
   }

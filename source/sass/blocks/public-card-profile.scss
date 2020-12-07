@@ -109,7 +109,7 @@
   }
 
   .public-card-profile__photo-pofile {
-    grid-area: public-card-profile__photo-pofile;
+    grid-area: photo-pofile;
   }
 
   .public-card-profile__photo-like {
@@ -117,34 +117,34 @@
   }
 
   .public-card-profile__user-name {
-    grid-area: public-card-profile__user-name;
+    grid-area: user-name;
   }
 
   .public-card-profile__subscribers {
-    grid-area: public-card-profile__subscribers;
+    grid-area: profile-subscribers;
   }
 
   .public-card-profile__online-status {
-    grid-area: public-card-profile__online-status;
+    grid-area: online-status;
   }
 
   .public-card-profile__hashtags {
-    grid-area: public-card-profile__hashtags;
+    grid-area: profile-hashtags;
   }
 
   .public-card-profile__text {
-    grid-area: public-card-profile__text;
+    grid-area: profile-text;
   }
 
   .public-card-profile__list {
     display: flex;
     justify-content: space-between;
     width: 80%;
-    grid-area: public-card-profile__list;
+    grid-area: card-list;
   }
 
   .public-card-profile__transport {
-    grid-area: public-card-profile__transport;
+    grid-area: transport;
   }
 
   .public-card-profile__transport-title {
@@ -154,23 +154,23 @@
   .public-card-profile__level {
     display: flex;
     flex-direction: column-reverse;
-    grid-area: public-card-profile__level;
+    grid-area: profile-level;
   }
 
   .public-card-profile__signal-button {
     width: 150px;
     height: 50px;
-    grid-area: public-card-profile__signal-button;
+    grid-area: signal-button;
   }
 
   .public-card-profile {
     display: grid;
     grid-template-areas:
-      "public-card-profile__photo-pofile public-card-profile__user-name     public-card-profile__online-status public-card-profile__transport"
-      "public-card-profile__photo-pofile public-card-profile__hashtags      public-card-profile__hashtags      public-card-profile__transport"
-      "public-card-profile__photo-pofile public-card-profile__signal-button public-card-profile__subscribers   public-card-profile__level"
-      "public-card-profile__text public-card-profile__text public-card-profile__text public-card-profile__text"
-      "public-card-profile__list         public-card-profile__list          public-card-profile__list          public-card-profile__list ";
+      "photo-pofile   user-name           online-status           transport"
+      "photo-pofile   profile-hashtags    profile-hashtags        transport"
+      "photo-pofile   signal-button       profile-subscribers     profile-level"
+      "profile-text   profile-text        profile-text            profile-text"
+      "card-list      card-list           card-list               card-list ";
   }
 }
 
@@ -179,9 +179,9 @@
     display: grid;
     align-items: flex-start;
     grid-template-areas:
-      "public-card-profile__photo-pofile public-card-profile__online-status public-card-profile__user-name public-card-profile__list  public-card-profile__list "
-      "public-card-profile__photo-pofile public-card-profile__hashtags      public-card-profile__hashtags public-card-profile__list  public-card-profile__list "
-      "public-card-profile__photo-pofile public-card-profile__signal-button public-card-profile__subscribers  public-card-profile__transport public-card-profile__level";
+      "photo-pofile   online-status       user-name               card-list  card-list "
+      "photo-pofile   profile-hashtags    profile-hashtags        card-list  card-list "
+      "photo-pofile   signal-button       profile-subscribers     transport  profile-level";
   }
 
   .public-card-profile__text {
