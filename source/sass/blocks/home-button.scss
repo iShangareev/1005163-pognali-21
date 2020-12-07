@@ -1,0 +1,19 @@
+.home-button {
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--basic-white);
+}
+
+.home-button_hidden {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .home-button {
+    width: 50%;
+    text-align: right;
+    display: block;
+  }
+}

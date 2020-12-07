@@ -26,10 +26,12 @@
   opacity: 0.6;
   text-decoration: none;
 }
+
 .travel-card__count-box {
   display: flex;
   flex-direction: column;
 }
+
 .travel-card__companions {
   order: 0;
 }
@@ -79,6 +81,7 @@
   .travel-card__checkbox {
     order: 1;
   }
+
   .travel-card__button {
     width: 40%;
   }
@@ -89,22 +92,27 @@
     display: flex;
     flex-wrap: wrap;
   }
+
   .travel-card__title {
     width: 20%;
   }
+
   .travel-card__text {
     width: 70%;
   }
+
   .travel-card__count-box {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
   .travel-card__companions {
     width: 70%;
     margin-right: auto;
   }
+
   .travel-card__filter {
     display: block;
   }

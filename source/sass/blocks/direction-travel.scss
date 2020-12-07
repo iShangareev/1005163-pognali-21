@@ -14,8 +14,8 @@
   .direction-travel__wrapper {
     display: grid;
     grid-template-areas:
-      "direction-travel__card-wrapper direction-travel__info"
-      "direction-travel__card-wrapper direction-travel__info"
-      "direction-travel__card-wrapper  direction-travel__button";
+      "direction-travel__card-wrapper   direction-travel__info"
+      "direction-travel__card-wrapper   direction-travel__info"
+      "direction-travel__card-wrapper   direction-travel__button";
   }
 }

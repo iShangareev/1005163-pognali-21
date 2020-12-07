@@ -1,9 +1,20 @@
+.filter-form__item {
+  padding: 0;
+  border: none;
+}
+
 .filter-form__item-title {
+  margin: 0;
   font-weight: 600;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: var(--light-blue);
+}
+
+.filter-form__checkboxes {
+  display: flex;
+  flex-direction: column;
 }
 
 .filter-form__checkbox-name {
@@ -18,4 +29,61 @@
   font-size: 14px;
   line-height: 13px;
   color: var(--light-blue);
+}
+
+.filter-form__cost-controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-form__min-price-input,
+.filter-form__max-price-input {
+  width: 100px;
+}
+
+@media (min-width: $tablet-width) {
+  .filter-form__item {
+    display: flex;
+  }
+
+  .filter-form__item-show-button {
+    display: none;
+  }
+
+  .filter-form__checkboxes {
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+
+  .filter-form__item-title {
+    width: 20%;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .filter-form__checkbox-name {
+    flex-basis: 30%;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .filter-form__cost-controls {
+    order: 2;
+  }
+
+  .filter-form__range-controls {
+    order: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filter-form__item {
+    flex-direction: column;
+  }
+
+  .filter-form__checkboxes {
+    flex-direction: column;
+  }
 }

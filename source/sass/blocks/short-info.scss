@@ -29,6 +29,10 @@
   color: var(--basic-yellow);
 }
 
+.short-info__show-more {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .short-info__title {
     font-size: 45px;
@@ -59,6 +63,10 @@
   .contacts__box .short-info__text {
     text-align: center;
     width: 100%;
+  }
+
+  .short-info__show-more {
+    display: block;
   }
 }
 

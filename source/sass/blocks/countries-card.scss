@@ -1,3 +1,36 @@
 .countries-card {
+  padding: 0 25px;
   background-color: var(--lilac-light);
+}
+
+.countries-card__countries {
+  display: none;
+}
+
+.countries-card__countries_active {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .countries-card {
+    display: flex;
+  }
+
+  .countries-card__region-list {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .countries-card {
+    flex-wrap: wrap;
+  }
+
+  .countries-card__alphabet {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
 }

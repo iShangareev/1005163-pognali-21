@@ -23,16 +23,6 @@
   background-color: var(--basic-yellow);
 }
 
-@media (min-width: $tablet-width) {
-  .promo-board-list {
-    display: none;
-  }
-
-  .navbar__contact-list {
-    display: flex;
-  }
-}
-
 @media (min-width: $desktop-width) {
   .promo-board-list__contact-authorization {
     font-size: 20px;

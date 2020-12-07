@@ -10,8 +10,12 @@
   color: var(--special-grey);
 }
 
+.countries-list__country-name_main-word {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
-  .countries-list {
+  .countries-list_active {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -24,5 +28,33 @@
   .countries-list__country-name {
     font-size: 20px;
     line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .countries-list {
+    display: flex;
+    width: 220px;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .countries-list__country-name {
+    line-height: 30px;
+  }
+
+  .countries-list__item_main-word {
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 60px;
+    text-transform: uppercase;
+  }
+
+  .countries-list__country-name_main-word {
+    display: block;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 60px;
+    color: var(--main-blue-text);
   }
 }

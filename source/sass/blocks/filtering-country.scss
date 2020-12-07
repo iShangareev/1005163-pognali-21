@@ -1,3 +1,12 @@
+.filtering-country {
+  background-color: var(--lilac-light);
+  padding: 0 25px;
+}
+
+.filtering-country__list {
+  display: none;
+}
+
 .filtering-country__title {
   font-weight: 600;
   font-size: 16px;
@@ -7,7 +16,13 @@
   background-color: var(--lilac-light);
 }
 
+.filtering-country__menu-button {
+  width: 17px;
+  height: 17px;
+}
+
 .filtering-country__menu-close-bottom {
+  width: 100%;
   font-weight: 600;
   font-size: 17px;
   line-height: 30px;
@@ -16,4 +31,25 @@
   background-color: var(--lilac-blue);
   text-decoration: none;
   border: none;
+}
+
+.filtering-country__nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .filtering-country__list {
+    display: flex;
+  }
+
+  .filtering-country__title {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filtering-country__title {
+    display: block;
+  }
 }
