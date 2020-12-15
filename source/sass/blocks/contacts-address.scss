@@ -1,0 +1,133 @@
+.contacts-address {
+  position: relative;
+  background-color: var(--basic-yellow);
+  padding: 0 25px;
+  padding-top: 57px;
+  padding-bottom: 34px;
+  border-radius: 0 0 30px 30px;
+}
+
+.contacts-address__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.contacts-address__link,
+.contacts-address__route {
+  background-color: var(--basic-yellow);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: var(--light-blue);
+  text-decoration: none;
+}
+
+.contacts-address__link {
+  padding-left: 61px;
+  position: relative;
+  &::before {
+    position: absolute;
+    left: 0;
+    content: url("../img/map-mark.png");
+  }
+}
+
+.contacts-address__route {
+  display: block;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 20px;
+  border: solid 3px var(--main-blue-text);
+  border-radius: 10px;
+  margin-top: 32px;
+  text-transform: uppercase;
+  &::after {
+    content: url("../img/button-decor-triangle.svg");
+    position: relative;
+    top: 0;
+    left: 50px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contacts-address {
+    margin: 0 auto;
+    background-color: var(--basic-yellow);
+    padding-top: 119px;
+    padding-bottom: 84px;
+    border-radius: 0 0 60px 60px;
+  }
+
+  .contacts-address__link-br {
+    display: none;
+  }
+  .contacts-address__link {
+    display: block;
+    align-self: center;
+    padding-left: 0px;
+    font-size: 28px;
+    line-height: 28px;
+    &::before {
+      content: url("../img/map-mark-tablet.png");
+      top: -19px;
+      left: -94px;
+    }
+  }
+
+  .contacts-address__route {
+    align-self: center;
+    width: 573px;
+    padding-top: 23px;
+    padding-bottom: 27px;
+    padding-left: 42px;
+    margin-top: 66px;
+    border-radius: 20px;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: unset;
+    &::after {
+      content: url("../img/button-decor-triangle.svg");
+      position: relative;
+      top: 0;
+      left: 307px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts-address {
+    display: flex;
+    justify-content: center;
+    padding-top: 114px;
+    padding-bottom: 62px;
+  }
+
+  .contacts-address__wrapper {
+    max-width: 1200px;
+    padding-left: 99px;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .contacts-address__link {
+    display: inline;
+    margin-left: 167px;
+
+    &::before {
+      content: url("../img/map-mark-desk.png");
+      top: -30px;
+      left: -120px;
+    }
+  }
+
+  .contacts-address__route {
+    width: 275px;
+    margin: 0;
+    justify-self: flex-end;
+    margin-left: 149px;
+    &::after {
+      left: 12px;
+    }
+  }
+}

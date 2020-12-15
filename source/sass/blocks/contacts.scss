@@ -1,8 +1,31 @@
 .contacts {
   background-color: var(--main-blue-text);
+  position: relative;
+  padding-bottom: 37px;
+  border-radius: 0 0 30px 30px;
+}
+
+.contacts__box {
+  width: 270px;
+}
+
+.contacts__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacts__box-title {
+  padding-left: 22px;
+}
+
+.contacts__box-text {
+  text-align: center;
+  margin-bottom: 29px;
 }
 
 .contacts__text {
+  margin-top: 29px;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
@@ -12,6 +35,10 @@
 
 .contacts__phone,
 .contacts__mail {
+  position: relative;
+  display: block;
+  margin-left: 61px;
+  margin-top: 28px;
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
@@ -20,62 +47,237 @@
   text-decoration: none;
 }
 
-.contacts__address-link,
-.contacts__address-route {
+.contacts__phone {
+  &::before {
+    content: "";
+    width: 45px;
+    height: 45px;
+    left: -61px;
+    bottom: -13px;
+    position: absolute;
+    background: url("../img/contacts-icon-phone.png") no-repeat center;
+  }
+}
+
+.contacts__mail {
+  &::before {
+    content: "";
+    width: 45px;
+    height: 45px;
+    left: -61px;
+    bottom: -9px;
+    position: absolute;
+    background: url("../img/contacts-icon-mail.png") no-repeat center;
+  }
+}
+
+.contacts__subscribe {
+  display: flex;
+  position: relative;
+}
+
+.contacts__subscribe-mail {
+  display: block;
+  border-radius: 10px;
+  border: none;
+  width: 170px;
+  height: 60px;
+  padding-left: 26px;
+  padding-right: 50px;
+  background-color: var(--basic-white);
+  &::placeholder {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+.contacts__subscribe-button {
+  width: 60px;
+  height: 62px;
+  font-size: 0px;
+  position: absolute;
+  border: none;
+  border-radius: 10px;
+  right: 0;
   background-color: var(--basic-yellow);
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 22px;
-  text-transform: uppercase;
-  color: var(--light-blue);
-  text-decoration: none;
+  background-image: url("../img/button-decor-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media (min-width: $tablet-width) {
-  .contacts__subscribe {
+  .contacts {
+    padding-bottom: 80px;
+    border-radius: 0 0 60px 60px;
+  }
+
+  .contacts__box {
+    width: 619px;
     display: flex;
     flex-direction: column;
   }
 
+  .contacts__box-info {
+    padding: 0;
+  }
+
+  .contacts__box-text {
+    margin-top: 46px;
+    margin-bottom: 65px;
+    text-align: center;
+  }
+
+  .contacts__box-text-br {
+    display: none;
+  }
+
+  // .contacts__content {
+  //   padding: 0 25px;
+  // }
+
+  .contacts__subscribe {
+    max-width: 620px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+
+  .contacts__box-title {
+    padding-left: 0;
+  }
+
   .contacts__text {
+    margin-top: 58px;
+    margin-bottom: 37px;
     font-size: 28px;
     line-height: 30px;
+    text-align: center;
+  }
+
+  .contacts__text-br {
+    display: none;
   }
 
   .contacts__phone {
     display: block;
+    padding-left: 29px;
     font-size: 28px;
     line-height: 28px;
+    &::before {
+      width: 68px;
+      height: 68px;
+      left: -61px;
+      top: -23px;
+      background: url("../img/contacts-icon-phone-tablet.png") no-repeat center;
+    }
   }
 
   .contacts__mail {
+    padding-left: 29px;
+    padding-top: 10px;
     font-size: 28px;
     line-height: 28px;
+    &::before {
+      width: 68px;
+      height: 68px;
+      left: -61px;
+      top: -11px;
+      background: url("../img/contacts-icon-mail-tablet.png") no-repeat center;
+    }
   }
 
-  .contacts__address {
-    width: 100%;
-    background-color: var(--basic-yellow);
+  .contacts__subscribe-mail {
+    width: 539px;
+    height: 78px;
+    border-radius: 20px 20px 20px 20px;
+    &::placeholder {
+      font-size: 24px;
+    }
   }
 
-  .contacts__address-link {
-    display: block;
-    font-size: 28px;
-    line-height: 28px;
-  }
-
-  .contacts__address-route {
-    font-size: 24px;
-    line-height: 24px;
+  .contacts__subscribe-button {
+    width: 80px;
+    height: 80px;
+    font-size: 0px;
+    border-radius: 0 20px 20px 0;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .contacts__phone {
-    display: inline;
+  .contacts {
+    padding-bottom: 134px;
   }
 
-  .contacts__address-link {
+  .contacts__box {
+    width: 1170px;
+  }
+
+  .contacts__box-info {
+    margin-top: 35px;
+  }
+
+  .contacts__box-text {
+    padding-top: 10px;
+    padding-left: 5px;
+    margin-bottom: 62px;
+  }
+
+  .contacts__subscribe {
+    max-width: 100%;
+  }
+
+  .contacts__subscribe-mail {
+    width: 1093px;
+  }
+
+  .contacts__subscribe-button {
+    width: 330px;
+    padding-left: 38px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: left;
+    background-position: 283px;
+  }
+
+  .contacts__item-box {
+    display: flex;
+    align-self: center;
+    width: 866px;
+    padding-top: 40px;
+  }
+
+  .contacts__phone {
     display: inline;
+    padding-left: 0;
+    margin: 0;
+    margin-left: 119px;
+    margin-right: auto;
+    &::before {
+      position: absolute;
+      width: 90px;
+      height: 90px;
+      left: -122px;
+      top: -32px;
+      background: url("../img/contacts-icon-phone-desk.png") no-repeat center;
+    }
+  }
+
+  .contacts__mail {
+    padding: 0;
+    margin: 0;
+    &::before {
+      position: absolute;
+      width: 90px;
+      height: 90px;
+      left: -123px;
+      top: -33px;
+      background: url("../img/contacts-icon-mail-desk.png") no-repeat center;
+    }
+  }
+
+  .contacts__text {
+    margin-top: 67px;
   }
 }

@@ -1,10 +1,19 @@
 .button-detail {
-  width: 276px;
+  position: relative;
+  width: 246px;
   height: 80px;
+  padding-left: 30px;
   font-weight: bold;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 80px;
   color: var(--light-blue);
   text-decoration: none;
   background-color: var(--basic-yellow);
+  border-radius: 20px;
+}
+
+.button-detail::after {
+  content: url("../img/button-decor-triangle.svg");
+  position: absolute;
+  right: 36px;
 }

@@ -1,5 +1,17 @@
 .companion-card {
+  width: 270px;
+  display: block;
+  position: relative;
   text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.companion-card__level {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 33px;
+  bottom: 361px;
 }
 
 .companion-card__level-num {
@@ -15,18 +27,34 @@
   color: var(--basic-white);
 }
 
+.companion-card__info {
+  position: relative;
+  bottom: 5px;
+}
+
 .companion-card__country-list {
   display: flex;
   list-style-type: none;
   padding: 0;
   margin: 0;
+  justify-content: center;
+  position: relative;
+  top: -9px;
+}
+
+.companion-card__country-item {
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .companion-card__info {
   background-color: var(--basic-white);
+  padding-bottom: 15px;
+  border-radius: 0 0 10px 10px;
 }
 
 .companion-card__info-username {
+  margin: 0;
   font-weight: 600;
   font-size: 21px;
   line-height: 21px;
@@ -34,9 +62,49 @@
   color: var(--light-blue);
 }
 
+.companion-card__hashtag-box {
+  display: flex;
+  justify-content: center;
+  margin: 0 46px;
+  margin-top: 13px;
+  margin-bottom: 16px;
+}
+
 @media (min-width: $tablet-width) {
+  .companion-card {
+    width: 285px;
+    height: 483px;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .companion-card__info {
+    padding-bottom: 24px;
+    border-radius: 0 0 20px 20px;
+  }
+
   .companion-card__info-username {
     font-size: 24px;
     line-height: 22px;
+  }
+
+  .companion-card__hashtag-box {
+    margin: 0 36px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .companion-card__user-photo {
+    width: 285px;
+  }
+
+  .companion-card__level {
+    top: 7%;
+    left: 13%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .companion-card {
   }
 }

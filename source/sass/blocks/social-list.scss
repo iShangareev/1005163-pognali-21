@@ -1,4 +1,44 @@
+.social-list {
+  display: flex;
+  padding-left: 0;
+}
+
+.social-list__position {
+  margin-top: 37px;
+}
+
 .social-list__item {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
   list-style-type: none;
   font-size: 0;
+}
+
+.social-list_theme_yellow .social-list__item {
+  background-color: var(--basic-yellow);
+}
+
+.social-list__item-facebook {
+  background: url("../img/icon_facebook.svg") no-repeat center;
+}
+
+.social-list__item-vk {
+  background: url("../img/icon_vkontakte.svg") no-repeat center;
+}
+
+.social-list__item-insta {
+  background: url("../img/icon_instagram.svg") no-repeat center;
+}
+
+@media (min-width: $tablet-width) {
+  .social-list__item {
+    width: 62px;
+    height: 62px;
+  }
+
+  .social-list__position {
+    margin: 0;
+    margin-left: 100px;
+  }
 }

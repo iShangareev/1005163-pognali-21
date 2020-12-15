@@ -1,8 +1,13 @@
 .type-travel-list {
   display: flex;
+  justify-content: center;
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+.type-travel-list__item {
+  margin: 0 6px;
 }
 
 @media (min-width: $tablet-width) {

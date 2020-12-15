@@ -1,12 +1,18 @@
+.short-info {
+  padding-left: 8px;
+}
+
 .short-info__title {
   font-weight: 600;
   font-size: 24px;
   line-height: 24px;
   color: var(--special-orange);
   margin: 0;
+  padding-left: 5px;
 }
 
 .short-info__text {
+  padding-top: 4px;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
@@ -14,11 +20,12 @@
 }
 
 .short-info__text-important {
+  padding-top: 2px;
+  margin: 0;
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
   color: var(--basic-white);
-  margin: 0;
 }
 
 .short-info_theme_light .short-info__text {
@@ -34,25 +41,40 @@
 }
 
 @media (min-width: $tablet-width) {
-  .short-info__title {
-    font-size: 45px;
-    line-height: 45px;
-  }
-
-  .short-info__text {
-    font-size: 28px;
-    line-height: 33px;
-  }
-
-  .short-info__text-important {
-    font-size: 21px;
-    line-height: 25px;
+  .short-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 75px;
+    padding-top: 67px;
   }
 
   .short-info__title,
   .short-info__text,
   .short-info__text-important {
     width: 50%;
+  }
+
+  .short-info__title {
+    padding-left: 0;
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .short-info__text {
+    padding-top: 14px;
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .short-info__text-br {
+    display: none;
+  }
+
+  .short-info__text-important {
+    margin-bottom: 54px;
+    font-size: 21px;
+    line-height: 25px;
   }
 
   .contacts__box .short-info__title {
@@ -71,9 +93,28 @@
 }
 
 @media (min-width: $desktop-width) {
+  .short-info {
+    padding-top: 10px;
+    padding-left: 127px;
+  }
+
   .short-info__title,
   .short-info__text,
   .short-info__text-important {
-    width: 60%;
+    width: 52%;
+  }
+
+  .short-info__text {
+    padding-top: 32px;
+  }
+
+  .short-info__text-important {
+    padding-top: 9px;
+    width: 38%;
+    margin-bottom: 87px;
+  }
+
+  .short-info__text-important-br {
+    display: none;
   }
 }

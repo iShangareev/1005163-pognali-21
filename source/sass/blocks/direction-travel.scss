@@ -1,21 +1,101 @@
 .direction-travel {
+  position: relative;
+  z-index: 9;
+  display: flex;
+  border-radius: 0 0 25px 25px;
   background-color: var(--basic-grey);
 }
 
+.direction-travel__wrapper {
+  padding-top: 89px;
+  padding-bottom: 30px;
+}
+
+.direction-travel__info {
+  padding-left: 22px;
+  margin-bottom: 60px;
+}
+
+@media (min-width: $tablet-width) {
+  .direction-travel {
+    padding-bottom: 78px;
+    border-radius: 0px 0px 60px 60px;
+    background-image: url("../img/country-flags.png");
+    background-position: 38px 140px;
+    background-repeat: no-repeat;
+  }
+
+  .direction-travel__wrapper {
+    margin: 0;
+    padding: 0;
+    padding-top: 64px;
+    padding-left: 48px;
+  }
+
+  .direction-travel__info {
+    padding-left: 25px;
+  }
+
+  .direction-travel__info-text {
+    width: 100%;
+    padding-top: 28px;
+  }
+
+  .direction-travel__card-wrapper {
+    width: 100%;
+    padding-left: 29px;
+    padding-top: 20px;
+    padding-bottom: 37px;
+  }
+
+  .direction-travel__card {
+    margin-bottom: 10px;
+  }
+}
+
 @media (min-width: $desktop-width) {
+  .direction-travel {
+    margin: 0 auto;
+    padding-bottom: 103px;
+    background-position: 692px 150px;
+  }
+
   .direction-travel__info {
     grid-area: direction-travel__info;
   }
 
   .direction-travel__card-wrapper {
+    padding-left: 0;
+    // padding-right: 68px;
     grid-area: direction-travel__card-wrapper;
   }
 
   .direction-travel__wrapper {
+    margin: 0 auto;
+    padding-top: 203px;
+    padding-left: 0;
+    padding-right: 110px;
     display: grid;
+    grid-column-gap: 171px;
     grid-template-areas:
       "direction-travel__card-wrapper   direction-travel__info"
       "direction-travel__card-wrapper   direction-travel__info"
       "direction-travel__card-wrapper   direction-travel__button";
+  }
+
+  .direction-travel__info {
+    margin-bottom: 10px;
+    padding: 0;
+    padding-top: 10px;
+  }
+
+  .direction-travel__info-title {
+    padding-left: 0;
+    padding-top: 10px;
+  }
+
+  .direction-travel__info-text {
+    padding-left: 0;
+    padding-top: 33px;
   }
 }
