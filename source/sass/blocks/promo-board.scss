@@ -1,11 +1,7 @@
 .promo-board {
-  background: url(../img/traveller-illustration-mobile.svg) 63% 148px,
-    linear-gradient(
-      to bottom,
-      var(--main-blue-title) 72%,
-      var(--main-blue-text) 72%
-    ),
-    url(../img/promo-bckg-mobile.png) 50% 0% / 320px 400px;
+  background: url("../img/traveller-illustration-mobile.svg") 63% 148px,
+    linear-gradient(to bottom, var(--main-blue-title) 72%, var(--main-blue-text) 72%),
+    url("../img/promo-bckg-mobile.png") 50% 0% / 320px 400px;
   background-repeat: no-repeat;
   color: var(--basic-white);
 }
@@ -50,8 +46,8 @@
 @media (min-width: $tablet-width) {
   .promo-board {
     padding-bottom: 50px;
-    background: url(../img/traveller-illustration-tablet.svg) 72% 269px,
-      url(../img/promo-bckg-tablet.png) 50% 245px;
+    background: url("../img/traveller-illustration-tablet.svg") 72% 269px,
+      url("../img/promo-bckg-tablet.png") 50% 245px;
     background-color: var(--main-blue-text);
     background-repeat: no-repeat;
   }
@@ -89,6 +85,7 @@
   .promo-board__quote-mobile-indent {
     display: none;
   }
+
   .promo-board__quote-tablet-indent {
     display: inline;
   }
@@ -101,8 +98,8 @@
 @media (min-width: $desktop-width) {
   .promo-board {
     padding-bottom: 0;
-    background: url(../img/traveller-illustration-desktop.png) 60% 9px,
-      url(../img/promo-bckg-tablet.png) -146px 37px;
+    background: url("../img/traveller-illustration-desktop.png") 60% 9px,
+      url("../img/promo-bckg-tablet.png") -146px 37px;
     background-color: var(--main-blue-text);
     background-repeat: no-repeat;
   }

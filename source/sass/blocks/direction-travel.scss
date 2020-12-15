@@ -19,7 +19,7 @@
 @media (min-width: $tablet-width) {
   .direction-travel {
     padding-bottom: 78px;
-    border-radius: 0px 0px 60px 60px;
+    border-radius: 0 0 60px 60px;
     background-image: url("../img/country-flags.png");
     background-position: 38px 140px;
     background-repeat: no-repeat;
@@ -62,6 +62,9 @@
 
   .direction-travel__info {
     grid-area: direction-travel__info;
+    margin-bottom: 10px;
+    padding: 0;
+    padding-top: 10px;
   }
 
   .direction-travel__card-wrapper {
@@ -81,12 +84,6 @@
       "direction-travel__card-wrapper   direction-travel__info"
       "direction-travel__card-wrapper   direction-travel__info"
       "direction-travel__card-wrapper   direction-travel__button";
-  }
-
-  .direction-travel__info {
-    margin-bottom: 10px;
-    padding: 0;
-    padding-top: 10px;
   }
 
   .direction-travel__info-title {

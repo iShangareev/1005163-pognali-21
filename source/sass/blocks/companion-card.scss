@@ -30,6 +30,9 @@
 .companion-card__info {
   position: relative;
   bottom: 5px;
+  background-color: var(--basic-white);
+  padding-bottom: 15px;
+  border-radius: 0 0 10px 10px;
 }
 
 .companion-card__country-list {
@@ -45,12 +48,6 @@
 .companion-card__country-item {
   padding-right: 10px;
   padding-left: 10px;
-}
-
-.companion-card__info {
-  background-color: var(--basic-white);
-  padding-bottom: 15px;
-  border-radius: 0 0 10px 10px;
 }
 
 .companion-card__info-username {
@@ -101,10 +98,5 @@
   .companion-card__level {
     top: 7%;
     left: 13%;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .companion-card {
   }
 }

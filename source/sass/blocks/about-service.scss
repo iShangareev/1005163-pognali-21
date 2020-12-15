@@ -8,15 +8,15 @@
   background-repeat: no-repeat;
   background-color: var(--main-blue);
   padding-bottom: 84px;
-  border-radius: 0px 0px 25px 25px;
+  border-radius: 0 0 25px 25px;
 }
 
 @media (min-width: $tablet-width) {
   .about-service {
     padding-bottom: 90px;
-    border-radius: 0px 0px 60px 60px;
-    background: url(../img/about-tablet.png) 98% 78px,
-      url(../img/rectangle-688-212.svg) 49% 30px/688px 212px;
+    border-radius: 0 0 60px 60px;
+    background: url("../img/about-tablet.png") 98% 78px,
+      url("../img/rectangle-688-212.svg") 49% 30px/688px 212px;
     background-color: var(--main-blue-text);
     background-repeat: no-repeat;
   }
@@ -26,9 +26,9 @@
   .about-service {
     padding-top: 53px;
     padding-bottom: 161px;
-    border-radius: 0px 0px 60px 60px;
-    background: url(../img/rectangle-212-212.png) 60px 5px,
-      url(../img/about-desktop.png) 751px 17px;
+    border-radius: 0 0 60px 60px;
+    background: url("../img/rectangle-212-212.png") 60px 5px,
+      url("../img/about-desktop.png") 751px 17px;
     background-color: var(--main-blue-text);
     background-repeat: no-repeat;
   }

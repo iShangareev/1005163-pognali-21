@@ -80,13 +80,13 @@
     padding-left: 28px;
     padding-top: 26px;
     bottom: 0;
-    border-radius: 20px 0px 0px 20px;
+    border-radius: 20px 0 0 20px;
   }
 
   .direction-card__pic {
     width: 186px;
     height: 140px;
-    border-radius: 0px 20px 20px 0px;
+    border-radius: 0 20px 20px 0;
   }
 
   .direction-card__country-flag {
@@ -159,9 +159,7 @@
     display: block;
     justify-self: left;
     margin-left: 0;
-  }
 
-  .direction-card__button-more {
     &::after {
       left: 53px;
     }

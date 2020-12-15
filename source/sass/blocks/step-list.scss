@@ -12,14 +12,17 @@
 
 .step-list__item_idea {
   background-color: var(--special-orange-2);
+  bottom: 18px;
 }
 
 .step-list__item_similar {
   background-color: var(--special-yellow-dark);
+  bottom: 26px;
 }
 
 .step-list__item_together {
   background-color: var(--basic-yellow);
+  bottom: 34px;
 }
 
 .step-list__item {
@@ -27,11 +30,11 @@
   height: 88px;
   position: relative;
   bottom: 10px;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0 0;
 }
 
 .step-list__item::after {
-  font-family: "Bloggersans";
+  font-family: "Bloggersans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -46,18 +49,6 @@
 .step-list__item:last-child {
   height: 80px;
   border-radius: 10px;
-}
-
-.step-list__item_idea {
-  bottom: 18px;
-}
-
-.step-list__item_similar {
-  bottom: 26px;
-}
-
-.step-list__item_together {
-  bottom: 34px;
 }
 
 .step-list__text {
@@ -86,7 +77,7 @@
     position: relative;
   }
 
-  .step-list__item:after {
+  .step-list__item::after {
     left: 9%;
     bottom: -11px;
     font-size: 30px;
@@ -99,7 +90,7 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    border-radius: 0px 0px 20px 20px;
+    border-radius: 0 0 20px 20px;
   }
 
   .step-list__item_direction {
@@ -107,7 +98,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    border-radius: 20px 0px 0px 0px;
+    border-radius: 20px 0 0 0;
   }
 
   .step-list__item_idea {
@@ -115,7 +106,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 20px 20px 0 0;
   }
 
   .step-list__item_similar {
@@ -123,7 +114,7 @@
     width: 55%;
     bottom: 0;
     left: 0;
-    border-radius: 0px 0px 0px 20px;
+    border-radius: 0 0 0 20px;
   }
 
   .step-list__text {
@@ -142,7 +133,7 @@
   .step-list__item {
     width: 345px;
     height: 107px;
-    border-radius: 20px 0px 0px 20px;
+    border-radius: 20px 0 0 20px;
   }
 
   .step-list__item::after {

@@ -11,7 +11,7 @@
   align-items: center;
   padding-top: 160px;
   padding-bottom: 31px;
-  background: url("../img/companion-travel-bckg-mobile.png") no-repeat 0px 131px;
+  background: url("../img/companion-travel-bckg-mobile.png") no-repeat 0 131px;
 }
 
 .companion-travel__info {
@@ -45,6 +45,7 @@
   color: var(--light-blue);
   background-color: var(--basic-yellow);
   text-decoration: none;
+
   &::after {
     content: url("../img/button-decor-triangle.svg");
     position: relative;
@@ -137,6 +138,7 @@
     margin-left: 50px;
     padding-left: 10px;
   }
+
   .companion-travel__info {
     width: 428px;
     padding-left: 66px;
@@ -158,6 +160,7 @@
     bottom: 84px;
     left: 68px;
     margin-top: 0;
+
     &::after {
       left: 17%;
     }

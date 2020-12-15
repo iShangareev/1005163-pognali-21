@@ -85,6 +85,7 @@
   padding-left: 26px;
   padding-right: 50px;
   background-color: var(--basic-white);
+
   &::placeholder {
     font-weight: 600;
     font-size: 18px;
@@ -95,7 +96,7 @@
 .contacts__subscribe-button {
   width: 60px;
   height: 62px;
-  font-size: 0px;
+  font-size: 0;
   position: absolute;
   border: none;
   border-radius: 10px;
@@ -164,6 +165,7 @@
     padding-left: 29px;
     font-size: 28px;
     line-height: 28px;
+
     &::before {
       width: 68px;
       height: 68px;
@@ -178,6 +180,7 @@
     padding-top: 10px;
     font-size: 28px;
     line-height: 28px;
+
     &::before {
       width: 68px;
       height: 68px;
@@ -191,6 +194,7 @@
     width: 539px;
     height: 78px;
     border-radius: 20px 20px 20px 20px;
+
     &::placeholder {
       font-size: 24px;
     }
@@ -199,7 +203,7 @@
   .contacts__subscribe-button {
     width: 80px;
     height: 80px;
-    font-size: 0px;
+    font-size: 0;
     border-radius: 0 20px 20px 0;
   }
 }
@@ -254,6 +258,7 @@
     margin: 0;
     margin-left: 119px;
     margin-right: auto;
+
     &::before {
       position: absolute;
       width: 90px;
@@ -267,6 +272,7 @@
   .contacts__mail {
     padding: 0;
     margin: 0;
+
     &::before {
       position: absolute;
       width: 90px;
