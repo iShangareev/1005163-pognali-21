@@ -1,13 +1,13 @@
 .contacts-address {
   position: relative;
   background-color: var(--basic-yellow);
-  padding: 0 25px;
-  padding-top: 57px;
-  padding-bottom: 34px;
+  padding: 57px 25px 34px;
   border-radius: 0 0 30px 30px;
 }
 
 .contacts-address__wrapper {
+  max-width: 320px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -29,17 +29,16 @@
   position: relative;
 
   &::before {
-    position: absolute;
+    bottom: -8px;
     left: 0;
+    position: absolute;
     content: url("../img/map-mark.png");
   }
 }
 
 .contacts-address__route {
   display: block;
-  padding-top: 17px;
-  padding-bottom: 17px;
-  padding-left: 20px;
+  padding: 17px 0 17px 20px;
   border: solid 3px var(--main-blue-text);
   border-radius: 10px;
   margin-top: 32px;
@@ -55,11 +54,14 @@
 
 @media (min-width: $tablet-width) {
   .contacts-address {
-    margin: 0 auto;
     background-color: var(--basic-yellow);
     padding-top: 119px;
     padding-bottom: 84px;
     border-radius: 0 0 60px 60px;
+  }
+
+  .contacts-address__wrapper {
+    max-width: 768px;
   }
 
   .contacts-address__link-br {
@@ -75,7 +77,7 @@
 
     &::before {
       content: url("../img/map-mark-tablet.png");
-      top: -19px;
+      bottom: -27px;
       left: -94px;
     }
   }
@@ -83,14 +85,12 @@
   .contacts-address__route {
     align-self: center;
     width: 573px;
-    padding-top: 23px;
-    padding-bottom: 27px;
-    padding-left: 42px;
+    padding: 23px 0 27px 42px;
     margin-top: 66px;
     border-radius: 20px;
     font-size: 24px;
     line-height: 24px;
-    text-transform: unset;
+    text-transform: none;
 
     &::after {
       content: url("../img/button-decor-triangle.svg");
@@ -117,21 +117,19 @@
   }
 
   .contacts-address__link {
-    display: inline;
     margin-left: 167px;
 
     &::before {
       content: url("../img/map-mark-desk.png");
-      top: -30px;
-      left: -120px;
+      bottom: -36px;
+      left: -119px;
     }
   }
 
   .contacts-address__route {
     width: 275px;
-    margin: 0;
+    margin: 0 0 0 149px;
     justify-self: flex-end;
-    margin-left: 149px;
 
     &::after {
       left: 12px;

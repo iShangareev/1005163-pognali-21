@@ -9,6 +9,7 @@
 .direction-travel__wrapper {
   padding-top: 89px;
   padding-bottom: 30px;
+  margin: 0 auto;
 }
 
 .direction-travel__info {
@@ -26,14 +27,12 @@
   }
 
   .direction-travel__wrapper {
-    margin: 0;
-    padding: 0;
-    padding-top: 64px;
-    padding-left: 48px;
+    margin: 0 auto;
+    padding: 64px 0 0 0;
   }
 
   .direction-travel__info {
-    padding-left: 25px;
+    padding-left: 14px;
   }
 
   .direction-travel__info-text {
@@ -43,9 +42,7 @@
 
   .direction-travel__card-wrapper {
     width: 100%;
-    padding-left: 29px;
-    padding-top: 20px;
-    padding-bottom: 37px;
+    padding: 20px 0 37px 16px;
   }
 
   .direction-travel__card {
@@ -55,35 +52,34 @@
 
 @media (min-width: $desktop-width) {
   .direction-travel {
-    margin: 0 auto;
     padding-bottom: 103px;
     background-position: 692px 150px;
   }
 
   .direction-travel__info {
-    grid-area: direction-travel__info;
+    grid-area: travel__info;
     margin-bottom: 10px;
-    padding: 0;
-    padding-top: 10px;
+    padding: 10px 0 0 0;
   }
 
   .direction-travel__card-wrapper {
     padding-left: 0;
-    // padding-right: 68px;
-    grid-area: direction-travel__card-wrapper;
+    grid-area: card-wrapper;
+  }
+
+  .direction-travel__button {
+    grid-area: travel__button;
   }
 
   .direction-travel__wrapper {
     margin: 0 auto;
-    padding-top: 203px;
-    padding-left: 0;
-    padding-right: 110px;
+    padding: 143px 125px 0 13px;
     display: grid;
     grid-column-gap: 171px;
     grid-template-areas:
-      "direction-travel__card-wrapper   direction-travel__info"
-      "direction-travel__card-wrapper   direction-travel__info"
-      "direction-travel__card-wrapper   direction-travel__button";
+      "card-wrapper   travel__info"
+      "card-wrapper   travel__info"
+      "card-wrapper   travel__button";
   }
 
   .direction-travel__info-title {

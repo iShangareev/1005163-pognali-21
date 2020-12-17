@@ -1,19 +1,24 @@
 .promo-board {
   background: url("../img/traveller-illustration-mobile.svg") 63% 148px,
-    linear-gradient(to bottom, var(--main-blue-title) 72%, var(--main-blue-text) 72%),
+    linear-gradient(
+      to bottom,
+      var(--main-blue-title) 72%,
+      var(--main-blue-text) 72%
+    ),
     url("../img/promo-bckg-mobile.png") 50% 0% / 320px 400px;
   background-repeat: no-repeat;
   color: var(--basic-white);
 }
 
 .promo-board__wrapper {
+  max-width: 270px;
   padding-top: 20px;
   padding-bottom: 20px;
+  margin: 0 auto;
 }
 
 .promo-board__title {
-  margin: 0;
-  margin-bottom: 245px;
+  margin: 0 0 245px 0;
   font-weight: 600;
   font-size: 36px;
   line-height: 40px;
@@ -53,8 +58,8 @@
   }
 
   .promo-board__wrapper {
-    padding: 0 40px;
-    padding-top: 20px;
+    max-width: 688px;
+    padding: 20px 40px 0;
   }
 
   .promo-board__authorization {
@@ -68,16 +73,14 @@
   }
 
   .promo-board__quote {
-    padding: 0;
-    padding-left: 33px;
+    padding: 0 0 0 33px;
     font-size: 28px;
     line-height: 33px;
   }
 
   .promo-board__quote-author {
     margin-top: 45px;
-    padding: 0;
-    padding-left: 33px;
+    padding: 0 0 0 33px;
     font-size: 21px;
     line-height: 25px;
   }
@@ -105,18 +108,18 @@
   }
 
   .promo-board__wrapper {
+    max-width: 1339px;
     display: grid;
     grid-template-areas:
       "promo-board__title  promo-board__quote"
       "promo-board__title  promo-board__quote-author"
       "step-list           step-list";
-    padding-top: 48px;
+    padding: 48px 49px 0;
   }
 
   .promo-board__title {
     text-align: left;
-    margin-top: 57px;
-    margin-left: 77px;
+    margin: 57px 0 0 77px;
   }
 
   .promo-board__quote,
@@ -125,20 +128,16 @@
   }
 
   .promo-board__quote {
-    margin-top: 69px;
-    margin-right: 40px;
-    margin-bottom: 0;
+    margin: 69px 40px 0 0;
   }
 
   .promo-board__quote-author {
     text-align: left;
-    margin-top: 0;
+    margin: 46px 42px 61px 0px;
     justify-self: flex-end;
-    margin-right: 52px;
-    margin-bottom: 61px;
   }
 
   .promo-board__steps {
-    margin-top: 14px;
+    margin-top: 56px;
   }
 }

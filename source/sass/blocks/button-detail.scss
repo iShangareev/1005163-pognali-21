@@ -10,10 +10,9 @@
   text-decoration: none;
   background-color: var(--basic-yellow);
   border-radius: 20px;
-}
-
-.button-detail::after {
-  content: url("../img/button-decor-triangle.svg");
-  position: absolute;
-  right: 36px;
+  &::after {
+    content: url("../img/button-decor-triangle.svg");
+    position: absolute;
+    right: 36px;
+  }
 }

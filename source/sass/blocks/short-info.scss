@@ -45,14 +45,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 0 75px;
-    padding-top: 67px;
-  }
-
-  .short-info__title,
-  .short-info__text,
-  .short-info__text-important {
-    width: 50%;
+    padding: 67px 75px 0;
   }
 
   .short-info__title {
