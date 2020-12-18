@@ -1,63 +1,69 @@
-.direction-travel_position {
+.page__body {
+  font-family: "Bloggersans", "Arial", sans-serif;
+  font-style: normal;
+  margin: 0;
+}
+
+.page__direction-travel {
   position: relative;
   margin-top: -20px;
 }
 
-.companion-travel_position {
+.page__companion-travel {
   margin-top: -96px;
 }
 
-.rate-tariff_position {
+.page__rate-tariff {
   position: relative;
   margin-top: -106px;
   padding-top: 100px;
   z-index: 7;
 }
 
-.contacts_position {
+.page__contacts {
   position: relative;
   margin-top: -77px;
   padding-top: 147px;
   z-index: 6;
 }
 
-.contacts-address_position {
+.page__contacts-address {
   position: relative;
 
   margin-top: -24px;
   z-index: 5;
 }
 
-.map_position {
+.page__map {
   position: relative;
 
   margin-top: -52px;
   z-index: 4;
 }
 
-.footer_position {
+.page__footer {
   margin-top: -110px;
 }
 
 @media (min-width: $tablet-width) {
-  .direction-travel_position {
+  .page__direction-travel {
     margin-top: -60px;
   }
 
-  .companion-travel_position {
+  .page__companion-travel {
     margin-top: -53px;
   }
 
-  .contacts-address_position {
+  .page__contacts-address {
     margin: 0 auto;
     margin-top: -56px;
   }
 
-  .map_position {
+  .page__map {
     margin-bottom: -60px;
   }
 
-  .footer_position {
+  .page__footer {
     position: relative;
     z-index: 5;
     margin-top: 25px;
@@ -67,11 +73,11 @@
 }
 
 @media (min-width: $desktop-width) {
-  .direction-travel_position {
+  .page__direction-travel {
     margin: 0 auto;
   }
 
-  .map_position {
+  .page__map {
     margin-bottom: -129px;
   }
 }

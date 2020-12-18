@@ -11,9 +11,8 @@
   position: relative;
   bottom: 10px;
   border-radius: 10px 10px 0 0;
+
   &::after {
-    font-family: "Bloggersans", "Arial", sans-serif;
-    font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 18px;
@@ -22,6 +21,11 @@
     bottom: 36px;
     counter-increment: section;
     content: counter(section);
+  }
+
+  &:last-child {
+    height: 80px;
+    border-radius: 10px;
   }
 }
 
@@ -42,11 +46,6 @@
 .step-list__item_together {
   background-color: var(--basic-yellow);
   bottom: 34px;
-}
-
-.step-list__item:last-child {
-  height: 80px;
-  border-radius: 10px;
 }
 
 .step-list__text {
@@ -73,21 +72,22 @@
     bottom: 0;
     border-radius: 20px;
     position: relative;
+
     &::after {
       left: 33px;
       bottom: -11px;
       font-size: 30px;
       line-height: 30px;
     }
-  }
 
-  .step-list__item:last-child {
-    width: 50%;
-    height: 140px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    border-radius: 0 0 20px 20px;
+    &:last-child {
+      width: 50%;
+      height: 140px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      border-radius: 0 0 20px 20px;
+    }
   }
 
   .step-list__item_direction {
@@ -131,20 +131,21 @@
     width: 345px;
     height: 107px;
     border-radius: 20px 0 0 20px;
+
     &::after {
       left: 270px;
       bottom: 51px;
       font-size: 24px;
       line-height: 24px;
     }
-  }
 
-  .step-list__item:last-child {
-    width: 316px;
-    right: 10px;
-    top: 0;
-    height: 107px;
-    border-radius: 20px;
+    &:last-child {
+      width: 316px;
+      right: 10px;
+      top: 0;
+      height: 107px;
+      border-radius: 20px;
+    }
   }
 
   .step-list__item_direction {
@@ -154,6 +155,7 @@
   .step-list__item_idea {
     width: 370px;
     left: 322px;
+
     &::after {
       left: 303px;
     }
@@ -163,6 +165,7 @@
     width: 370px;
     top: 0;
     left: 668px;
+
     &::after {
       left: 303px;
     }

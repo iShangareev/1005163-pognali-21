@@ -10,6 +10,7 @@
   text-decoration: none;
   background-color: var(--basic-yellow);
   border-radius: 20px;
+
   &::after {
     content: url("../img/button-decor-triangle.svg");
     position: absolute;

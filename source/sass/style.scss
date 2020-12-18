@@ -8,7 +8,6 @@ $tablet-width: 768px;
 $desktop-width: 1200px;
 
 // Блоки
-@import "blocks/page__body.scss";
 @import "blocks/page-margin.scss";
 @import "blocks/header.scss";
 @import "blocks/menu-box.scss";
@@ -67,3 +66,4 @@ $desktop-width: 1200px;
 @import "blocks/pagination-page-box.scss";
 @import "blocks/public-cards.scss";
 @import "blocks/section-position.scss";
+@import "blocks/page.scss";
