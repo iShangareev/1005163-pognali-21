@@ -1,21 +1,94 @@
 .direction-travel {
+  position: relative;
+  z-index: 9;
+  display: flex;
+  border-radius: 0 0 25px 25px;
   background-color: var(--basic-grey);
 }
 
-@media (min-width: $desktop-width) {
-  .direction-travel__info {
-    grid-area: direction-travel__info;
-  }
+.direction-travel__wrapper {
+  padding-top: 89px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+}
 
-  .direction-travel__card-wrapper {
-    grid-area: direction-travel__card-wrapper;
+.direction-travel__info {
+  padding-left: 22px;
+  margin-bottom: 60px;
+}
+
+@media (min-width: $tablet-width) {
+  .direction-travel {
+    padding-bottom: 78px;
+    border-radius: 0 0 60px 60px;
+    background-image: url("../img/country-flags.png");
+    background-position: 38px 140px;
+    background-repeat: no-repeat;
   }
 
   .direction-travel__wrapper {
+    margin: 0 auto;
+    padding: 64px 0 0 0;
+  }
+
+  .direction-travel__info {
+    padding-left: 14px;
+  }
+
+  .direction-travel__info-text {
+    width: 100%;
+    padding-top: 28px;
+  }
+
+  .direction-travel__card-wrapper {
+    width: 100%;
+    padding: 20px 0 37px 16px;
+  }
+
+  .direction-travel__card {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .direction-travel {
+    padding-bottom: 103px;
+    background-position: 692px 150px;
+  }
+
+  .direction-travel__info {
+    grid-area: travel__info;
+    margin-bottom: 10px;
+    padding: 10px 0 0 0;
+  }
+
+  .direction-travel__card-wrapper {
+    padding-left: 0;
+    grid-area: card-wrapper;
+  }
+
+  .direction-travel__button {
+    grid-area: travel__button;
+  }
+
+  .direction-travel__wrapper {
+    margin: 0 auto;
+    padding: 143px 125px 0 13px;
     display: grid;
+    grid-column-gap: 171px;
     grid-template-areas:
-      "direction-travel__card-wrapper   direction-travel__info"
-      "direction-travel__card-wrapper   direction-travel__info"
-      "direction-travel__card-wrapper   direction-travel__button";
+      "card-wrapper   travel__info"
+      "card-wrapper   travel__info"
+      "card-wrapper   travel__button";
+  }
+
+  .direction-travel__info-title {
+    padding-left: 0;
+    padding-top: 10px;
+  }
+
+  .direction-travel__info-text {
+    padding-left: 0;
+    padding-top: 33px;
   }
 }

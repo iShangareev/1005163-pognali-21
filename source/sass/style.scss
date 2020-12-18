@@ -8,20 +8,19 @@ $tablet-width: 768px;
 $desktop-width: 1200px;
 
 // Блоки
-@import "blocks/page__body.scss";
 @import "blocks/page-margin.scss";
 @import "blocks/header.scss";
 @import "blocks/menu-box.scss";
 @import "blocks/promo-board-list.scss";
 @import "blocks/navbar.scss";
+@import "blocks/company-logo.scss";
 @import "blocks/navbar-menu.scss";
 @import "blocks/navbar-menu-navigation.scss";
 @import "blocks/social-list.scss";
 @import "blocks/promo-board.scss";
-
 @import "blocks/step-list.scss";
-@import "blocks/about-service.scss";
 @import "blocks/short-info.scss";
+@import "blocks/about-service.scss";
 @import "blocks/direction-travel.scss";
 @import "blocks/direction-card.scss";
 @import "blocks/companion-travel.scss";
@@ -30,6 +29,7 @@ $desktop-width: 1200px;
 @import "blocks/type-travel-list.scss";
 @import "blocks/rate-tariff.scss";
 @import "blocks/contacts.scss";
+@import "blocks/contacts-address.scss";
 @import "blocks/map.scss";
 @import "blocks/card-profile.scss";
 @import "blocks/user-travel-plan.scss";
@@ -65,3 +65,5 @@ $desktop-width: 1200px;
 @import "blocks/home-button.scss";
 @import "blocks/pagination-page-box.scss";
 @import "blocks/public-cards.scss";
+@import "blocks/section-position.scss";
+@import "blocks/page.scss";

@@ -8,17 +8,25 @@
   </head>
   <body class="page__body">
     <header class="header">
-      <div class="page-margin">
+      <div class="page-margin header__content">
         <div class="navbar">
           <a href="" class="company-logo">
             <img
-              src="https://via.placeholder.com/96x15"
+              src="img/logo.svg"
               alt="Логотип сервиса 'Погнали?'"
               class="company-logo__image"
             />
+            <img
+              src="img/logo-big.svg"
+              alt="Логотип сервиса 'Погнали?'"
+              class="company-logo__image-big"
+            />
           </a>
           <button type="button" class="navbar__menu-button"></button>
-          <nav class="navbar-menu-navigation navbar-menu-navigation_horizontal">
+          <img src="img/white-line.svg" alt="" class="navbar__line" />
+          <nav
+            class="navbar-menu-navigation navbar-menu-navigation_horizontal navbar__navigation"
+          >
             <ul class="navbar-menu-navigation__list">
               <li class="navbar-menu-navigation__item">
                 <a href="" class="navbar-menu-navigation__link">О сервисе</a>
@@ -34,12 +42,18 @@
 
           <ul class="promo-board-list navbar__contact-list">
             <li class="promo-board-list__contact-item">
-              <a href="" class="promo-board-list__contact-button">
+              <a
+                href=""
+                class="promo-board-list__contact-button promo-board-list__button-call"
+              >
                 кнопка позвонить нам
               </a>
             </li>
             <li class="promo-board-list__contact-item">
-              <a href="" class="promo-board-list__contact-button">
+              <a
+                href=""
+                class="promo-board-list__contact-button promo-board-list__button-mail"
+              >
                 кнопка написать нам
               </a>
             </li>
@@ -61,13 +75,7 @@
               alt="Погнали?"
               class="company-logo__image"
           /></a>
-          <a href="" class="navbar-menu__close">
-            <img
-              class="navbar-menu__close-image"
-              src="https://via.placeholder.com/19x19"
-              alt=""
-            />
-          </a>
+          <a href="" class="navbar-menu__close"> </a>
         </div>
         <nav class="navbar-menu-navigation">
           <ul class="navbar-menu-navigation__list">
@@ -133,12 +141,18 @@
           </h2>
           <ul class="promo-board-list promo-board__authorization">
             <li class="promo-board-list__contact-item">
-              <a href="" class="promo-board-list__contact-button">
+              <a
+                href=""
+                class="promo-board-list__contact-button promo-board-list__button-call"
+              >
                 кнопка позвонить нам
               </a>
             </li>
             <li class="promo-board-list__contact-item">
-              <a href="" class="promo-board-list__contact-button">
+              <a
+                href=""
+                class="promo-board-list__contact-button promo-board-list__button-mail"
+              >
                 кнопка написать нам
               </a>
             </li>
@@ -155,63 +169,91 @@
           </p>
           <p class="promo-board__quote-author">
             Мурат Эльтазин<br />
-            главный редактор газеты<br />
+            главный редактор<br class="promo-board__quote-mobile-indent" />
+            газеты <br class="promo-board__quote-tablet-indent" />
             «гаджетлайф»
           </p>
-          <ul class="step-list">
+          <ul class="step-list promo-board__steps">
             <li class="step-list__item step-list__item_direction">
-              <p class="step-list__text">Выберите направление</p>
+              <p class="step-list__text">
+                Выберите<br />
+                направление
+              </p>
             </li>
             <li class="step-list__item step-list__item_idea">
-              <p class="step-list__text">Изучите идеи путешественников</p>
+              <p class="step-list__text">
+                Изучите идеи<br />
+                путешественников
+              </p>
             </li>
             <li class="step-list__item step-list__item_similar">
-              <p class="step-list__text">Находите тех, кто похож на вас</p>
+              <p class="step-list__text">
+                Находите тех,<br />
+                кто похож на вас
+              </p>
             </li>
             <li class="step-list__item step-list__item_together">
-              <p class="step-list__text">Путешествуйте вместе!</p>
+              <p class="step-list__text">
+                Путешествуйте<br />
+                вместе!
+              </p>
             </li>
           </ul>
         </div>
         <!-- /.page-margin -->
       </section>
       <section class="about-service">
-        <div class="short-info page-margin">
-          <h2 class="short-info__title">О сервисе</h2>
-          <p class="short-info__text">
-            Любое путешествие веселее с попутчиками, которые на одной волне с
-            тобой! Делитесь своими идеями путешествий и черпайте вдохновение в
-            чужих.
+        <div class="short-info page-margin about-service__content">
+          <h2 class="short-info__title about-service__title">О сервисе</h2>
+          <p class="short-info__text about-service__text">
+            Любое путешествие веселее<br class="short-info__text-br" />
+            с попутчиками, которые на<br class="short-info__text-br" />
+            одной волне с тобой! Делитесь<br class="short-info__text-br" />
+            своими идеями путешествий и<br class="short-info__text-br" />
+            черпайте вдохновение в чужих.
           </p>
           <p class="short-info__text-important">
-            А если найдете кого-то близкого по духу — скорее зовите в совместный
-            трип!
+            А если найдете кого-то<br class="short-info__text-important-br" />
+            близкого по духу — скорее<br
+              class="short-info__text-important-br"
+            />
+            зовите в совместный трип!
           </p>
           <a href="" class="button-detail short-info__show-more">Подробнее</a>
         </div>
       </section>
-      <section class="direction-travel">
+      <section class="direction-travel page__direction-travel">
         <div class="page-margin direction-travel__wrapper">
           <div class="short-info short-info_theme_light direction-travel__info">
-            <h2 class="short-info__title">Направления</h2>
-            <p class="short-info__text">
-              Мы не продаем туры<br />
-              и ничего не рекламируем. <br />
-              Люди сами пишут о странах, <br />
-              куда хотели бы отправиться <br />
+            <h2 class="short-info__title direction-travel__info-title">
+              Направления
+            </h2>
+            <p class="short-info__text direction-travel__info-text">
+              Мы не продаем туры<br class="direction-travel__info-br-mobile" />
+              и ничего не рекламируем.
+              <br class="direction-travel__info-br-mobile" />
+              Люди сами пишут о странах,
+              <br class="direction-travel__info-br-mobile" />
+              куда хотели бы отправиться
+              <br class="direction-travel__info-br-mobile" />
               и чем можно там заняться.
             </p>
           </div>
           <!-- /.short-info -->
           <div class="direction-travel__card-wrapper">
-            <div class="direction-card direction-travel-card">
+            <div class="direction-card direction-travel__card">
               <a href="" class="direction-card__link">
                 <img
-                  src="https://via.placeholder.com/270x110"
+                  src="img/thailand-mobile.png"
                   alt="Тайланд"
                   class="direction-card__pic"
                 />
                 <div class="direction-card__box">
+                  <img
+                    src="img/flag-thailand-mobile.png"
+                    alt="Флаг Тайланда"
+                    class="direction-card__country-flag"
+                  />
                   <p class="direction-card__country">Таиланд</p>
                   <span class="direction-card__tourist">18321</span>
                   <p class="direction-card__text">Джунгли зовут!</p>
@@ -219,14 +261,19 @@
                 <!-- /.direction-card__box -->
               </a>
             </div>
-            <div class="direction-card direction-travel-card">
+            <div class="direction-card direction-travel__card">
               <a href="" class="direction-card__link">
                 <img
-                  src="https://via.placeholder.com/270x110"
+                  src="img/france-mobile.png"
                   alt="Франция"
                   class="direction-card__pic"
                 />
                 <div class="direction-card__box">
+                  <img
+                    src="img/falg-france-mobile.png"
+                    alt="Флаг франции"
+                    class="direction-card__country-flag"
+                  />
                   <p class="direction-card__country">Франция</p>
                   <span class="direction-card__tourist">12518</span>
                   <p class="direction-card__text">Трэ бьен, манифик!</p>
@@ -234,17 +281,25 @@
                 <!-- /.direction-card__box -->
               </a>
             </div>
-            <div class="direction-card direction-travel-card">
+            <div class="direction-card direction-travel__card">
               <a href="" class="direction-card__link">
                 <img
-                  src="https://via.placeholder.com/270x110"
+                  src="img/czech-mobile.png"
                   alt="Чехия"
                   class="direction-card__pic"
                 />
                 <div class="direction-card__box">
+                  <img
+                    src="img/flag-czech-mobile.png"
+                    alt="Флаг Чехии"
+                    class="direction-card__country-flag"
+                  />
                   <p class="direction-card__country">Чехия</p>
                   <span class="direction-card__tourist">5326</span>
-                  <p class="direction-card__text">Закоулки старой Европы</p>
+                  <p class="direction-card__text">
+                    Закоулки старой<br />
+                    Европы
+                  </p>
                 </div>
                 <!-- /.direction-card__box -->
               </a>
@@ -254,218 +309,263 @@
 
           <a
             href="form.html"
-            class="direction-card__button-more direction-travel__button button"
+            class="direction-card__button-more direction-travel__button"
             >Показать все
           </a>
         </div>
       </section>
-      <section class="companion-travel">
+      <section class="companion-travel page__companion-travel">
         <div class="page-margin companion-travel__wrapper">
-          <div class="short-info">
-            <h2 class="short-info__title">Попутчики</h2>
-            <p class="short-info__text">
-              Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
-              Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
+          <div class="short-info companion-travel__info">
+            <h2 class="short-info__title companion-travel__title">Попутчики</h2>
+            <p class="short-info__text companion-travel__text">
+              Все мы индивидуальны и у<br
+                class="companion-travel__text-br-mobile"
+              />
+              каждого свой взгляд на<br
+                class="companion-travel__text-br-mobile"
+              />
+              идеальный отдых. Одному<br
+                class="companion-travel__text-br-mobile"
+              />
+              нужен пляж и коктейль, а<br
+                class="companion-travel__text-br-mobile"
+              />
+              другому маршрут для хайкинга.
             </p>
-            <p class="short-info__text-important">
-              Теперь можно легко найти единомышленников!
+            <p
+              class="short-info__text-important companion-travel__text-important"
+            >
+              Теперь можно легко
+              <br class="companion-travel__text-important-br" />
+              найти единомышленников!
             </p>
           </div>
           <!-- /.short-info -->
-          <a href="" class="companion-card">
-            <div class="companion-card__level">
-              <span class="companion-card__level-num">99</span>
-              <span class="companion-card__level-text">Level</span>
-            </div>
-            <!-- /.companion-card-level -->
-            <img
-              src="https://via.placeholder.com/270x270"
-              class="companion-card__user-photo"
-              alt="Фото пользователя"
-            />
-            <div class="companion-card__info">
-              <ul class="companion-card__country-list">
-                <li class="companion-card__country-item">
-                  <img
-                    src="https://via.placeholder.com/35x25"
-                    class="companion-card__country-pic"
-                    alt=""
-                  />
-                </li>
-                <li class="companion-card__country-item">
-                  <img
-                    src="https://via.placeholder.com/35x25"
-                    class="companion-card__country-pic"
-                    alt=""
-                  />
-                </li>
-                <li class="companion-card__country-item">
-                  <img
-                    src="https://via.placeholder.com/35x25"
-                    class="companion-card__country-pic"
-                    alt=""
-                  />
-                </li>
-              </ul>
-              <!-- /.companion-card__info-country -->
-              <h4 class="companion-card__info-username">Таня Фирсова</h4>
-              <ul class="hashtags-box">
-                <li class="hashtags-box__item">
-                  <span class="hashtags-box__tag">#ЗОЖ</span>
-                </li>
-                <li class="hashtags-box__item">
-                  <span class="hashtags-box__tag">#ПП</span>
-                </li>
-                <li class="hashtags-box__item">
-                  <span class="hashtags-box__tag">#Фитнес</span>
-                </li>
-                <li class="hashtags-box__item">
-                  <span class="hashtags-box__tag">#пляж</span>
-                </li>
-                <li class="hashtags-box__item">
-                  <span class="hashtags-box__tag">#авокадо</span>
-                </li>
-                <li class="hashtags-box__item">
-                  <span class="hashtags-box__tag">#смузи</span>
-                </li>
-              </ul>
-              <ul class="type-travel-list">
-                <li class="type-travel-list__item">
-                  <img
-                    src="https://via.placeholder.com/22x22"
-                    alt=""
-                    class="type-travel-list__item-status"
-                  />
-                </li>
-                <li class="type-travel-list__item">
-                  <img
-                    src="https://via.placeholder.com/22x22"
-                    alt=""
-                    class="type-travel-list__item-status type-travel-list__item-status_disabled"
-                  />
-                </li>
-                <li class="type-travel-list__item">
-                  <img
-                    src="https://via.placeholder.com/22x22"
-                    alt=""
-                    class="type-travel-list__item-status type-travel-list__item-status_disabled"
-                  />
-                </li>
-                <li class="type-travel-list__item">
-                  <img
-                    src="https://via.placeholder.com/22x22"
-                    alt=""
-                    class="type-travel-list__item-status type-travel-list__item-status_disabled"
-                  />
-                </li>
-              </ul>
-            </div>
-            <!-- /.companion-card__info -->
-          </a>
-          <!-- /.companion-card -->
-          <a href="" class="companion-card">
-            <div class="companion-card__level">
-              <span class="companion-card__level-num">80</span>
-              <span class="companion-card__level-text">Level</span>
-            </div>
-            <!-- /.companion-card__level -->
-            <img
-              src="https://via.placeholder.com/270x270"
-              class="companion-card__user-photo"
-              alt="Фото пользователя"
-            />
-            <div class="companion-card__info">
-              <ul class="companion-card__country-list">
-                <li class="companion-card__country-item">
-                  <img
-                    src="https://via.placeholder.com/35x25"
-                    class="companion-card__country-pic"
-                    alt=""
-                  />
-                </li>
-                <li class="companion-card__country-item">
-                  <img
-                    src="https://via.placeholder.com/35x25"
-                    class="companion-card__country-pic"
-                    alt=""
-                  />
-                </li>
-              </ul>
-              <!-- /.companion-card__info-country -->
-              <h4 class="companion-card__info-username">Петя Демин</h4>
-              <ul class="hashtags-box">
-                <li class="hashtags-box__item">
-                  <span class="hashtags-box__tag">#бургер</span>
-                </li>
-                <li class="hashtags-box__item">
-                  <span class="hashtags-box__tag">#концерт</span>
-                </li>
-                <li class="hashtags-box__item">
-                  <span class="hashtags-box__tag">#бар</span>
-                </li>
-                <li class="hashtags-box__item">
-                  <span class="hashtags-box__tag">#футбол</span>
-                </li>
-                <li class="hashtags-box__item">
-                  <span class="hashtags-box__tag">#крафт</span>
-                </li>
-              </ul>
+          <div class="companion-travel__card-box">
+            <a href="" class="companion-card companion-travel__card">
+              <div class="companion-card__level">
+                <span class="companion-card__level-num">99</span>
+                <span class="companion-card__level-text">Level</span>
+              </div>
+              <!-- /.companion-card-level -->
+              <img
+                src="img/user-firsova-mobile.png"
+                class="companion-card__user-photo"
+                alt="Фото пользователя"
+              />
+              <div class="companion-card__info">
+                <ul class="companion-card__country-list">
+                  <li class="companion-card__country-item">
+                    <img
+                      src="img/flag-sri-lanka-mobile.png"
+                      class="companion-card__country-pic"
+                      alt="Флаг Шри-Ланки"
+                    />
+                  </li>
+                  <li class="companion-card__country-item">
+                    <img
+                      src="img/flag-thailand-mobile.png"
+                      class="companion-card__country-pic"
+                      alt="Флаг Тайланда"
+                    />
+                  </li>
+                  <li class="companion-card__country-item">
+                    <img
+                      src="img/flag-seychelles-mobile.png"
+                      class="companion-card__country-pic"
+                      alt="Флаг Сэйшел"
+                    />
+                  </li>
+                </ul>
+                <!-- /.companion-card__info-country -->
+                <h4 class="companion-card__info-username">Таня Фирсова</h4>
+                <ul class="hashtags-box companion-card__hashtag-box">
+                  <li
+                    class="hashtags-box__item companion-card__hashtag-box-item"
+                  >
+                    <span class="hashtags-box__tag">#ЗОЖ </span>
+                  </li>
+                  <li
+                    class="hashtags-box__item companion-card__hashtag-box-item"
+                  >
+                    <span class="hashtags-box__tag">#ПП </span>
+                  </li>
+                  <li
+                    class="hashtags-box__item companion-card__hashtag-box-item"
+                  >
+                    <span class="hashtags-box__tag">#Фитнес </span>
+                  </li>
+                  <li
+                    class="hashtags-box__item companion-card__hashtag-box-item"
+                  >
+                    <span class="hashtags-box__tag">#пляж </span>
+                  </li>
+                  <li
+                    class="hashtags-box__item companion-card__hashtag-box-item"
+                  >
+                    <span class="hashtags-box__tag">#авокадо </span>
+                  </li>
+                  <li
+                    class="hashtags-box__item companion-card__hashtag-box-item"
+                  >
+                    <span class="hashtags-box__tag">#смузи</span>
+                  </li>
+                </ul>
+                <ul class="type-travel-list">
+                  <li class="type-travel-list__item">
+                    <img
+                      src="img/icon_plane.svg"
+                      alt="Кнопка самолет"
+                      class="type-travel-list__item-status"
+                    />
+                  </li>
+                  <li class="type-travel-list__item">
+                    <img
+                      src="img/icon-bus.png"
+                      alt="Кнопка автобус"
+                      class="type-travel-list__item-status type-travel-list__item-status_disabled"
+                    />
+                  </li>
+                  <li class="type-travel-list__item">
+                    <img
+                      src="img/icon-bicycle.png"
+                      alt="Кнопка велосипед"
+                      class="type-travel-list__item-status type-travel-list__item-status_disabled"
+                    />
+                  </li>
+                  <li class="type-travel-list__item">
+                    <img
+                      src="img/icon-run.png"
+                      alt="Кнопка пешком"
+                      class="type-travel-list__item-status type-travel-list__item-status_disabled"
+                    />
+                  </li>
+                </ul>
+              </div>
+              <!-- /.companion-card__info -->
+            </a>
+            <!-- /.companion-card -->
+            <a href="" class="companion-card companion-travel__card">
+              <div class="companion-card__level">
+                <span class="companion-card__level-num">80</span>
+                <span class="companion-card__level-text">Level</span>
+              </div>
+              <!-- /.companion-card__level -->
+              <img
+                src="img/user-demin-mobie.png"
+                class="companion-card__user-photo"
+                alt="Фото пользователя"
+              />
+              <div class="companion-card__info">
+                <ul class="companion-card__country-list">
+                  <li class="companion-card__country-item">
+                    <img
+                      src="img/flag-belgium-mobile.png"
+                      class="companion-card__country-pic"
+                      alt="Флаг Бельгии"
+                    />
+                  </li>
+                  <li class="companion-card__country-item">
+                    <img
+                      src="img/flag-czech-mobile.png"
+                      class="companion-card__country-pic"
+                      alt="Флаг Чехии"
+                    />
+                  </li>
+                </ul>
+                <!-- /.companion-card__info-country -->
+                <h4 class="companion-card__info-username">Петя Демин</h4>
+                <ul class="hashtags-box companion-card__hashtag-box">
+                  <li
+                    class="hashtags-box__item companion-card__hashtag-box-item"
+                  >
+                    <span class="hashtags-box__tag">#бургер</span>
+                  </li>
+                  <li class="hashtags-box__item">
+                    <span class="hashtags-box__tag">#концерт</span>
+                  </li>
+                  <li class="hashtags-box__item">
+                    <span class="hashtags-box__tag">#бар</span>
+                  </li>
+                  <li class="hashtags-box__item">
+                    <span class="hashtags-box__tag">#футбол</span>
+                  </li>
+                  <li class="hashtags-box__item">
+                    <span class="hashtags-box__tag">#крафт</span>
+                  </li>
+                </ul>
 
-              <ul class="type-travel-list">
-                <li class="type-travel-list__item">
-                  <img
-                    src="https://via.placeholder.com/22x22"
-                    alt=""
-                    class="type-travel-list__item-status"
-                  />
-                </li>
-                <li class="type-travel-list__item">
-                  <img
-                    src="https://via.placeholder.com/22x22"
-                    alt=""
-                    class="type-travel-list__item-status"
-                  />
-                </li>
-                <li class="type-travel-list__item">
-                  <img
-                    src="https://via.placeholder.com/22x22"
-                    alt=""
-                    class="type-travel-list__item-status type-travel-list__item-status_disabled"
-                  />
-                </li>
-                <li class="type-travel-list__item">
-                  <img
-                    src="https://via.placeholder.com/22x22"
-                    alt=""
-                    class="type-travel-list__item-status"
-                  />
-                </li>
-              </ul>
-            </div>
-            <!-- /.companion-card__info -->
-          </a>
-          <!-- /.companion-card -->
+                <ul class="type-travel-list">
+                  <li class="type-travel-list__item">
+                    <img
+                      src="img/icon_plane.svg"
+                      alt="Кнопка самолет"
+                      class="type-travel-list__item-status"
+                    />
+                  </li>
+                  <li class="type-travel-list__item">
+                    <img
+                      src="img/icon-bus-active.png"
+                      alt="Кнопка автобус"
+                      class="type-travel-list__item-status type-travel-list__item-status_disabled"
+                    />
+                  </li>
+                  <li class="type-travel-list__item">
+                    <img
+                      src="img/icon-bicycle.png"
+                      alt="Кнопка велосипед"
+                      class="type-travel-list__item-status type-travel-list__item-status_disabled"
+                    />
+                  </li>
+                  <li class="type-travel-list__item">
+                    <img
+                      src="img/icon-run-active.png"
+                      alt="Кнопка пешком"
+                      class="type-travel-list__item-status type-travel-list__item-status_disabled"
+                    />
+                  </li>
+                </ul>
+              </div>
+              <!-- /.companion-card__info -->
+            </a>
+            <!-- /.companion-card -->
+          </div>
+          <!-- /.companion-travel__card-box -->
+
           <a href="" class="companion-travel__show-more button">
             Показать всех
           </a>
         </div>
         <!-- /.page-margin -->
       </section>
-      <section class="rate-tariff">
-        <div class="page-margin">
+      <section class="rate-tariff page__rate-tariff">
+        <div class="page-margin rate-tariff__content">
           <h2 class="rate-tariff__start">Добавьте свой профиль</h2>
           <ul class="rate-tariff__list">
-            <li class="rate-tariff__item">
+            <li class="rate-tariff__item rate-tariff__item-basic">
               <p class="rate-tariff__item-content">Базовое размещение</p>
-              <p class="rate-tariff__item-content">Бесплатно</p>
+              <p
+                class="rate-tariff__item-content rate-tariff__item-content-cost"
+              >
+                Бесплатно
+              </p>
             </li>
-            <li class="rate-tariff__item">
+            <li class="rate-tariff__item rate-tariff__item-seo">
               <p class="rate-tariff__item-content">Вывод на первых позициях</p>
-              <p class="rate-tariff__item-content">99 руб./мес</p>
+              <p
+                class="rate-tariff__item-content rate-tariff__item-content-cost"
+              >
+                99 руб./мес
+              </p>
             </li>
-            <li class="rate-tariff__item">
+            <li class="rate-tariff__item rate-tariff__item-color">
               <p class="rate-tariff__item-content">Кастомный цвет карточки</p>
-              <p class="rate-tariff__item-content">59 руб./мес</p>
+              <p
+                class="rate-tariff__item-content rate-tariff__item-content-cost"
+              >
+                59 руб./мес
+              </p>
             </li>
           </ul>
           <a href="" class="rate-tariff__company-show"
@@ -473,36 +573,45 @@
           >
         </div>
       </section>
-      <section class="contacts">
+      <section class="contacts page__contacts">
         <h2 class="visually-hidden">Зарегистрироваться</h2>
-        <div class="page-margin">
-          <div class="contacts__box">
-            <div class="short-info">
-              <p class="short-info__title">Заинтересовались?</p>
-              <p class="short-info__text">
-                Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы?
-                Тогда скорее
-                <a href="" class="short-info__link">авторизуйтесь.</a>
-              </p>
-            </div>
-            <!-- /.short-info -->
-            <form
-              action="https://echo.htmlacademy.ru"
-              class="contacts__subscribe"
-            >
-              <label class="visually-hidden">
-                поле ввода для почты
-                <input
-                  type="email"
-                  name="usermail"
-                  class="contacts__subscribe-mail"
-                />
-              </label>
-              <button type="submit" class="contacts__subscribe-button"></button>
-            </form>
-            <p class="contacts__text">
-              Остались вопросы? Мы с радостью на них ответим!
+        <div class="page-margin contacts__content">
+          <div class="short-info contacts__content-info">
+            <p class="short-info__title contacts__content-title">
+              Заинтересовались?
             </p>
+            <p class="short-info__text contacts__content-text">
+              Зарегистрируйтесь,<br class="contacts__content-text-br" />
+              это быстро и бесплатно!<br />
+              Уже зарегистрированы? Тогда<br
+                class="contacts__content-text-br"
+              />
+              скорее
+              <a href="" class="short-info__link">авторизуйтесь.</a>
+            </p>
+          </div>
+          <!-- /.short-info -->
+          <form
+            action="https://echo.htmlacademy.ru"
+            class="contacts__subscribe"
+          >
+            <label aria-label="поле ввода для почты">
+              <input
+                type="email"
+                name="usermail"
+                class="contacts__subscribe-mail"
+                placeholder="E-mail"
+              />
+            </label>
+            <button type="submit" class="contacts__subscribe-button">
+              Регистрация
+            </button>
+          </form>
+          <p class="contacts__text">
+            Остались вопросы?<br class="contacts__text-br" />
+            Мы с радостью на них ответим!
+          </p>
+          <div class="contacts__item-box">
             <a href="tel:88005558628" class="contacts__phone"
               >8 800 555-86-28</a
             >
@@ -510,18 +619,22 @@
               >mail@htmlacademy.ru</a
             >
           </div>
-          <!-- /.contacts__box -->
-          <div class="contacts__address">
-            <a href="" class="contacts__address-link">
-              ул. Большая Конюшенная, 19/8
-            </a>
-            <a href="" class="contacts__address-route">Проложить маршрут</a>
-          </div>
-          <!-- /.contacts__address -->
+          <!-- /.contacts__item-box -->
         </div>
         <!-- /.page-margin -->
       </section>
-      <section class="map">
+      <section class="contacts-address page__contacts-address">
+        <div class="contacts-address__wrapper">
+          <a href="" class="contacts-address__link">
+            ул. Большая<br class="contacts-address__link-br" />
+            Конюшенная, 19/8
+          </a>
+          <a href="" class="contacts-address__route">Проложить маршрут</a>
+        </div>
+        <!-- /.page-margin -->
+      </section>
+      <!-- /.contacts-address -->
+      <section class="map page__map">
         <h2 class="visually-hidden">Мое местоположение</h2>
         <div class="map__info">
           <a href="" class="map__link"></a>
@@ -529,26 +642,20 @@
         <!-- /.map__info -->
       </section>
     </main>
-    <footer class="footer">
-      <a class="company-logo">
-        <img
-          src="https://via.placeholder.com/96x15"
-          alt="Логотип Погнали?"
-          class="company-logo__pic"
-        />
-      </a>
-      <ul class="social-list social-list_theme_yellow">
-        <li class="social-list__item">
+    <footer class="footer page__footer">
+      <a class="company-logo"> </a>
+      <ul class="social-list social-list_theme_yellow social-list__position">
+        <li class="social-list__item social-list__item-facebook">
           <a href="https://facebook.com" class="social-list__link">
             Ссылка на facebook
           </a>
         </li>
-        <li class="social-list__item">
+        <li class="social-list__item social-list__item-vk">
           <a href="https://vk.com" class="social-list__link">
             Ссылка на вконтакте
           </a>
         </li>
-        <li class="social-list__item">
+        <li class="social-list__item social-list__item-insta">
           <a href="https://www.instagram.com" class="social-list__link">
             Ссылка на instagram
           </a>

@@ -1,5 +1,54 @@
 .about-service {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
   background-image: url("../img/about-mobile.png");
+  background-position: center;
   background-repeat: no-repeat;
   background-color: var(--main-blue);
+  padding-bottom: 84px;
+  border-radius: 0 0 25px 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .about-service {
+    // display: block;
+    padding-bottom: 90px;
+    border-radius: 0 0 60px 60px;
+    background: url("../img/about-tablet.png") right;
+    background-repeat: no-repeat;
+    background-color: var(--main-blue-text);
+  }
+
+  .about-service__content {
+    // margin: 0 auto;
+
+    margin-right: 305px;
+    padding: 66px 75px 0;
+  }
+
+  .about-service__title,
+  .about-service__text {
+    max-width: 320px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-service {
+    padding-bottom: 161px;
+    border-radius: 0 0 60px 60px;
+    background: url("../img/rectangle-212-212.png") 60px 5px,
+      url("../img/about-desktop.png") 751px 17px;
+    background-color: var(--main-blue-text);
+    background-repeat: no-repeat;
+  }
+
+  .about-service__content {
+    padding: 66px 129px 0;
+  }
+
+  .about-service__text {
+    max-width: 617px;
+  }
 }

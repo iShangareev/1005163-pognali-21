@@ -1,21 +1,84 @@
 .rate-tariff {
   background-color: var(--basic-grey);
+  padding-bottom: 35px;
+  border-radius: 0 0 30px 30px;
+}
+
+.rate-tariff__content {
+  max-width: 246px;
+  margin: 0 auto;
+  padding-top: 33px;
+  padding-left: 50px;
 }
 
 .rate-tariff__start {
+  position: relative;
+  width: 110px;
   font-weight: 600;
   font-size: 24px;
   line-height: 24px;
   color: var(--special-orange);
-}
+  text-align: left;
 
-.rate-tariff__list {
-  list-style-type: none;
-  padding: 0;
+  &::after {
+    position: absolute;
+    content: url("../img/rates.png");
+    top: -13px;
+    left: 146px;
+  }
 }
 
 .rate-tariff__item {
   color: var(--special-grey);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 17px;
+
+  &::after {
+    display: block;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    position: relative;
+    counter-increment: section;
+    content: counter(section);
+    left: 210px;
+    bottom: 44px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 33px;
+    color: var(--basic-white);
+  }
+}
+
+.rate-tariff__item-content {
+  margin: 0;
+}
+
+.rate-tariff__list {
+  margin-top: 57px;
+  counter-reset: section;
+  list-style-type: none;
+  padding: 0;
+}
+
+.rate-tariff__item-basic {
+  &::after {
+    background-color: var(--special-orange);
+  }
+}
+
+.rate-tariff__item-seo {
+  &::after {
+    background-color: var(--special-yellow-dark);
+  }
+}
+
+.rate-tariff__item-color {
+  &::after {
+    background-color: var(--basic-yellow);
+  }
 }
 
 .rate-tariff__company-show {
@@ -27,25 +90,129 @@
 }
 
 @media (min-width: $tablet-width) {
+  .rate-tariff {
+    border-radius: 0 0 60px 60px;
+    padding-bottom: 0;
+  }
+
+  .rate-tariff__content {
+    max-width: 688px;
+    padding-top: 46px;
+    padding-bottom: 86px;
+    background: url("../img/tariff-backg.png") no-repeat 530px 164px;
+  }
+
   .rate-tariff__start {
+    width: 100%;
+    padding-left: 13px;
     font-size: 45px;
     line-height: 45px;
     text-align: center;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .rate-tariff__list {
+    max-width: 643px;
+    margin-top: 85px;
+    margin-bottom: 0;
   }
 
   .rate-tariff__item {
+    position: relative;
     display: flex;
-    justify-content: space-between;
     font-size: 28px;
     line-height: 28px;
+    padding: 9px 0 20px 80px;
+    margin-bottom: 8px;
+
+    &::after {
+      display: none;
+    }
+
+    &::before {
+      position: absolute;
+      display: block;
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+      counter-increment: section;
+      content: counter(section);
+      left: -10px;
+      bottom: 44px;
+      text-align: center;
+      font-weight: normal;
+      font-size: 28px;
+      line-height: 70px;
+      color: var(--basic-white);
+    }
   }
 
-  .rate-tariff__item .rate-tariff__item-content:nth-child(2) {
-    background-color: var(--lilac-light);
+  .rate-tariff__item-basic {
+    &::before {
+      background-color: var(--special-orange);
+      bottom: 3px;
+    }
+  }
+
+  .rate-tariff__item-seo {
+    &::before {
+      background-color: var(--special-yellow-dark);
+      bottom: 0;
+    }
+  }
+
+  .rate-tariff__item-color {
+    &::before {
+      background-color: var(--basic-yellow);
+      bottom: -2px;
+    }
+  }
+
+  .rate-tariff__item-content {
+    width: 70%;
+    text-align: left;
+  }
+
+  .rate-tariff__item-content-cost {
+    width: 30%;
+    text-align: right;
   }
 
   .rate-tariff__company-show {
     font-size: 20px;
     line-height: 20px;
+    padding-left: 11px;
+
+    &::before {
+      content: url("../img/business-rates-link.svg");
+      position: relative;
+      left: -21px;
+      bottom: -25px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .rate-tariff {
+    padding-bottom: 100px;
+  }
+
+  .rate-tariff__content {
+    max-width: 1146px;
+    padding-top: 72px;
+    background: url("../img/tariff-backg-desktop.png") no-repeat 660px 244px;
+  }
+
+  .rate-tariff__list {
+    max-width: 905px;
+    margin-top: 146px;
+  }
+
+  .rate-tariff__item {
+    padding: 5px 0 18px 80px;
+    margin-bottom: 15px;
   }
 }

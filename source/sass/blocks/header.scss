@@ -1,5 +1,5 @@
 .header {
-  background-color: var(--main-blue);
+  background-color: var(--main-blue-title);
 }
 
 .header__title {
@@ -15,10 +15,15 @@
 }
 
 @media (min-width: $tablet-width) {
+  .header {
+    background-color: var(--main-blue);
+  }
+
   .header__content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    padding: 0 40px;
   }
 
   .header__title {

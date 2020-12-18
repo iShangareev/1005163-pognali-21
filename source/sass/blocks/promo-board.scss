@@ -1,11 +1,20 @@
 .promo-board {
-  background-image: url("../img/promo-bckg-mobile.png");
+  background: url("../img/traveller-illustration-mobile.svg") 63% 148px,
+    linear-gradient(to bottom, var(--main-blue-title) 72%, var(--main-blue-text) 72%),
+    url("../img/promo-bckg-mobile.png") 50% 0% / 320px 400px;
   background-repeat: no-repeat;
-  background-size: cover;
   color: var(--basic-white);
 }
 
+.promo-board__wrapper {
+  max-width: 270px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+
 .promo-board__title {
+  margin: 0 0 245px 0;
   font-weight: 600;
   font-size: 36px;
   line-height: 40px;
@@ -14,6 +23,8 @@
 }
 
 .promo-board__quote {
+  padding-left: 26px;
+  padding-top: 11px;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -22,15 +33,29 @@
 }
 
 .promo-board__quote-author {
+  padding-left: 26px;
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
   grid-area: promo-board__quote-author;
 }
 
+.promo-board__quote-tablet-indent {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .promo-board {
-    background-image: url("../img/promo-bckg-tablet.png");
+    padding-bottom: 50px;
+    background: url("../img/traveller-illustration-tablet.svg") 72% 269px,
+      url("../img/promo-bckg-tablet.png") 50% 245px;
+    background-color: var(--main-blue-text);
+    background-repeat: no-repeat;
+  }
+
+  .promo-board__wrapper {
+    max-width: 688px;
+    padding: 20px 40px 0;
   }
 
   .promo-board__authorization {
@@ -40,34 +65,75 @@
   .promo-board__title {
     font-size: 60px;
     line-height: 70px;
+    margin-bottom: 90px;
   }
 
   .promo-board__quote {
+    padding: 0 0 0 33px;
     font-size: 28px;
     line-height: 33px;
   }
 
   .promo-board__quote-author {
+    margin-top: 45px;
+    padding: 0 0 0 33px;
     font-size: 21px;
     line-height: 25px;
+  }
+
+  .promo-board__quote-mobile-indent {
+    display: none;
+  }
+
+  .promo-board__quote-tablet-indent {
+    display: inline;
+  }
+
+  .promo-board__steps {
+    margin-top: 213px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .promo-board {
+    padding-bottom: 0;
+    background: url("../img/traveller-illustration-desktop.png") 60% 9px,
+      url("../img/promo-bckg-tablet.png") -146px 37px;
+    background-color: var(--main-blue-text);
+    background-repeat: no-repeat;
+  }
+
   .promo-board__wrapper {
+    max-width: 1340px;
     display: grid;
     grid-template-areas:
-      "promo-board__title promo-board__title  promo-board__quote"
-      "promo-board__title promo-board__title  promo-board__quote-author"
-      "step-list          step-list           step-list";
+      "promo-board__title  promo-board__quote"
+      "promo-board__title  promo-board__quote-author"
+      "step-list           step-list";
+    padding: 48px 49px 0;
   }
 
   .promo-board__title {
     text-align: left;
+    margin: 57px 0 0 77px;
   }
 
   .promo-board__quote,
   .promo-board__quote-author {
     text-align: right;
+  }
+
+  .promo-board__quote {
+    margin: 69px 40px 0 0;
+  }
+
+  .promo-board__quote-author {
+    text-align: left;
+    margin: 46px 42px 61px 0;
+    justify-self: flex-end;
+  }
+
+  .promo-board__steps {
+    margin-top: 56px;
   }
 }
