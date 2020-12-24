@@ -1,11 +1,15 @@
 .countries-list {
   list-style-type: none;
-  padding: 0;
+  padding: 19px 0 20px 19px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  background-color: var(--basic-white);
 }
 
 .countries-list__country-name {
   font-size: 16px;
-  line-height: 22px;
+  line-height: 25px;
   text-decoration: none;
   color: var(--special-grey);
 }
@@ -15,6 +19,14 @@
 }
 
 @media (min-width: $tablet-width) {
+  .countries-list {
+    padding: 36px 26px 20px 25px;
+  }
+
+  .countries-list__item {
+    margin-bottom: 9px;
+  }
+
   .countries-list_active {
     display: flex;
     flex-direction: column;

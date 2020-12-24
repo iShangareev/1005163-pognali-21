@@ -1,13 +1,40 @@
 .travel-card-direction {
+  position: relative;
   background-color: var(--basic-white);
+  border-radius: 10px;
+  padding: 7px 0 22px 23px;
+  margin-bottom: 10px;
+
+  &::before {
+    left: 25px;
+    top: 23px;
+    position: absolute;
+    counter-increment: section;
+    content: counter(section) ".";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: var(--light-blue);
+  }
 }
 
 .travel-card-direction__country {
+  margin-left: 18px;
+  margin-bottom: 22px;
   font-weight: 600;
   font-size: 16px;
   line-height: 16px;
   text-align: left;
   color: var(--light-blue);
+}
+
+.travel-card-direction__companion {
+  margin-bottom: 5px;
+}
+
+.travel-card-direction__date {
+  margin-top: 0;
+  margin-bottom: 22px;
 }
 
 .travel-card-direction__companion,
@@ -32,22 +59,71 @@
 
 @media (min-width: $tablet-width) {
   .travel-card-direction {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
+    padding: 14px 36px 0 40px;
+
+    &::before {
+      top: 40px;
+      left: 570px;
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+
+  .travel-card-direction__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .travel-card-direction__country {
     width: 100%;
+    margin-bottom: 54px;
+    margin-left: 0;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .travel-card-direction__companion {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+  }
+
+  .travel-card-direction__date {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 16px;
+  }
+
+  .travel-card-direction__change {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+    justify-self: flex-end;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .travel-card-direction {
+    display: flex;
+    padding: 14px 36px 39px 96px;
+
+    &::before {
+      left: 44px;
+    }
+  }
+
   .travel-card-direction__country {
     width: 30%;
+    margin-right: auto;
+    margin-bottom: 0;
     font-size: 24px;
     line-height: 24px;
+  }
+
+  .travel-card-direction__info {
+    width: 590px;
+    align-items: flex-end;
   }
 
   .travel-card-direction__companion {
@@ -60,5 +136,6 @@
   .travel-card-direction__change {
     font-size: 20px;
     line-height: 20px;
+    margin-bottom: 0;
   }
 }

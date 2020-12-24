@@ -11,9 +11,10 @@
 
 @media (min-width: $tablet-width) {
   .company-logo {
-    width: 164px;
+    width: 166px;
     height: 42px;
-    background-image: url("../img/company-logo-tablet.svg");
+    background-image: url("../img/logo-tablet-white.png");
+    background-size: cover;
   }
 
   .company-logo__image {
@@ -30,5 +31,10 @@
     width: 200px;
     height: 52px;
     margin-left: 10px;
+  }
+
+  .company-logo {
+    width: 200px;
+    height: 52px;
   }
 }

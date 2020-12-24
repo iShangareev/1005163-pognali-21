@@ -6,13 +6,40 @@
   margin: 0;
 }
 
-.type-travel-list__item {
-  margin: 0 6px;
+.type-travel-list__link {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-color: var(--basic-white);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.type-travel-list__fly {
+  background-image: url("../img/icon-plane-active.png");
+}
+
+.type-travel-list__bus {
+  background-image: url("../img/icon-bus-active.png");
+}
+
+.type-travel-list__bicycle {
+  background-image: url("../img/icon-bicycle-diactive.png");
+}
+
+.type-travel-list__walk {
+  background-image: url("../img/icon-run-active.png");
 }
 
 @media (min-width: $tablet-width) {
   .type-travel-list {
     flex-direction: row;
+  }
+
+  .type-travel-list__link {
+    width: 44px;
+    height: 44px;
   }
 
   .type-travel-list_vertical {

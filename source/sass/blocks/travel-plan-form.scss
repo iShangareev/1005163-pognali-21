@@ -1,19 +1,136 @@
-.travel-plan-form {
-  padding: 0 25px;
-  background-color: var(--basic-white);
-}
-
 .travel-plan-form__title {
-  margin: 0;
+  margin: 0 0 28px 0;
   font-weight: 600;
   font-size: 24px;
   line-height: 24px;
   color: var(--light-blue);
 }
 
+.travel-plan-form__arrival {
+  margin-bottom: 8px;
+}
+
+.travel-plan-form__route {
+  padding-top: 20px;
+  padding-bottom: 12px;
+  margin-bottom: 10px;
+}
+
+.travel-plan-form__route-title {
+  width: 50%;
+}
+
+.travel-plan-form__entertainment {
+  padding-bottom: 12px;
+}
+
+.travel-plan-form__entertainment-title {
+  width: 50%;
+}
+
+.travel-plan-form__entertainment-buttons {
+  margin-top: 20px;
+}
+
+.travel-plan-form__entertainment-button {
+  margin-bottom: 8px;
+}
+
+.travel-plan-form__route-instructions {
+  text-align: left;
+}
+
+.travel-plan-form__route-button {
+  margin-bottom: 12px;
+}
+
 @media (min-width: $tablet-width) {
+  .travel-plan-form__arrival {
+    margin-top: 58px;
+    margin-bottom: 40px;
+  }
+
   .travel-plan-form__title {
     font-size: 36px;
     line-height: 36px;
+  }
+
+  .travel-plan-form__route {
+    padding-top: 45px;
+    padding-bottom: 40px;
+    margin-bottom: 50px;
+  }
+
+  .travel-plan-form__route-instructions {
+    width: 75%;
+  }
+
+  .travel-plan-form__route-info-box {
+    margin-bottom: 31px;
+  }
+
+  .travel-plan-form__route-title {
+    width: 48%;
+  }
+
+  .travel-plan-form__entertainment {
+    padding-bottom: 45px;
+  }
+
+  .travel-plan-form__entertainment-instructions {
+    width: 90%;
+  }
+
+  .travel-plan-form__travel-action-plan {
+    margin-top: 32px;
+    margin-bottom: 15px;
+    border-top: 1px solid var(--grey-border);
+    padding-top: 4px;
+  }
+
+  .travel-plan-form__entertainment-buttons {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .travel-plan-form {
+    position: relative;
+  }
+
+  .travel-plan-form__title {
+    margin-left: 69px;
+  }
+
+  .travel-plan-form__route {
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 94px;
+    margin-bottom: 43px;
+  }
+
+  .travel-plan-form__route-info-box {
+    margin-bottom: 42px;
+  }
+
+  .travel-plan-form__route-title {
+    width: 60%;
+  }
+
+  .travel-plan-form__entertainment-title {
+    width: 70%;
+  }
+
+  .travel-plan-form__travel-action-plan {
+    margin-top: 39px;
+    padding-top: 50px;
+  }
+
+  .travel-plan-form__entertainment-buttons {
+    margin-top: 50px;
+  }
+
+  .travel-plan-form__entertainment {
+    padding-bottom: 97px;
   }
 }

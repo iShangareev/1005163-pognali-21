@@ -1,35 +1,322 @@
 .choosen-country {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  padding-top: 20px;
+  position: relative;
+}
+
+.choosen-country__show-more_active {
+  width: 52px;
+  height: 42px;
+  background-color: var(--basic-white);
+  border: 1px solid var(--grey-border);
+}
+
+.choosen-country__flag {
+  display: block;
+  width: 52px;
+  height: 42px;
+  border: 1px solid var(--grey-border);
+  border-radius: 4px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 37px;
+    right: 48px;
+    background-color: var(--light-blue);
+  }
+}
+
+.choosen-country__flag_czech {
+  background-image: url("../img/flag-czech-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.choosen-country__flag_bosnia {
+  background-image: url("../img/bosnia-and-herzegovina.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .choosen-country__name {
+  position: relative;
+  width: 157px;
+  height: 42px;
+  padding-left: 9px;
+  border: 1px solid var(--grey-border);
+  border-radius: 4px;
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: 500;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 42px;
   text-transform: uppercase;
   color: var(--light-blue);
+  text-decoration: none;
+
+  &::after {
+    content: "";
+    width: 31px;
+    height: 27px;
+    right: 3px;
+    top: 7px;
+    position: absolute;
+    border: none;
+    box-shadow: -5px -5px 5px var(--basic-white);
+    background-color: var(--basic-white);
+    background-image: url("../img/arrow-prev.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
-.choosen-country_add {
+.choosen-country__name_choose {
+  width: 210px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 1px solid var(--grey-border);
+    border-radius: 50%;
+    top: 17px;
+    right: 47px;
+    background-color: transparent;
+  }
+}
+
+.choosen-country__name_add {
+  width: 210px;
   background-color: var(--special-choose);
+  position: relative;
+  z-index: 5;
+
+  &::after {
+    background-image: url("../img/icon-plus.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 1px solid var(--grey-border);
+    border-radius: 50%;
+    top: 17px;
+    right: 47px;
+    background-color: transparent;
+  }
+}
+
+.choosen-country__close {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  right: -9px;
+  top: 11px;
+  background-image: url("../img/icon-close.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media (min-width: $tablet-width) {
+  .choosen-country {
+    padding-top: 14px;
+    align-items: center;
+  }
+
+  .choosen-country_border {
+    border-top: 1px solid var(--grey-border);
+    padding-top: 41px;
+  }
+
   .choosen-country_add {
     width: 80%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 135px;
+      right: 31px;
+      top: 0;
+      background-color: var(--grey-border);
+    }
+
+    &::after {
+      content: "";
+      position: relative;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      display: block;
+      top: -3px;
+      right: -16px;
+      background-color: var(--grey-border);
+      border: 1px solid var(--grey-border);
+    }
   }
 
   .choosen-country_choose {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 135px;
+      right: 139px;
+      top: 0;
+      background-color: var(--grey-border);
+    }
+
+    &::after {
+      content: "";
+      position: relative;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      display: block;
+      top: -3px;
+      right: 3px;
+      background-color: var(--basic-white);
+      border: 1px solid var(--grey-border);
+    }
   }
 
   .choosen-country__name {
-    width: 80%;
+    width: 345px;
+    padding-left: 27px;
+    height: 70px;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 70px;
+
+    &::after {
+      right: 22px;
+      top: 21px;
+    }
+  }
+
+  .choosen-country__name_add {
+    &::before {
+      display: none;
+    }
+  }
+
+  .choosen-country_choose .choosen-country__close {
+    left: 145px;
+  }
+
+  .choosen-country__flag {
+    width: 70px;
+    height: 47px;
+    margin-left: 49px;
+    border-left: solid 1px var(--grey-border);
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 135px;
+      right: 139px;
+      top: 0;
+      background-color: var(--grey-border);
+    }
+
+    &::after {
+      content: "";
+      position: relative;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      display: block;
+      top: 14px;
+      right: 33px;
+      background-color: var(--light-blue);
+    }
+  }
+
+  .choosen-country__close {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    right: -24px;
+    top: 0;
+    background-color: var(--basic-white);
+    background-size: cover;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .choosen-country_border {
+    padding-top: 61px;
+  }
+
+  .choosen-country__name {
+    width: 700px;
+  }
+
+  .choosen-country__flag {
+    margin-left: 85px;
+
+    &::before {
+      right: 225px;
+    }
+
+    &::after {
+      right: 47px;
+    }
+  }
+
+  .choosen-country__flag_bosnia {
+    background-image: url("../img/bosnia-and-herzegovina-tablet.png");
+    border: none;
+  }
+
+  .choosen-country__flag_czech {
+    background-image: url("../img/czech-table.png");
+    border: none;
+  }
+
+  .choosen-country__close {
+    right: -90px;
+  }
+
+  .choosen-country_choose .choosen-country__close {
+    left: 247px;
+  }
+
+  .choosen-country_choose {
+    &::before {
+      right: 225px;
+    }
+
+    &::after {
+      right: -18px;
+    }
+  }
+
+  .choosen-country_add {
+    &::before {
+      right: 25px;
+    }
+
+    &::after {
+      right: -38px;
+    }
   }
 }

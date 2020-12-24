@@ -1,0 +1,49 @@
+.count-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 14px;
+  border: 1px solid var(--grey-border);
+  border-radius: 4px;
+}
+
+.count-buttons__button-minus {
+  width: 10px;
+  height: 10px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/minus.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.count-buttons__button-plus {
+  width: 10px;
+  height: 15px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/plus.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.count-buttons__input-value {
+  width: 40px;
+  border: none;
+  text-align: center;
+}
+
+@media (min-width: $desktop-width) {
+  .count-buttons {
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .count-buttons__button-minus {
+    width: 25px;
+  }
+
+  .count-buttons__button-plus {
+    width: 25px;
+  }
+}

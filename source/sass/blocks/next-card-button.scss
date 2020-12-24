@@ -2,18 +2,34 @@
   display: block;
   font-weight: 600;
   font-size: 17px;
-  line-height: 30px;
+  line-height: 39px;
   text-transform: uppercase;
   text-align: center;
   color: var(--light-blue);
   background-color: var(--basic-yellow);
   text-decoration: none;
+  border-radius: 20px;
 }
 
 @media (min-width: $tablet-width) {
+  .next-card-button {
+    position: relative;
+    width: 255px;
+    height: 80px;
+    padding-left: 36px;
+    text-align: left;
+
+    &::after {
+      content: url("../img/button-decor-triangle.svg");
+      position: absolute;
+      right: 38px;
+    }
+  }
+
   .next-card-button_small {
     display: block;
     font-size: 24px;
-    line-height: 24px;
+    text-transform: none;
+    line-height: 80px;
   }
 }
