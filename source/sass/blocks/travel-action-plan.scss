@@ -108,6 +108,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .travel-action-plan {
+    min-width: 1000px;
+  }
+
   .travel-action-plan__text {
     width: 703px;
   }

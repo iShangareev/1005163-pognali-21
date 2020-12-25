@@ -37,7 +37,7 @@
   color: var(--light-blue);
 }
 
-.alphabet-wrapper__item-selected {
+.alphabet-wrapper__item_selected {
   color: var(--basic-white);
   background-color: var(--grey-border);
 }
@@ -55,35 +55,30 @@
 
   .alphabet-wrapper {
     border-right: 1px solid var(--grey-border);
+  }
 
-    .alphabet-wrapper__list_big {
-      width: 346px;
-      height: 378px;
-    }
+  .alphabet-wrapper__list_big {
+    width: 346px;
+    height: 378px;
+  }
 
-    .alphabet-wrapper__item {
-      width: 50px;
-      height: 68px;
-      background-color: transparent;
-      border: 1px solid var(--grey-border);
-    }
-
-    .alphabet-wrapper__word {
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 68px;
-      background-color: transparent;
-      opacity: 0.3;
-    }
-
-    .alphabet-wrapper__word_selected {
-      color: var(--light-blue);
-      opacity: 1;
-    }
+  .alphabet-wrapper__item {
+    width: 50px;
+    height: 68px;
+    background-color: transparent;
+    border: 1px solid var(--grey-border);
   }
 
   .alphabet-wrapper__word {
     font-size: 20px;
-    line-height: 20px;
+    font-weight: 500;
+    line-height: 68px;
+    background-color: transparent;
+    opacity: 0.3;
+  }
+
+  .alphabet-wrapper__word_selected {
+    color: var(--light-blue);
+    opacity: 1;
   }
 }

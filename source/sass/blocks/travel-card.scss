@@ -16,14 +16,6 @@
   position: relative;
 }
 
-.travel-card__checkbox-input {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
-
 .travel-card__checkbox {
   vertical-align: baseline;
   order: 2;
@@ -47,7 +39,7 @@
 }
 
 .travel-card__calendar {
-  width: 221px;
+  max-width: 221px;
   padding-top: 21px;
 }
 
@@ -170,7 +162,7 @@
   }
 
   .travel-card__calendar {
-    width: 538px;
+    max-width: 538px;
     margin-top: 20px;
   }
 }
@@ -288,7 +280,7 @@
   }
 
   .travel-card__calendar {
-    width: 1000px;
+    max-width: 1000px;
     margin-top: 0;
     padding-top: 10px;
   }

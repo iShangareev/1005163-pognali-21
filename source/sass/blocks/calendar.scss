@@ -24,6 +24,7 @@
   background-image: url("../img/arrow-back-mobile.png");
   background-repeat: no-repeat;
   background-position: center;
+  font-size: 0;
 }
 
 .calendar__next-month {
@@ -34,6 +35,7 @@
   background-image: url("../img/arrow-next-mobile.png");
   background-repeat: no-repeat;
   background-position: center;
+  font-size: 0;
 }
 
 .calendar__month,
@@ -203,8 +205,10 @@
     margin-top: 16px;
   }
 
-  .calendar__weekday:not(:last-child) {
-    margin-right: 110px;
+  .calendar__weekday {
+    &:not(:last-child) {
+      margin-right: 110px;
+    }
   }
 
   .calendar__day-button {

@@ -18,7 +18,7 @@
                 class="company-logo__image"
               />
             </a>
-            <button type="button" class="navbar__menu-button"></button>
+            <button type="button" class="navbar__menu-button">Меню</button>
             <img src="img/white-line.svg" alt="" class="navbar__line" />
             <nav
               class="navbar-menu-navigation navbar-menu-navigation_horizontal navbar__navigation"
@@ -201,25 +201,25 @@
               <li class="type-travel-list__item">
                 <a
                   href=""
-                  class="type-travel-list__link type-travel-list__fly"
+                  class="type-travel-list__link type-travel-list_fly"
                 ></a>
               </li>
               <li class="type-travel-list__item">
                 <a
                   href=""
-                  class="type-travel-list__link type-travel-list__bus"
+                  class="type-travel-list__link type-travel-list_bus"
                 ></a>
               </li>
               <li class="type-travel-list__item">
                 <a
                   href=""
-                  class="type-travel-list__link type-travel-list__bicycle"
+                  class="type-travel-list__link type-travel-list_bicycle"
                 ></a>
               </li>
               <li class="type-travel-list__item">
                 <a
                   href=""
-                  class="type-travel-list__link type-travel-list__walk"
+                  class="type-travel-list__link type-travel-list_walk"
                 ></a>
               </li>
             </ul>
@@ -331,7 +331,7 @@
                   <!-- /.count-buttons -->
                 </div>
                 <input
-                  class="checkbox-allow__input travel-card__checkbox-input"
+                  class="checkbox-allow__input travel-card__checkbox-input visually-hidden"
                   type="checkbox"
                   id="children-allow"
                   name="children-allow"
@@ -377,10 +377,14 @@
 
               <table class="calendar travel-card__calendar">
                 <caption class="calendar__month-box">
-                  <button type="button" class="calendar__prev-month"></button>
+                  <button type="button" class="calendar__prev-month">
+                    Предыдщий месяц
+                  </button>
                   <span class="calendar__month">Март</span>
                   <span class="calendar__year">2019</span>
-                  <button type="button" class="calendar__next-month"></button>
+                  <button type="button" class="calendar__next-month">
+                    Следующий месяц
+                  </button>
                 </caption>
                 <tr class="calendar__weekdays">
                   <th class="calendar__weekday">П</th>
@@ -604,10 +608,10 @@
               </div>
               <!-- /.travel-card__info-box -->
 
-              <div class="choosen-country choosen-country_border">
-                <a href="" class="choosen-country__name"
-                  >Босния и герцеговина</a
-                >
+              <div class="choosen-country choosen-country__content">
+                <button type="button" class="choosen-country__name">
+                  Босния и герцеговина
+                </button>
 
                 <span
                   class="choosen-country__flag choosen-country__flag_bosnia"
@@ -616,7 +620,9 @@
               </div>
               <!-- /.choosen-country -->
               <div class="choosen-country">
-                <a href="" class="choosen-country__name">Чехия</a>
+                <button type="button" class="choosen-country__name">
+                  Чехия
+                </button>
 
                 <span
                   class="choosen-country__flag choosen-country__flag_czech"
@@ -624,21 +630,24 @@
                 <button class="choosen-country__close"></button>
               </div>
               <div class="choosen-country choosen-country_choose">
-                <a
-                  href=""
+                <button
+                  type="button"
                   class="choosen-country__name choosen-country__name_choose"
-                  >Выберите страну</a
                 >
+                  Выберите страну
+                </button>
 
                 <button class="choosen-country__close"></button>
-                <div class="alphabet-countries">
+                <div
+                  class="alphabet-countries choosen-country__alphabet-countries alphabet-countries_hidden"
+                >
                   <a href="" class="alphabet-countries__choose-link"
                     >Выберите страну</a
                   >
                   <div class="alphabet-wrapper">
                     <ul class="alphabet-wrapper__list">
                       <li
-                        class="alphabet-wrapper__item alphabet-wrapper__item-selected"
+                        class="alphabet-wrapper__item alphabet-wrapper__item_selected"
                       >
                         <a
                           href=""
@@ -777,14 +786,15 @@
                     </li>
                   </ul>
                 </div>
-                <!-- /.alphabet-countries -->
+                <!-- /.choosen-country__alphabet-countries -->
               </div>
               <div class="choosen-country choosen-country_add">
-                <a
-                  href=""
+                <button
+                  type="button"
                   class="choosen-country__name choosen-country__name_add"
-                  >Добавьте страну</a
                 >
+                  Добавьте страну
+                </button>
               </div>
               <!-- /.choosen-country -->
               <div class="travel-card__buttons travel-card__buttons_reverse">

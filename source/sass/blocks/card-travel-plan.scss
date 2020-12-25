@@ -11,6 +11,10 @@
   position: relative;
 }
 
+.card-travel-plan__card-pagination {
+  position: absolute;
+}
+
 @media (min-width: $tablet-width) {
   .card-travel-plan {
     padding-top: 50px;
