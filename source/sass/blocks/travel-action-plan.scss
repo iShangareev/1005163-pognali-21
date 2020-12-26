@@ -1,29 +1,128 @@
 .travel-action-plan__title {
+  margin-left: 10px;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 18px;
-  text-transform: uppercase;
   color: var(--light-blue);
 }
 
+.travel-action-plan__title_bosnia {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 24px;
+    background-image: url("../img/bosnia-and-herzegovina.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: -20px -3px 7px var(--basic-white);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/line.png");
+    width: 17px;
+    height: 287px;
+    top: 8px;
+    left: -24px;
+  }
+}
+
+.travel-action-plan__title_czech {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 24px;
+    right: 0;
+    background-image: url("../img/flag-czech-mobile.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
 .travel-action-plan__text {
+  width: 206px;
+  height: 211px;
+  padding: 9px 0 0 12px;
   font-family: "Bloggersans", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
   color: var(--special-grey);
   opacity: 0.3;
+  border-radius: 4px;
 }
 
 @media (min-width: $tablet-width) {
   .travel-action-plan__title {
+    margin-left: 0;
     font-weight: 600;
     font-size: 30px;
     line-height: 30px;
+
+    &::before {
+      position: absolute;
+      background-image: url("../img/line-country.png");
+      background-repeat: no-repeat;
+      top: 10px;
+      left: 525px;
+    }
+
+    &::after {
+      right: 33px;
+      top: -6px;
+    }
+  }
+
+  .travel-action-plan__title_bosnia {
+    &::after {
+      width: 70px;
+      height: 47px;
+      background-image: url("../img/bosnia-and-herzegovina-tablet.png");
+    }
+  }
+
+  .travel-action-plan__title_czech {
+    &::after {
+      width: 70px;
+      height: 47px;
+      background-image: url("../img/czech-table.png");
+    }
   }
 
   .travel-action-plan__text {
+    width: 475px;
+    height: 125px;
+    margin-top: 10px;
+    margin-left: 3px;
+    padding: 16px 0 0 23px;
     font-size: 20px;
     line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .travel-action-plan {
+    min-width: 1000px;
+  }
+
+  .travel-action-plan__text {
+    width: 703px;
+  }
+
+  .travel-action-plan__title {
+    &::before {
+      left: 768px;
+    }
+
+    &::after {
+      right: 115px;
+    }
   }
 }

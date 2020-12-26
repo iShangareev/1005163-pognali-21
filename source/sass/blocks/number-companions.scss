@@ -6,6 +6,8 @@
 
 .number-companions__title {
   width: 70%;
+  margin-right: auto;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
@@ -15,6 +17,7 @@
 
 .number-companions__text {
   width: 30%;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
@@ -28,5 +31,9 @@
   .number-companions__text {
     font-size: 20px;
     line-height: 18px;
+  }
+
+  .number-companions__title {
+    width: auto;
   }
 }

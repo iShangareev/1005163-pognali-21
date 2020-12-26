@@ -20,6 +20,7 @@
   width: 25px;
   height: 11px;
   border: none;
+  font-size: 0;
   background: url("../img/menu-line.svg") 50% 0%,
     url("../img/menu-line.svg") 50% 100%;
   background-repeat: no-repeat;
@@ -61,6 +62,6 @@
   }
 
   .navbar__contact-list {
-    margin: 0 10px 0 auto;
+    margin: 0 0 0 auto;
   }
 }

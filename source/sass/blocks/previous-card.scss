@@ -8,3 +8,20 @@
   text-decoration: none;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .previous-card {
+    position: relative;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 80px;
+    text-transform: none;
+
+    &::before {
+      position: absolute;
+      content: url("../img/button-decor-triangle.svg");
+      left: -36px;
+      transform: rotate(180deg);
+    }
+  }
+}

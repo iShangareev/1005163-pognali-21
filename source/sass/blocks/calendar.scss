@@ -2,13 +2,40 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-.calendar__buttons {
+.calendar__month-box {
+  width: 221px;
+  height: 42px;
   display: flex;
-  justify-content: center;
-  padding: 0;
-  list-style-type: none;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--grey-border);
+  border-bottom: 1px solid var(--grey-border);
+}
+
+.calendar__prev-month {
+  width: 15px;
+  height: 21px;
+  background-color: transparent;
+  border: none;
+  background-image: url("../img/arrow-back-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 0;
+}
+
+.calendar__next-month {
+  width: 15px;
+  height: 21px;
+  background-color: transparent;
+  border: none;
+  background-image: url("../img/arrow-next-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 0;
 }
 
 .calendar__month,
@@ -20,16 +47,19 @@
 }
 
 .calendar__weekdays {
+  width: 220px;
   display: flex;
   padding: 0;
-
+  margin-top: 20px;
+  margin-bottom: -2px;
   justify-content: space-between;
   list-style-type: none;
 }
 
 .calendar__weekday {
   width: 33px;
-  height: 32px;
+  height: 26px;
+  font-weight: 400;
   text-align: center;
   font-size: 14px;
   line-height: 18px;
@@ -40,22 +70,52 @@
   color: var(--normal-orange);
 }
 
-.calendar__day {
-  font-size: 14px;
-  line-height: 18px;
-  color: var(--special-grey);
-  opacity: 0.3;
-}
-
 .calendar__days {
+  width: 224px;
+  height: 187px;
   display: flex;
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
   list-style-type: none;
+  vertical-align: baseline;
+  border-right: 1px solid var(--grey-border);
+  border-bottom: 1px solid var(--grey-border);
+}
+
+.calendar__day-cell {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  border-top: 1px solid var(--grey-border);
+  border-left: 1px solid var(--grey-border);
+}
+
+.calendar__day {
+  display: block;
+  width: 31px;
+  height: 30px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 30px;
+  color: var(--grey-border);
+}
+
+.calendar__day_disabled {
+  background-color: var(--basic-grey);
+  color: var(--light-blue);
+  font-weight: 500;
+}
+
+.calendar__day_choose {
+  font-weight: 500;
+  background-color: var(--light-blue);
 }
 
 .calendar__day-button {
+  width: 32px;
+  height: 32px;
+  border: 1px solid;
   font-family: "Bloggersans", "Arial", sans-serif;
   background-color: var(--basic-white);
 }
@@ -66,6 +126,40 @@
 }
 
 @media (min-width: $tablet-width) {
+  .calendar__month-box {
+    width: 513px;
+    height: 86px;
+    justify-content: center;
+  }
+
+  .calendar__prev-month {
+    width: 30px;
+    height: 36px;
+    background-color: transparent;
+    border: none;
+    background-image: url("../img/arrow-back-tablet.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .calendar__next-month {
+    width: 30px;
+    height: 36px;
+    background-color: transparent;
+    border: none;
+    background-image: url("../img/arrow-next-tablet.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .calendar__month {
+    margin-left: auto;
+  }
+
+  .calendar__year {
+    margin-right: auto;
+  }
+
   .calendar__month,
   .calendar__year {
     font-size: 36px;
@@ -73,7 +167,8 @@
   }
 
   .calendar__weekdays {
-    width: 100%;
+    width: 500px;
+    margin-top: 33px;
   }
 
   .calendar__weekday {
@@ -81,9 +176,16 @@
     line-height: 18px;
   }
 
+  .calendar__days {
+    width: 100%;
+    height: auto;
+  }
+
   .calendar__day {
+    width: 76px;
+    height: 69px;
     font-size: 18px;
-    line-height: 18px;
+    line-height: 65px;
   }
 
   .calendar__day-button {
@@ -93,13 +195,37 @@
 }
 
 @media (min-width: $desktop-width) {
+  .calendar__month-box {
+    width: 1000px;
+  }
+
   .calendar__weekdays {
-    width: 100%;
-    justify-content: space-around;
+    width: 990px;
+    justify-content: left;
+    margin-top: 16px;
+  }
+
+  .calendar__weekday {
+    &:not(:last-child) {
+      margin-right: 110px;
+    }
   }
 
   .calendar__day-button {
     width: 148px;
     height: 76px;
+  }
+
+  .calendar__days {
+    width: 1000px;
+    margin-top: 13px;
+  }
+
+  .calendar__day {
+    width: 126px;
+    height: 70px;
+    padding-left: 16px;
+    line-height: 41px;
+    text-align: left;
   }
 }

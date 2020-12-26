@@ -1,26 +1,36 @@
+.alphabet-wrapper {
+  background-color: var(--basic-white);
+}
+
 .alphabet-wrapper__list {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   list-style-type: none;
+  border-bottom: 1px solid var(--grey-border);
 }
 
 .alphabet-wrapper__word,
 .alphabet-wrapper__item {
+  display: block;
   width: 43px;
-  height: 41px;
-  background-color: var(--basic-white);
+  height: 40px;
 }
 
 .alphabet-wrapper__item {
+  border-top: 1px solid var(--grey-border);
+  border-right: 1px solid var(--grey-border);
   text-align: center;
   vertical-align: middle;
 }
 
 .alphabet-wrapper__word {
+  background-color: transparent;
   font-weight: 500;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 40px;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
@@ -29,46 +39,52 @@
 }
 
 .alphabet-wrapper__word_selected {
-  color: var(--basic-white);
-  background-color: var(--light-blue);
+  color: var(--light-blue);
+  opacity: 1;
+  background-color: var(--grey-border);
 }
 
 @media (min-width: $tablet-width) {
   .alphabet-wrapper__list {
+    width: 262px;
+    height: 346px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 0;
+    padding: 35px 80px 31px 30px;
+    border: none;
   }
 
   .alphabet-wrapper {
-    .alphabet-wrapper__list_big {
-      width: 346px;
-      height: 378px;
-    }
+    border-right: 1px solid var(--grey-border);
+  }
 
-    .alphabet-wrapper__item {
-      width: 53px;
-      height: 70px;
-      background-color: transparent;
-    }
+  .alphabet-wrapper__list_big {
+    width: 346px;
+    height: 378px;
+  }
 
-    .alphabet-wrapper__word {
-      font-weight: 600;
-      font-size: 60px;
-      line-height: 60px;
-      background-color: transparent;
-      opacity: 0.3;
-    }
-
-    .alphabet-wrapper__word_selected {
-      color: var(--light-blue);
-      opacity: 1;
-    }
+  .alphabet-wrapper__item {
+    width: 50px;
+    height: 68px;
+    background-color: transparent;
+    border: 1px solid var(--grey-border);
   }
 
   .alphabet-wrapper__word {
+    width: 50px;
+    height: 68px;
+    color: var(--light-blue);
     font-size: 20px;
-    line-height: 20px;
+    font-weight: 500;
+    line-height: 68px;
+    background-color: transparent;
+    opacity: 1;
+  }
+
+  .alphabet-wrapper__word_selected {
+    color: var(--basic-white);
+    opacity: 1;
+    background-color: var(--light-blue);
   }
 }
