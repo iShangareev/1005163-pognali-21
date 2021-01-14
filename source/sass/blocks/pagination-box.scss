@@ -1,8 +1,33 @@
 .pagination-box {
   display: flex;
+  width: 270px;
+  height: 51px;
+  background-color: var(--basic-white);
+  border-radius: 20px;
+  overflow: hidden;
 }
 
-.pagination-button-prev,
-.pagination-button-next {
+.pagination-box__button-prev,
+.pagination-box__button-next {
   width: 50%;
+  border: none;
+  background-color: var(--basic-white);
+}
+
+.pagination-box__button-prev {
+  background-image: url("../img/page-arrows-l.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.pagination-box__button-next {
+  background-image: url("../img/page-arrows-r.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .pagination-box {
+    width: 100px;
+  }
 }

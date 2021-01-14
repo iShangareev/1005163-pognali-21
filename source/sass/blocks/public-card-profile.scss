@@ -1,8 +1,9 @@
 .public-card-profile {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 20px;
+  padding: 13px 20px 21px;
   background-color: var(--basic-white);
+  border-radius: 20px;
 }
 
 .public-card-profile__photo-pofile-pic {
@@ -12,13 +13,31 @@
 }
 
 .public-card-profile__user-name {
+  position: relative;
+  display: block;
+  width: 77px;
+  margin-left: 15px;
   font-weight: 600;
   font-size: 20px;
   line-height: 20px;
   color: var(--light-blue);
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--special-red);
+    top: 10px;
+    right: -66px;
+  }
 }
 
 .public-card-profile__subscribers {
+  position: relative;
+  margin-left: 84px;
+  margin-top: -20px;
   font-weight: 600;
   font-size: 14px;
   line-height: 16px;
@@ -32,6 +51,9 @@
 }
 
 .public-card-profile__hashtags {
+  padding-right: 40px;
+  margin-top: 0;
+  margin-left: 5px;
   font-size: 15px;
   line-height: 18px;
   color: var(--special-grey);
@@ -39,6 +61,8 @@
 
 .public-card-profile__text {
   width: 100%;
+  margin-top: 0;
+  margin-left: 5px;
   font-size: 15px;
   line-height: 16px;
   color: var(--special-grey);
@@ -48,9 +72,12 @@
   width: 100%;
   padding: 0;
   list-style-type: none;
+  margin-top: 0;
+  padding-left: 5px;
 }
 
 .public-card-profile__country-name {
+  margin-left: 12px;
   font-weight: 500;
   font-size: 15px;
   line-height: 16px;
@@ -58,9 +85,12 @@
   color: var(--light-blue);
 }
 
-.public-card-profile__transport,
+.public-card-profile__transport {
+  width: 80%;
+}
+
 .public-card-profile__level {
-  width: 50%;
+  width: 20%;
 }
 
 .public-card-profile__transport-title,
@@ -70,7 +100,14 @@
   color: var(--special-grey);
 }
 
+.public-card-profile__level-title {
+  margin-top: -3px;
+  margin-left: 5px;
+}
+
 .public-card-profile__level-num {
+  display: block;
+  padding-top: 5px;
   font-weight: 600;
   font-size: 24px;
   line-height: 24px;
@@ -78,7 +115,10 @@
 }
 
 .public-card-profile__signal-button {
-  width: 100%;
+  width: 230px;
+  height: 40px;
+  border-radius: 20px;
+  margin-top: 20px;
   font-weight: bold;
   font-size: 17px;
   line-height: 17px;
@@ -101,6 +141,43 @@
   text-decoration: none;
 }
 
+.public-card-profile__photo-like {
+  width: 31px;
+  height: 31px;
+  background-color: var(--special-pink);
+  background-image: url("../img/heart.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  border-radius: 50%;
+  left: -36px;
+  top: -11px;
+}
+
+.public-card-profile__item {
+  display: flex;
+  align-items: center;
+  margin-top: 7px;
+}
+
+.public-card-profile__item-pic {
+  width: 28px;
+  height: 18px;
+}
+
+.public-card-profile__transport-title {
+  margin-top: -3px;
+  margin-left: 5px;
+}
+
+.public-card-profile__level-box {
+  margin-left: 9px;
+}
+
+.public-card-profile__pagination-box {
+  margin: 0 auto;
+}
+
 @media (min-width: $tablet-width) {
   .public-card-profile__photo-pofile-pic {
     width: 190px;
@@ -108,39 +185,69 @@
     border-radius: 20px;
   }
 
+  .public-card-profile__user-name {
+    width: 230px;
+    grid-area: user-name;
+    margin-left: 35px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+
+    &::after {
+      content: "";
+      right: 20px;
+    }
+  }
+
+  .public-card-profile__hashtags {
+    margin-top: 5px;
+    margin-left: 36px;
+    font-size: 20px;
+    line-height: 23px;
+    grid-area: profile-hashtags;
+    padding-right: 60px;
+  }
+
+  .public-card-profile__subscribers {
+    position: relative;
+    margin-top: 31px;
+    right: 49px;
+    margin-left: 0;
+    grid-area: profile-subscribers;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
   .public-card-profile__photo-pofile {
     grid-area: photo-pofile;
   }
 
   .public-card-profile__photo-like {
-    grid-area: public-card-profile__photo-like;
-  }
-
-  .public-card-profile__user-name {
-    grid-area: user-name;
-  }
-
-  .public-card-profile__subscribers {
-    grid-area: profile-subscribers;
+    width: 50px;
+    height: 50px;
+    left: -54px;
+    top: -16px;
   }
 
   .public-card-profile__online-status {
     grid-area: online-status;
   }
 
-  .public-card-profile__hashtags {
-    grid-area: profile-hashtags;
-  }
-
   .public-card-profile__text {
     grid-area: profile-text;
+    margin-left: 50px;
+    margin-top: 18px;
   }
 
   .public-card-profile__list {
     display: flex;
-    justify-content: space-between;
-    width: 80%;
+    justify-content: flex-start;
+    width: auto;
     grid-area: card-list;
+  }
+
+  .public-card-profile__item {
+    margin-right: 35px;
   }
 
   .public-card-profile__transport {
@@ -155,12 +262,33 @@
     display: flex;
     flex-direction: column-reverse;
     grid-area: profile-level;
+    margin-left: 38px;
+  }
+
+  .public-card-profile__level-title {
+    margin-bottom: 10px;
+    margin-left: 9px;
+  }
+
+  .public-card-profile__country-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .public-card-profile__signal-button {
     width: 150px;
     height: 50px;
     grid-area: signal-button;
+    margin-left: 30px;
+    margin-top: 16px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .public-card-profile__pagination-box {
+    margin-left: 340px;
   }
 
   .public-card-profile {
@@ -179,7 +307,7 @@
     display: grid;
     align-items: flex-start;
     grid-template-areas:
-      "photo-pofile   online-status       user-name               card-list  card-list "
+      "photo-pofile   user-name           user-name               card-list  card-list "
       "photo-pofile   profile-hashtags    profile-hashtags        card-list  card-list "
       "photo-pofile   signal-button       profile-subscribers     transport  profile-level";
   }
@@ -191,5 +319,179 @@
   .public-card-profile__list {
     display: flex;
     flex-direction: column;
+    margin-left: 0;
+    margin-top: 52px;
+  }
+
+  .public-card-profile__item {
+    margin-bottom: 11px;
+    margin-top: 0;
+  }
+
+  .public-card-profile__user-name {
+    width: auto;
+    margin-top: 45px;
+    margin-left: 21px;
+
+    &::after {
+      display: none;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: var(--special-red);
+      top: 13px;
+      right: 336px;
+    }
+  }
+
+  .public-card-profile__country-name {
+    margin-left: 19px;
+  }
+
+  .public-card-profile__hashtags {
+    width: 226px;
+    padding-right: 0;
+    margin-top: -18px;
+    margin-left: 23px;
+  }
+
+  .public-card-profile__signal-button {
+    margin-top: -15px;
+    margin-left: 10px;
+  }
+
+  .public-card-profile__subscribers {
+    right: 8px;
+    bottom: 30px;
+  }
+
+  .public-card-profile__item-pic {
+    width: 35px;
+    height: 24px;
+  }
+
+  .public-card-profile__photo-pofile-pic {
+    width: 285px;
+    height: 285px;
+    border-radius: 20px 0 0 20px;
+  }
+
+  .public-card-profile__travel-list__link {
+    width: 32px;
+    padding-bottom: 0;
+  }
+
+  .public-card-profile__level {
+    margin-top: -12px;
+  }
+
+  .public-card-profile__user-name_demin {
+    margin-left: 13px;
+
+    &::before {
+      right: 368px;
+    }
+  }
+
+  .public-card-profile__list_demin {
+    margin-left: -26px;
+  }
+
+  .public-card-profile__signal-button_demin {
+    margin-top: -4px;
+    margin-left: 4px;
+  }
+
+  .public-card-profile__subscribers_demin {
+    margin-left: -17px;
+    top: -21px;
+  }
+
+  .public-card-profile__level_demin {
+    margin-top: -3px;
+    margin-left: 12px;
+  }
+
+  .public-card-profile__list_smolov {
+    margin-left: 32px;
+  }
+
+  .public-card-profile__user-name_smolov {
+    margin-left: 29px;
+
+    &::before {
+      right: 306px;
+    }
+  }
+
+  .public-card-profile__signal-button_smolov {
+    margin-left: 22px;
+  }
+
+  .public-card-profile__subscribers_smolov {
+    right: 0;
+  }
+
+  .public-card-profile__level_smolov {
+    margin-top: -14px;
+    margin-left: 63px;
+  }
+
+  .public-card-profile__transport_demin {
+    position: relative;
+    right: 31px;
+  }
+
+  .public-card-profile__transport_smolov {
+    position: relative;
+    right: -27px;
+  }
+
+  .public-card-profile__user-name_larisa {
+    margin-top: 45px;
+    margin-left: 30px;
+
+    &::before {
+      top: 12px;
+      right: 304px;
+    }
+  }
+
+  .public-card-profile__list_larisa {
+    margin-left: 41px;
+    margin-top: 46px;
+  }
+
+  .public-card-profile__list_larisa .public-card-profile__item {
+    margin-right: 0;
+  }
+
+  .public-card-profile__signal-button_larisa {
+    margin-top: -3px;
+    margin-left: 25px;
+  }
+
+  .public-card-profile__subscribers_larisa {
+    right: 5px;
+    top: -21px;
+  }
+
+  .public-card-profile__level_larisa {
+    margin-top: 0;
+    margin-left: 70px;
+  }
+
+  .public-card-profile__transport_larisa {
+    position: relative;
+    right: -37px;
+  }
+
+  .public-card-profile__pagination-box {
+    margin-left: 580px;
   }
 }

@@ -1,6 +1,11 @@
 .public-cards__filter {
+  max-width: 220px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
   background-color: var(--basic-yellow);
-  padding: 0 25px;
+  padding: 25px;
+  border-radius: 20px;
 }
 
 .public-cards__filter-title {
@@ -12,26 +17,111 @@
   color: var(--light-blue);
 }
 
+.public-cards__box {
+  position: relative;
+  margin-top: -15px;
+  padding-top: 42px;
+  background-color: transparent;
+}
+
+.public-cards__public-card-profile {
+  margin: 0 auto 11px;
+  max-width: 230px;
+}
+
+.public-cards__show-more {
+  display: block;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+
+  &::before {
+    content: url("../img/icon-plus-blue.svg");
+    position: relative;
+    top: 2px;
+    right: 15px;
+  }
+}
+
 @media (min-width: $tablet-width) {
+  .public-cards__box {
+    padding-top: 60px;
+  }
+
+  .public-cards__public-card-profile {
+    max-width: 636px;
+    padding: 30px 20px 12px 34px;
+    margin-bottom: 40px;
+  }
+
+  .public-cards__filter {
+    max-width: 636px;
+    margin-top: 35px;
+    padding-top: 35px;
+    padding-bottom: 32px;
+  }
+
   .public-cards__filter-title {
     width: 100%;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    padding-left: 10px;
   }
 
   .public-cards__content {
     padding: 0 40px;
   }
+
+  .public-cards__show-more {
+    margin-left: 12px;
+    padding-top: 13px;
+    margin-bottom: 54px;
+    font-size: 20px;
+    line-height: 20px;
+
+    &::before {
+      right: 28px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .public-cards__box {
+    padding: 74px 0 0 10px;
+    margin-right: 85px;
+  }
+
   .public-cards__filter {
-    max-width: 285px;
+    max-width: 260px;
+    margin: 60px -40px 0 0;
+    padding-right: 0;
+    padding-bottom: 48px;
+  }
+
+  .public-cards__filter-title {
+    margin-top: 10px;
+    margin-left: 12px;
   }
 
   .public-cards__content {
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: flex-start;
+  }
+
+  .public-cards__public-card-profile {
+    width: 950px;
+    max-width: 1400px;
+    padding: 0 0 0 0;
+    margin-bottom: 28px;
+  }
+
+  .public-cards__show-more {
+    margin-left: -21px;
+    padding-top: 29px;
+    margin-bottom: 76px;
   }
 }

@@ -3,12 +3,21 @@
   background-color: var(--lilac-light);
 }
 
+.countries-card__region-list {
+  margin-bottom: 20px;
+}
+
 .countries-card__countries {
   display: none;
 }
 
 .countries-card__countries_active {
   display: block;
+  padding: 10px 0;
+}
+
+.countries-card__alphabet-wrapper {
+  width: 220px;
 }
 
 @media (min-width: $tablet-width) {
@@ -16,14 +25,41 @@
     display: flex;
   }
 
+  .countries-card__alphabet-wrapper {
+    width: 346px;
+  }
+
   .countries-card__region-list {
     display: none;
+  }
+
+  .countries-card__region-item {
+    margin-right: 30px;
+  }
+
+  .countries-card__alphabet {
+    width: 380px;
+    padding: 31px 0 31px 0;
+    background-color: var(--lilac-light);
   }
 }
 
 @media (min-width: $desktop-width) {
   .countries-card {
     flex-wrap: wrap;
+  }
+
+  .countries-card__countries {
+    display: block;
+    background-color: var(--basic-grey);
+  }
+
+  .countries-card__region-list {
+    display: none;
+  }
+
+  .countries-card__alphabet-wrapper {
+    display: none;
   }
 
   .countries-card__alphabet {

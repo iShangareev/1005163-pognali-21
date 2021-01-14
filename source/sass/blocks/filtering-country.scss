@@ -3,53 +3,208 @@
   padding: 0 25px;
 }
 
-.filtering-country__list {
+.filtering-country__nav {
+  max-width: 270px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 17px;
+}
+
+.filtering-country__nav-list {
   display: none;
 }
 
 .filtering-country__title {
+  margin: 0 0 0 10px;
   font-weight: 600;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: var(--main-blue-text);
   background-color: var(--lilac-light);
+
+  &::before {
+    position: relative;
+    right: 10px;
+    content: url("../img/filter-title-decor.png");
+  }
+}
+
+.filtering-country__menu-close-top {
+  display: none;
+  width: 16px;
+  height: 16px;
+  border: none;
+  font-size: 0;
+
+  &::before {
+    content: url("../img/icon-close-blue.png");
+
+    position: absolute;
+    top: -15px;
+    right: 30px;
+  }
 }
 
 .filtering-country__menu-button {
   width: 17px;
   height: 17px;
+  margin-right: 4px;
+  border: none;
+  background-image: url("../img/filter-expand.png");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position: center;
 }
 
 .filtering-country__menu-close-bottom {
-  width: 100%;
+  width: 270px;
+  height: 39px;
+  position: relative;
+  right: 25px;
+  top: 20px;
+  padding-left: 30px;
+  border-radius: 20px;
   font-weight: 600;
   font-size: 17px;
-  line-height: 30px;
+  line-height: 43px;
   text-transform: uppercase;
   color: var(--light-blue);
   background-color: var(--lilac-blue);
   text-decoration: none;
   border: none;
-}
 
-.filtering-country__nav {
-  display: flex;
-  justify-content: space-between;
+  &::before {
+    position: absolute;
+    left: 83px;
+    top: 3px;
+    content: url("../img/icon-close-blue.png");
+  }
 }
 
 @media (min-width: $tablet-width) {
-  .filtering-country__list {
+  .filtering-country__nav {
     display: flex;
+    align-items: center;
+    max-width: 625px;
+    padding-top: 100px;
+    padding-bottom: 65px;
+  }
+
+  .filtering-country__nav-list {
+    display: flex;
+    margin: 0;
+  }
+
+  .filtering-country__list {
+    width: 368px;
+    display: flex;
+    justify-content: space-between;
   }
 
   .filtering-country__title {
     display: none;
   }
+
+  .filtering-country__nav-item {
+    margin-bottom: 0;
+  }
+
+  .filtering-country__menu-button {
+    width: 30px;
+    height: 6px;
+    background-image: url("../img/filter-expand-tablet.png");
+  }
+
+  .filtering-country__menu-close-top {
+    position: absolute;
+    font-size: 20px;
+    bottom: 702px;
+    right: 237px;
+    background-color: transparent;
+    color: var(--light-blue);
+    font-weight: 600;
+    line-height: 20px;
+    text-transform: uppercase;
+
+    &::before {
+      top: 2px;
+      left: 162px;
+    }
+  }
+
+  .filtering-country__menu-close-bottom {
+    width: 615px;
+    height: 100px;
+    right: -4px;
+    top: 82px;
+    padding-left: 46px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+
+    &::before {
+      left: 245px;
+      top: 41px;
+    }
+  }
+
+  .filtering-country__show-all {
+    margin-left: 15px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .filtering-country__nav {
+    max-width: 1280px;
+    padding-top: 100px;
+    padding-bottom: 57px;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 6;
+  }
+
+  .filtering-country__nav-list {
+    margin-left: 30px;
+    margin-right: auto;
+  }
+
+  .filtering-country__nav-item {
+    margin-right: 33px;
+  }
+
   .filtering-country__title {
     display: block;
+    margin-left: 22px;
+    font-size: 20px;
+    line-height: 20px;
+
+    &::before {
+      position: relative;
+      right: 22px;
+      content: url("../img/icon-filte-desk.png");
+    }
+  }
+
+  .filtering-country__list {
+    margin: 0 auto 0 30px;
+  }
+
+  .filtering-country__menu-button {
+    margin-right: 40px;
+  }
+
+  .filtering-country__menu-close-bottom {
+    width: 1320px;
+    position: absolute;
+    top: auto;
+    bottom: -138px;
+    left: -15px;
+
+    &.filtering-country__menu-close-bottom::before {
+      left: 597px;
+    }
   }
 }
