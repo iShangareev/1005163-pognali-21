@@ -1,10 +1,31 @@
 .filter-form__item {
-  padding: 0;
+  position: relative;
+  margin-top: 23px;
+  padding: 12px 0 0 0;
   border: none;
+  border-top: 1px solid var(--grey-special-border);
+}
+
+.filter-form__music {
+  margin-top: 0;
+}
+
+.filter-form__food {
+  margin-top: 0;
+  padding-top: 15px;
+}
+
+.filter-form__transport {
+  margin-top: 0;
+}
+
+.filter-form__level {
+  margin-top: 22px;
+  padding-top: 8px;
 }
 
 .filter-form__item-title {
-  margin: 0;
+  margin: 0 0 10px 0;
   font-weight: 600;
   font-size: 16px;
   line-height: 18px;
@@ -12,15 +33,60 @@
   color: var(--light-blue);
 }
 
+.filter-form__type-travel-list {
+  width: 130px;
+  padding-top: 5px;
+}
+
+.filter-form__item-show-button {
+  width: 10px;
+  height: 6px;
+  position: absolute;
+  background-image: url("../img/polygon.png");
+  background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
+  right: -5px;
+  top: 19px;
+}
+
 .filter-form__checkboxes {
   display: flex;
   flex-direction: column;
 }
 
+.filter-form__checkboxes_hidden {
+  display: none;
+}
+
 .filter-form__checkbox-name {
+  margin-bottom: 12px;
   font-size: 15px;
   line-height: 20px;
   color: var(--basic-black);
+}
+
+.filter-form__checkbox-text {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    margin-right: 7px;
+    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--basic-white);
+  }
+}
+
+.filter-form__checkbox:checked + .filter-form__checkbox-text::before {
+  background-image: url("../img/icon-check-mark.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .filter__min-price-input,
@@ -34,15 +100,83 @@
 .filter-form__cost-controls {
   display: flex;
   justify-content: space-between;
+  border-radius: 4px;
+  border: 1px solid var(--grey-border);
+
+  &::before {
+    content: url("../img/line-input.png");
+    position: absolute;
+    background-color: var(--basic-white);
+    right: 100px;
+  }
 }
 
 .filter-form__min-price-input,
 .filter-form__max-price-input {
-  width: 100px;
+  width: 107px;
+  border-radius: 4px;
+  border: none;
+  padding: 12px 0;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 13px;
+}
+
+.filter-form__range-controls {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  width: 220px;
+  height: 10px;
+  margin-top: 15px;
+}
+
+.filter-form__cost-scale {
+  display: flex;
+  height: 2px;
+  background-color: var(--grey-border);
+}
+
+.filter-form__cost-bar {
+  width: 65%;
+  margin-left: 65px;
+  background-color: var(--light-blue);
+  height: 2px;
+}
+
+.filter-form__cost-toggle {
+  width: 10px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--light-blue);
+  position: absolute;
+}
+
+.filter-form__cost-toggle-min {
+  left: 29%;
+  top: 0;
+}
+
+.filter-form__cost-toggle-max {
+  right: 0;
+}
+
+.filter-form__send-button {
+  height: 40px;
+  border-radius: 20px;
+  margin-top: 20px;
 }
 
 @media (min-width: $tablet-width) {
   .filter-form__item {
+    display: flex;
+    border-top: none;
+  }
+
+  .filter-form__checkboxes_visible-desktop {
     display: flex;
   }
 
@@ -57,10 +191,37 @@
     align-content: flex-start;
   }
 
+  .filter-form__checkbox-text {
+    &::before {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .filter-form__hobby {
+    margin-top: 40px;
+    padding-top: 39px;
+  }
+
+  .filter-form__transport {
+    align-items: center;
+    padding-top: 5px;
+  }
+
+  .filter-form__transport-title {
+    margin-right: 15px;
+    padding-top: 15px;
+  }
+
   .filter-form__item-title {
     width: 20%;
+    margin-left: 9px;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .filter-form__level {
+    padding-top: 2px;
   }
 
   .filter-form__checkbox-name {
@@ -71,10 +232,57 @@
 
   .filter-form__cost-controls {
     order: 2;
+    margin-left: 58px;
+    margin-top: -15px;
+
+    &::before {
+      right: 75px;
+      top: -7px;
+    }
   }
 
   .filter-form__range-controls {
+    width: 280px;
     order: 1;
+    margin-top: 5px;
+  }
+
+  .filter-form__cost-bar {
+    margin-left: 100px;
+  }
+
+  .filter-form__cost-toggle-min {
+    left: 35%;
+  }
+
+  .filter-form__min-price-input,
+  .filter-form__max-price-input {
+    width: 75px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .filter-form__send-button {
+    width: 617px;
+    height: 50px;
+    margin: 76px auto 0 10px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .filter-form__type-travel-list_vertical {
+    width: 50px;
+    flex-direction: column;
+    margin-left: 45px;
+  }
+
+  .public-card-profile__travel-list__link {
+    width: 23px;
+    height: 22px;
+    padding-bottom: 8px;
   }
 }
 
@@ -83,7 +291,115 @@
     flex-direction: column;
   }
 
+  .filter-form__item-title {
+    margin-left: 20px;
+  }
+
   .filter-form__checkboxes {
     flex-direction: column;
+    margin-top: 16px;
+  }
+
+  .filter-form__checkbox-name {
+    margin-left: 21px;
+    margin-bottom: 17px;
+  }
+
+  .filter-form__checkbox-text {
+    &::before {
+      margin-right: 13px;
+    }
+  }
+
+  .filter-form__type-travel-list_vertical {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .filter-form__send-button {
+    width: 194px;
+    margin: 81px auto 0 23px;
+  }
+
+  .filter-form__checkboxes_hidden {
+    display: none;
+  }
+
+  .filter-form__hobby {
+    margin-top: 0;
+    padding-top: 34px;
+  }
+
+  .filter-form__food {
+    padding-top: 11px;
+  }
+
+  .filter-form__level {
+    margin-top: 35px;
+  }
+
+  .filter-form__transport {
+    align-items: flex-start;
+  }
+
+  .filter-form__transport-title {
+    padding-top: 6px;
+  }
+
+  .filter-form__item-show-button {
+    display: block;
+    right: 42px;
+    top: 39px;
+  }
+
+  .filter-form__type-travel-list {
+    margin-left: 44px;
+  }
+
+  .filter-form__range-controls {
+    width: 200px;
+    position: relative;
+    top: 85px;
+    left: 11px;
+  }
+
+  .filter-form__cost-controls {
+    width: 192px;
+    margin-left: 20px;
+    margin-top: -8px;
+
+    &::before {
+      right: 132px;
+      top: 49px;
+    }
+  }
+
+  .filter-form__min-price-input,
+  .filter-form__max-price-input {
+    width: 96px;
+  }
+
+  .filter-form__cost-toggle-min {
+    left: 35%;
+  }
+
+  .filter-form__music-button {
+    top: 20px;
+  }
+
+  .filter-form__food-button {
+    top: 18px;
+  }
+
+  .filter-form__transport-button {
+    top: 20px;
+  }
+
+  .filter-form__level-button {
+    top: 11px;
+  }
+
+  .filter-form__cost-bar {
+    margin-left: 78px;
   }
 }

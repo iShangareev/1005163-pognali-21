@@ -4,15 +4,21 @@
 
 @media (min-width: $tablet-width) {
   .pagination-page-box {
+    max-width: 688px;
     display: flex;
     justify-content: space-between;
     background-color: var(--basic-white);
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    margin: 0 auto;
   }
 
   .pagination-page-box__pages-list {
     display: flex;
     list-style-type: none;
     padding: 0;
+    margin: 5px auto 0 28px;
   }
 
   .pagination-page-box__pages-item {
@@ -20,6 +26,7 @@
     height: 50px;
     border-radius: 50%;
     text-align: center;
+    line-height: 45px;
   }
 
   .pagination-page-box__pages-item_active {
@@ -35,5 +42,11 @@
     color: var(--light-blue);
     text-decoration: none;
     vertical-align: middle;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .pagination-page-box {
+    max-width: 952px;
   }
 }

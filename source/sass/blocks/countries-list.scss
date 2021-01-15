@@ -52,10 +52,11 @@
   }
 
   .countries-list__country-name {
-    line-height: 30px;
+    line-height: 20px;
   }
 
   .countries-list__item_main-word {
+    margin-bottom: 37px;
     font-weight: 600;
     font-size: 60px;
     line-height: 60px;
@@ -64,6 +65,7 @@
 
   .countries-list__country-name_main-word {
     display: block;
+    margin-bottom: 20px;
     font-weight: 600;
     font-size: 60px;
     line-height: 60px;

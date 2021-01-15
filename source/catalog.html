@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>HTML Academy: Погнали</title>
   </head>
-  <body class="page__body">
-    <header class="header">
+  <body class="page__body catalog-page">
+    <header class="header catalog-page__header">
       <div class="page-margin header__content">
         <div class="navbar">
           <a href="" class="company-logo">
@@ -18,7 +18,10 @@
             />
           </a>
           <button type="button" class="navbar__menu-button">Меню</button>
-          <nav class="navbar-menu-navigation navbar-menu-navigation_horizontal">
+          <img src="img/white-line.svg" alt="" class="navbar__line" />
+          <nav
+            class="navbar-menu-navigation navbar-menu-navigation_horizontal navbar__navigation"
+          >
             <ul class="navbar-menu-navigation__list">
               <li class="navbar-menu-navigation__item">
                 <a href="" class="navbar-menu-navigation__link">О сервисе</a>
@@ -31,14 +34,21 @@
               </li>
             </ul>
           </nav>
+
           <ul class="promo-board-list navbar__contact-list">
             <li class="promo-board-list__contact-item">
-              <a href="" class="promo-board-list__contact-button">
+              <a
+                href=""
+                class="promo-board-list__contact-button promo-board-list__button-call"
+              >
                 кнопка позвонить нам
               </a>
             </li>
             <li class="promo-board-list__contact-item">
-              <a href="" class="promo-board-list__contact-button">
+              <a
+                href=""
+                class="promo-board-list__contact-button promo-board-list__button-mail"
+              >
                 кнопка написать нам
               </a>
             </li>
@@ -49,7 +59,7 @@
             </li>
           </ul>
         </div>
-        <h2 class="header__title">Попутчики</h2>
+        <h2 class="header__title catalog-page__header-title">Попутчики</h2>
         <a href="index.html" class="home-button home-button_hidden"
           >На главную</a
         >
@@ -122,136 +132,246 @@
       </div>
       <!-- /.menu-box -->
     </header>
-    <main class="page-catalog">
-      <section class="filtering-country">
+    <main class="catalog-page__main">
+      <section class="filtering-country catalog-page__filtering-country">
         <div class="filtering-country__nav">
           <h3 class="filtering-country__title">Фильтрация по странам:</h3>
-          <ul class="regions-list filtering-country__list">
-            <li class="regions-list__region-item">
+          <ul
+            class="regions-list countries-card__region-list filtering-country__nav-list"
+          >
+            <li
+              class="regions-list__region-item countries-card__region-item filtering-country__nav-item"
+            >
               <a
                 href=""
                 class="regions-list__region-name regions-list__region-name_selected"
                 >Европа</a
               >
             </li>
-            <li class="regions-list__region-item">
+            <li
+              class="regions-list__region-item countries-card__region-item filtering-country__nav-item"
+            >
               <a href="" class="regions-list__region-name">Азия</a>
             </li>
-            <li class="regions-list__region-item">
+            <li
+              class="regions-list__region-item countries-card__region-item filtering-country__nav-item"
+            >
               <a href="" class="regions-list__region-name">Америка</a>
             </li>
-            <li class="regions-list__region-item">
+            <li
+              class="regions-list__region-item countries-card__region-item filtering-country__nav-item"
+            >
               <a href="" class="regions-list__region-name">Острова</a>
             </li>
           </ul>
-          <button class="region-list__show-all">Показать все</button>
-          <button class="filtering-country__menu-button"></button>
+          <button class="region-list__show-all filtering-country__show-all">
+            Показать все
+          </button>
+          <button type="button" class="filtering-country__menu-button"></button>
         </div>
-        <div class="countries-card">
+      </section>
+      <div class="catalog-page__countries-popup">
+        <div class="countries-card catalog-page__countries-card">
           <ul class="regions-list countries-card__region-list">
-            <li class="regions-list__region-item">
+            <li class="regions-list__region-item countries-card__region-item">
               <a
                 href=""
                 class="regions-list__region-name regions-list__region-name_selected"
                 >Европа</a
               >
             </li>
-            <li class="regions-list__region-item">
+            <li class="regions-list__region-item countries-card__region-item">
               <a href="" class="regions-list__region-name">Азия</a>
             </li>
-            <li class="regions-list__region-item">
+            <li class="regions-list__region-item countries-card__region-item">
               <a href="" class="regions-list__region-name">Америка</a>
             </li>
-            <li class="regions-list__region-item">
+            <li class="regions-list__region-item countries-card__region-item">
               <a href="" class="regions-list__region-name">Острова</a>
             </li>
           </ul>
-          <div class="alphabet-wrapper">
+          <div class="alphabet-wrapper countries-card__alphabet-wrapper">
             <ul class="alphabet-wrapper__list countries-card__alphabet">
-              <li class="alphabet-wrapper__item">
+              <li class="alphabet-wrapper__item catalog-page__alphabet-item">
                 <a
                   href=""
-                  class="alphabet-wrapper__word alphabet-wrapper__word_selected"
+                  class="alphabet-wrapper__word catalog-page__alphabet-word catalog-page__alphabet-word_selected alphabet-wrapper__word_selected"
                   >А</a
                 >
               </li>
-              <li class="alphabet-wrapper__item">
-                <a href="" class="alphabet-wrapper__word">Б</a>
+              <li class="alphabet-wrapper__item catalog-page__alphabet-item">
+                <a
+                  href=""
+                  class="alphabet-wrapper__word catalog-page__alphabet-word"
+                  >Б</a
+                >
               </li>
-              <li class="alphabet-wrapper__item">
-                <a href="" class="alphabet-wrapper__word">В</a>
+              <li class="alphabet-wrapper__item catalog-page__alphabet-item">
+                <a
+                  href=""
+                  class="alphabet-wrapper__word catalog-page__alphabet-word"
+                  >В</a
+                >
               </li>
-              <li class="alphabet-wrapper__item">
-                <a href="" class="alphabet-wrapper__word">Г</a>
+              <li class="alphabet-wrapper__item catalog-page__alphabet-item">
+                <a
+                  href=""
+                  class="alphabet-wrapper__word catalog-page__alphabet-word"
+                  >Г</a
+                >
               </li>
-              <li class="alphabet-wrapper__item">
-                <a href="" class="alphabet-wrapper__word">Д</a>
+              <li class="alphabet-wrapper__item catalog-page__alphabet-item">
+                <a
+                  href=""
+                  class="alphabet-wrapper__word catalog-page__alphabet-word"
+                  >Д</a
+                >
               </li>
-              <li class="alphabet-wrapper__item">
-                <a href="" class="alphabet-wrapper__word">Е</a>
+              <li class="alphabet-wrapper__item catalog-page__alphabet-item">
+                <a
+                  href=""
+                  class="alphabet-wrapper__word catalog-page__alphabet-word"
+                  >Е</a
+                >
               </li>
-              <li class="alphabet-wrapper__item">
-                <a href="" class="alphabet-wrapper__word">З</a>
+              <li class="alphabet-wrapper__item catalog-page__alphabet-item">
+                <a
+                  href=""
+                  class="alphabet-wrapper__word catalog-page__alphabet-word"
+                  >З</a
+                >
               </li>
-              <li class="alphabet-wrapper__item">
-                <a href="" class="alphabet-wrapper__word">И</a>
+              <li class="alphabet-wrapper__item catalog-page__alphabet-item">
+                <a
+                  href=""
+                  class="alphabet-wrapper__word catalog-page__alphabet-word"
+                  >И</a
+                >
               </li>
-              <li class="alphabet-wrapper__item">
-                <a href="" class="alphabet-wrapper__word">К</a>
+              <li class="alphabet-wrapper__item catalog-page__alphabet-item">
+                <a
+                  href=""
+                  class="alphabet-wrapper__word catalog-page__alphabet-word"
+                  >К</a
+                >
               </li>
-              <li class="alphabet-wrapper__item">
-                <a href="" class="alphabet-wrapper__word">Л</a>
+              <li class="alphabet-wrapper__item catalog-page__alphabet-item">
+                <a
+                  href=""
+                  class="alphabet-wrapper__word catalog-page__alphabet-word"
+                  >Л</a
+                >
               </li>
-              <li class="alphabet-wrapper__item">
-                <a href="" class="alphabet-wrapper__word">М</a>
+              <li class="alphabet-wrapper__item catalog-page__alphabet-item">
+                <a
+                  href=""
+                  class="alphabet-wrapper__word catalog-page__alphabet-word"
+                  >М</a
+                >
               </li>
-              <li class="alphabet-wrapper__item">
-                <a href="" class="alphabet-wrapper__word">Н</a>
+              <li class="alphabet-wrapper__item catalog-page__alphabet-item">
+                <a
+                  href=""
+                  class="alphabet-wrapper__word catalog-page__alphabet-word"
+                  >Н</a
+                >
               </li>
-              <li class="alphabet-wrapper__item">
-                <a href="" class="alphabet-wrapper__word">О</a>
+              <li class="alphabet-wrapper__item catalog-page__alphabet-item">
+                <a
+                  href=""
+                  class="alphabet-wrapper__word catalog-page__alphabet-word"
+                  >О</a
+                >
               </li>
-              <li class="alphabet-wrapper__item">
-                <a href="" class="alphabet-wrapper__word">П</a>
+              <li class="alphabet-wrapper__item catalog-page__alphabet-item">
+                <a
+                  href=""
+                  class="alphabet-wrapper__word catalog-page__alphabet-word"
+                  >П</a
+                >
               </li>
-              <li class="alphabet-wrapper__item">
-                <a href="" class="alphabet-wrapper__word">Р</a>
+              <li class="alphabet-wrapper__item catalog-page__alphabet-item">
+                <a
+                  href=""
+                  class="alphabet-wrapper__word catalog-page__alphabet-word"
+                  >Р</a
+                >
               </li>
-              <li class="alphabet-wrapper__item">
-                <a href="" class="alphabet-wrapper__word">С</a>
+              <li class="alphabet-wrapper__item catalog-page__alphabet-item">
+                <a
+                  href=""
+                  class="alphabet-wrapper__word catalog-page__alphabet-word"
+                  >С</a
+                >
               </li>
-              <li class="alphabet-wrapper__item">
-                <a href="" class="alphabet-wrapper__word">Т</a>
+              <li class="alphabet-wrapper__item catalog-page__alphabet-item">
+                <a
+                  href=""
+                  class="alphabet-wrapper__word catalog-page__alphabet-word"
+                  >Т</a
+                >
               </li>
-              <li class="alphabet-wrapper__item">
-                <a href="" class="alphabet-wrapper__word">У</a>
+              <li class="alphabet-wrapper__item catalog-page__alphabet-item">
+                <a
+                  href=""
+                  class="alphabet-wrapper__word catalog-page__alphabet-word"
+                  >У</a
+                >
               </li>
-              <li class="alphabet-wrapper__item">
-                <a href="" class="alphabet-wrapper__word">Ф</a>
+              <li class="alphabet-wrapper__item catalog-page__alphabet-item">
+                <a
+                  href=""
+                  class="alphabet-wrapper__word catalog-page__alphabet-word"
+                  >Ф</a
+                >
               </li>
-              <li class="alphabet-wrapper__item">
-                <a href="" class="alphabet-wrapper__word">Х</a>
+              <li class="alphabet-wrapper__item catalog-page__alphabet-item">
+                <a
+                  href=""
+                  class="alphabet-wrapper__word catalog-page__alphabet-word"
+                  >Х</a
+                >
               </li>
-              <li class="alphabet-wrapper__item">
-                <a href="" class="alphabet-wrapper__word">Ч</a>
+              <li class="alphabet-wrapper__item catalog-page__alphabet-item">
+                <a
+                  href=""
+                  class="alphabet-wrapper__word catalog-page__alphabet-word"
+                  >Ч</a
+                >
               </li>
-              <li class="alphabet-wrapper__item">
-                <a href="" class="alphabet-wrapper__word">Ш</a>
+              <li class="alphabet-wrapper__item catalog-page__alphabet-item">
+                <a
+                  href=""
+                  class="alphabet-wrapper__word catalog-page__alphabet-word"
+                  >Ш</a
+                >
               </li>
-              <li class="alphabet-wrapper__item">
-                <a href="" class="alphabet-wrapper__word">Э</a>
+              <li class="alphabet-wrapper__item catalog-page__alphabet-item">
+                <a
+                  href=""
+                  class="alphabet-wrapper__word catalog-page__alphabet-word"
+                  >Э</a
+                >
               </li>
-              <li class="alphabet-wrapper__item">
-                <a href="" class="alphabet-wrapper__word">Ю</a>
+              <li class="alphabet-wrapper__item catalog-page__alphabet-item">
+                <a
+                  href=""
+                  class="alphabet-wrapper__word catalog-page__alphabet-word"
+                  >Ю</a
+                >
               </li>
-              <li class="alphabet-wrapper__item">
-                <a href="" class="alphabet-wrapper__word">Я</a>
+              <li class="alphabet-wrapper__item catalog-page__alphabet-item">
+                <a
+                  href=""
+                  class="alphabet-wrapper__word catalog-page__alphabet-word"
+                  >Я</a
+                >
               </li>
             </ul>
           </div>
           <!-- /.alphabet-wrapper -->
           <ul
-            class="countries-list countries-card__countries countries-card__countries_active"
+            class="countries-list countries-card__countries countries-card__countries_active catalog-page__countries-list"
           >
             <li class="countries-list__item countries-list__item_main-word">
               <a
@@ -260,43 +380,87 @@
                 >А
               </a>
             </li>
-            <li class="countries-list__item">
-              <a href="" class="countries-list__country-name">Австралия</a>
+            <li class="countries-list__item catalog-page__countries-list-item">
+              <a
+                href=""
+                class="countries-list__country-name catalog-page__countries-list-link"
+                >Австралия</a
+              >
             </li>
-            <li class="countries-list__item">
-              <a href="" class="countries-list__country-name">Австрия </a>
+            <li class="countries-list__item catalog-page__countries-list-item">
+              <a
+                href=""
+                class="countries-list__country-name catalog-page__countries-list-link"
+                >Австрия
+              </a>
             </li>
-            <li class="countries-list__item">
-              <a href="" class="countries-list__country-name">Азербайджан </a>
+            <li class="countries-list__item catalog-page__countries-list-item">
+              <a
+                href=""
+                class="countries-list__country-name catalog-page__countries-list-link"
+                >Азербайджан
+              </a>
             </li>
-            <li class="countries-list__item">
-              <a href="" class="countries-list__country-name">Албания </a>
+            <li class="countries-list__item catalog-page__countries-list-item">
+              <a
+                href=""
+                class="countries-list__country-name catalog-page__countries-list-link"
+                >Албания
+              </a>
             </li>
-            <li class="countries-list__item">
-              <a href="" class="countries-list__country-name">Алжир</a>
+            <li class="countries-list__item catalog-page__countries-list-item">
+              <a
+                href=""
+                class="countries-list__country-name catalog-page__countries-list-link"
+                >Алжир</a
+              >
             </li>
-            <li class="countries-list__item">
-              <a href="" class="countries-list__country-name">Ангола </a>
+            <li class="countries-list__item catalog-page__countries-list-item">
+              <a
+                href=""
+                class="countries-list__country-name catalog-page__countries-list-link"
+                >Ангола
+              </a>
             </li>
-            <li class="countries-list__item">
-              <a href="" class="countries-list__country-name">Андорра </a>
+            <li class="countries-list__item catalog-page__countries-list-item">
+              <a
+                href=""
+                class="countries-list__country-name catalog-page__countries-list-link"
+                >Андорра
+              </a>
             </li>
-            <li class="countries-list__item">
-              <a href="" class="countries-list__country-name"
+            <li class="countries-list__item catalog-page__countries-list-item">
+              <a
+                href=""
+                class="countries-list__country-name catalog-page__countries-list-link"
                 >Антигуа и Барбуда
               </a>
             </li>
-            <li class="countries-list__item">
-              <a href="" class="countries-list__country-name">Аргентина </a>
+            <li class="countries-list__item catalog-page__countries-list-item">
+              <a
+                href=""
+                class="countries-list__country-name catalog-page__countries-list-link"
+                >Аргентина
+              </a>
             </li>
-            <li class="countries-list__item">
-              <a href="" class="countries-list__country-name">Армения</a>
+            <li class="countries-list__item catalog-page__countries-list-item">
+              <a
+                href=""
+                class="countries-list__country-name catalog-page__countries-list-link"
+                >Армения</a
+              >
             </li>
-            <li class="countries-list__item">
-              <a href="" class="countries-list__country-name">Афганистан</a>
+            <li class="countries-list__item catalog-page__countries-list-item">
+              <a
+                href=""
+                class="countries-list__country-name catalog-page__countries-list-link"
+                >Афганистан</a
+              >
             </li>
           </ul>
-          <ul class="countries-list countries-card__countries">
+          <ul
+            class="countries-list countries-card__countries catalog-page__countries-list"
+          >
             <li class="countries-list__item countries-list__item_main-word">
               <a
                 href=""
@@ -306,7 +470,7 @@
             </li>
             <li class="countries-list__item">
               <a href="" class="countries-list__country-name"
-                >Багамские Острова Бутан</a
+                >Багамские Острова</a
               >
             </li>
             <li class="countries-list__item">
@@ -359,8 +523,13 @@
             <li class="countries-list__item">
               <a href="" class="countries-list__country-name">Бурунди</a>
             </li>
+            <li class="countries-list__item">
+              <a href="" class="countries-list__country-name">Бутан</a>
+            </li>
           </ul>
-          <ul class="countries-list countries-card__countries">
+          <ul
+            class="countries-list countries-card__countries catalog-page__countries-list"
+          >
             <li class="countries-list__item countries-list__item_main-word">
               <a
                 href=""
@@ -389,7 +558,9 @@
               <a href="" class="countries-list__country-name">Вьетнам</a>
             </li>
           </ul>
-          <ul class="countries-list countries-card__countries">
+          <ul
+            class="countries-list countries-card__countries catalog-page__countries-list"
+          >
             <li class="countries-list__item countries-list__item_main-word">
               <a
                 href=""
@@ -437,7 +608,9 @@
               <a href="" class="countries-list__country-name">Грузия</a>
             </li>
           </ul>
-          <ul class="countries-list countries-card__countries">
+          <ul
+            class="countries-list countries-card__countries catalog-page__countries-list"
+          >
             <li class="countries-list__item countries-list__item_main-word">
               <a
                 href=""
@@ -458,7 +631,9 @@
               <a href="" class="countries-list__country-name">Доминикана</a>
             </li>
           </ul>
-          <ul class="countries-list countries-card__countries">
+          <ul
+            class="countries-list countries-card__countries catalog-page__countries-list"
+          >
             <li class="countries-list__item countries-list__item_main-word">
               <a
                 href=""
@@ -470,7 +645,9 @@
               <a href="" class="countries-list__country-name">Египет</a>
             </li>
           </ul>
-          <ul class="countries-list countries-card__countries">
+          <ul
+            class="countries-list countries-card__countries catalog-page__countries-list"
+          >
             <li class="countries-list__item countries-list__item_main-word">
               <a
                 href=""
@@ -485,7 +662,9 @@
               <a href="" class="countries-list__country-name">Зимбабве</a>
             </li>
           </ul>
-          <ul class="countries-list countries-card__countries">
+          <ul
+            class="countries-list countries-card__countries catalog-page__countries-list"
+          >
             <li class="countries-list__item countries-list__item_main-word">
               <a
                 href=""
@@ -524,7 +703,9 @@
               <a href="" class="countries-list__country-name">Италия</a>
             </li>
           </ul>
-          <ul class="countries-list countries-card__countries">
+          <ul
+            class="countries-list countries-card__countries catalog-page__countries-list"
+          >
             <li class="countries-list__item countries-list__item_main-word">
               <a
                 href=""
@@ -569,7 +750,9 @@
               <a href="" class="countries-list__country-name">Колумбия</a>
             </li>
           </ul>
-          <ul class="countries-list countries-card__countries">
+          <ul
+            class="countries-list countries-card__countries catalog-page__countries-list"
+          >
             <li class="countries-list__item countries-list__item_main-word">
               <a
                 href=""
@@ -602,7 +785,9 @@
               <a href="" class="countries-list__country-name">Люксембург </a>
             </li>
           </ul>
-          <ul class="countries-list countries-card__countries">
+          <ul
+            class="countries-list countries-card__countries catalog-page__countries-list"
+          >
             <li class="countries-list__item countries-list__item_main-word">
               <a
                 href=""
@@ -638,7 +823,9 @@
               <a href="" class="countries-list__country-name">Марокко</a>
             </li>
           </ul>
-          <ul class="countries-list countries-card__countries">
+          <ul
+            class="countries-list countries-card__countries catalog-page__countries-list"
+          >
             <li class="countries-list__item countries-list__item_main-word">
               <a
                 href=""
@@ -676,7 +863,9 @@
               <a href="" class="countries-list__country-name">Норвегия</a>
             </li>
           </ul>
-          <ul class="countries-list countries-card__countries">
+          <ul
+            class="countries-list countries-card__countries catalog-page__countries-list"
+          >
             <li class="countries-list__item countries-list__item_main-word">
               <a
                 href=""
@@ -691,7 +880,9 @@
               <a href="" class="countries-list__country-name">Оман</a>
             </li>
           </ul>
-          <ul class="countries-list countries-card__countries">
+          <ul
+            class="countries-list countries-card__countries catalog-page__countries-list"
+          >
             <li class="countries-list__item countries-list__item_main-word">
               <a
                 href=""
@@ -726,7 +917,9 @@
               <a href="" class="countries-list__country-name">Португалия </a>
             </li>
           </ul>
-          <ul class="countries-list countries-card__countries">
+          <ul
+            class="countries-list countries-card__countries catalog-page__countries-list"
+          >
             <li class="countries-list__item countries-list__item_main-word">
               <a
                 href=""
@@ -744,7 +937,9 @@
               <a href="" class="countries-list__country-name">Россия</a>
             </li>
           </ul>
-          <ul class="countries-list countries-card__countries">
+          <ul
+            class="countries-list countries-card__countries catalog-page__countries-list catalog-page__countries-content catalog-page__countries-content"
+          >
             <li class="countries-list__item countries-list__item_main-word">
               <a
                 href=""
@@ -791,7 +986,9 @@
               <a href="" class="countries-list__country-name">США</a>
             </li>
           </ul>
-          <ul class="countries-list countries-card__countries">
+          <ul
+            class="countries-list countries-card__countries catalog-page__countries-list catalog-page__countries-content"
+          >
             <li class="countries-list__item countries-list__item_main-word">
               <a
                 href=""
@@ -832,7 +1029,9 @@
               <a href="" class="countries-list__country-name">Турция</a>
             </li>
           </ul>
-          <ul class="countries-list countries-card__countries">
+          <ul
+            class="countries-list countries-card__countries catalog-page__countries-list catalog-page__countries-content"
+          >
             <li class="countries-list__item countries-list__item_main-word">
               <a
                 href=""
@@ -853,7 +1052,9 @@
               <a href="" class="countries-list__country-name">Уругвай</a>
             </li>
           </ul>
-          <ul class="countries-list countries-card__countries">
+          <ul
+            class="countries-list countries-card__countries catalog-page__countries-list catalog-page__countries-content"
+          >
             <li class="countries-list__item countries-list__item_main-word">
               <a
                 href=""
@@ -874,7 +1075,9 @@
               <a href="" class="countries-list__country-name">Франция</a>
             </li>
           </ul>
-          <ul class="countries-list countries-card__countries">
+          <ul
+            class="countries-list countries-card__countries catalog-page__countries-list catalog-page__countries-content"
+          >
             <li class="countries-list__item countries-list__item_main-word">
               <a
                 href=""
@@ -886,7 +1089,9 @@
               <a href="" class="countries-list__country-name">Хорватия</a>
             </li>
           </ul>
-          <ul class="countries-list countries-card__countries">
+          <ul
+            class="countries-list countries-card__countries catalog-page__countries-list"
+          >
             <li class="countries-list__item countries-list__item_main-word">
               <a
                 href=""
@@ -907,7 +1112,9 @@
               <a href="" class="countries-list__country-name">Чили</a>
             </li>
           </ul>
-          <ul class="countries-list countries-card__countries">
+          <ul
+            class="countries-list countries-card__countries catalog-page__countries-list"
+          >
             <li class="countries-list__item countries-list__item_main-word">
               <a
                 href=""
@@ -925,7 +1132,9 @@
               <a href="" class="countries-list__country-name">Шри-Ланка</a>
             </li>
           </ul>
-          <ul class="countries-list countries-card__countries">
+          <ul
+            class="countries-list countries-card__countries catalog-page__countries-list"
+          >
             <li class="countries-list__item countries-list__item_main-word">
               <a
                 href=""
@@ -949,7 +1158,9 @@
               <a href="" class="countries-list__country-name">Эфиопия</a>
             </li>
           </ul>
-          <ul class="countries-list countries-card__countries">
+          <ul
+            class="countries-list countries-card__countries catalog-page__countries-list"
+          >
             <li class="countries-list__item countries-list__item_main-word">
               <a
                 href=""
@@ -964,7 +1175,9 @@
               <a href="" class="countries-list__country-name">Южный Судан</a>
             </li>
           </ul>
-          <ul class="countries-list countries-card__countries">
+          <ul
+            class="countries-list countries-card__countries catalog-page__countries-list"
+          >
             <li class="countries-list__item countries-list__item_main-word">
               <a
                 href=""
@@ -979,12 +1192,13 @@
               <a href="" class="countries-list__country-name">Япония</a>
             </li>
           </ul>
-          <button class="filtering-country__menu-close-top"></button>
+          <button class="filtering-country__menu-close-top">Свернуть</button>
+          <button class="filtering-country__menu-close-bottom">Свернуть</button>
         </div>
         <!-- /.country-card -->
-        <button class="filtering-country__menu-close-bottom">Свернуть</button>
-      </section>
-      <section class="public-cards">
+      </div>
+      <!-- /.catalog-page__countries-popup -->
+      <section class="public-cards catalog-page__public-cards">
         <h2 class="visually-hidden">Карточки попутчиков</h2>
         <div class="page-margin public-cards__content">
           <div class="public-cards__filter">
@@ -993,27 +1207,31 @@
             </h2>
 
             <form action="https://echo.htmlacademy.ru" class="filter-form">
-              <fieldset class="filter-form__item">
+              <fieldset class="filter-form__item filter-form__hobby">
                 <p class="filter-form__item-title">Хобби:</p>
                 <button
                   class="filter-form__item-show-button"
                   type="button"
                 ></button>
-                <div class="filter-form__checkboxes">
+                <div
+                  class="filter-form__checkboxes filter-form__checkboxes_hidden filter-form__checkboxes_visible-desktop"
+                >
                   <label class="filter-form__checkbox-name">
                     <input
                       type="checkbox"
                       name="gym"
-                      class="filter-form__checkbox"
-                    />Спортзал
+                      class="filter-form__checkbox visually-hidden"
+                    />
+                    <span class="filter-form__checkbox-text">Спортзал</span>
                   </label>
 
                   <label class="filter-form__checkbox-name">
                     <input
                       type="checkbox"
                       name="hookah"
-                      class="filter-form__checkbox"
-                    />Кальян
+                      class="filter-form__checkbox visually-hidden"
+                    />
+                    <span class="filter-form__checkbox-text">Кальян </span>
                   </label>
 
                   <label for="sofa-checkbox" class="filter-form__checkbox-name">
@@ -1021,16 +1239,17 @@
                       type="checkbox"
                       name="sofa"
                       id="sofa-checkbox"
-                      class="filter-form__checkbox"
-                    />Диван
+                      class="filter-form__checkbox visually-hidden"
+                    />
+                    <span class="filter-form__checkbox-text">Диван </span>
                   </label>
                 </div>
                 <!-- /.filter-form__checkboxes -->
               </fieldset>
-              <fieldset class="filter-form__item">
+              <fieldset class="filter-form__item filter-form__music">
                 <p class="filter-form__item-title">Музыка:</p>
                 <button
-                  class="filter-form__item-show-button"
+                  class="filter-form__item-show-button filter-form__music-button"
                   type="button"
                 ></button>
                 <div class="filter-form__checkboxes">
@@ -1038,100 +1257,106 @@
                     <input
                       type="checkbox"
                       name="hard-rock"
-                      class="filter-form__checkbox"
-                    />Тяжелый рок
+                      class="filter-form__checkbox visually-hidden"
+                    />
+                    <span class="filter-form__checkbox-text">Тяжелый рок </span>
                   </label>
                   <label class="filter-form__checkbox-name">
                     <input
                       type="checkbox"
                       name="rus-rap"
-                      class="filter-form__checkbox"
-                    />Русский рэп
+                      class="filter-form__checkbox visually-hidden"
+                    />
+                    <span class="filter-form__checkbox-text">Русский рэп </span>
                   </label>
                   <label class="filter-form__checkbox-name">
                     <input
                       type="checkbox"
                       name="euro-dance"
-                      class="filter-form__checkbox"
-                    />Евродэнс
+                      class="filter-form__checkbox visually-hidden"
+                    />
+                    <span class="filter-form__checkbox-text">Евродэнс </span>
                   </label>
                 </div>
                 <!-- /.filter-form__checkboxes -->
               </fieldset>
-              <fieldset class="filter-form__item">
+              <fieldset class="filter-form__item filter-form__food">
                 <p class="filter-form__item-title">Еда:</p>
                 <button
-                  class="filter-form__item-show-button"
+                  class="filter-form__item-show-button filter-form__food-button"
                   type="button"
                 ></button>
-                <div class="filter-form__checkboxes">
+                <div
+                  class="filter-form__checkboxes filter-form__checkboxes_hidden filter-form__checkboxes_visible-desktop"
+                >
                   <label class="filter-form__checkbox-name">
                     <input
                       type="checkbox"
                       name="meat-eater"
-                      class="filter-form__checkbox"
-                    />Мясоед
+                      class="filter-form__checkbox visually-hidden"
+                    />
+                    <span class="filter-form__checkbox-text">Мясоед </span>
                   </label>
                   <label class="filter-form__checkbox-name">
                     <input
                       type="checkbox"
                       name="proper-nutrition"
-                      class="filter-form__checkbox"
-                    />Сидит на ПП
+                      class="filter-form__checkbox visually-hidden"
+                    />
+                    <span class="filter-form__checkbox-text">Сидит на ПП </span>
                   </label>
 
                   <label class="filter-form__checkbox-name">
                     <input
                       type="checkbox"
                       name="vegan"
-                      class="filter-form__checkbox"
-                    />Веган-сыроед
+                      class="filter-form__checkbox visually-hidden"
+                    />
+                    <span class="filter-form__checkbox-text">Веган-сыроед</span>
                   </label>
                 </div>
                 <!-- /.filter-form__checkboxes -->
               </fieldset>
-              <fieldset class="filter-form__item">
-                <p class="filter-form__item-title">Транспорт:</p>
+              <fieldset class="filter-form__item filter-form__transport">
+                <p class="filter-form__item-title filter-form__transport-title">
+                  Транспорт:
+                </p>
                 <button
-                  class="filter-form__item-show-button"
+                  class="filter-form__item-show-button filter-form__transport-button"
                   type="button"
                 ></button>
-                <ul class="type-travel-list">
+                <ul class="type-travel-list filter-form__type-travel-list">
                   <li class="type-travel-list__item">
-                    <img
-                      src="https://via.placeholder.com/22x22"
-                      alt=""
-                      class="type-travel-list__item-status"
-                    />
+                    <a
+                      href=""
+                      class="type-travel-list__link type-travel-list__link_fly"
+                    ></a>
                   </li>
                   <li class="type-travel-list__item">
-                    <img
-                      src="https://via.placeholder.com/22x22"
-                      alt=""
-                      class="type-travel-list__item-status type-travel-list__item-status_disabled"
-                    />
+                    <a
+                      href=""
+                      class="type-travel-list__link type-travel-list__link_bus"
+                    ></a>
                   </li>
                   <li class="type-travel-list__item">
-                    <img
-                      src="https://via.placeholder.com/22x22"
-                      alt=""
-                      class="type-travel-list__item-status type-travel-list__item-status_disabled"
-                    />
+                    <a
+                      href=""
+                      class="type-travel-list__link type-travel-list__link_bicycle"
+                    ></a>
                   </li>
                   <li class="type-travel-list__item">
-                    <img
-                      src="https://via.placeholder.com/22x22"
-                      alt=""
-                      class="type-travel-list__item-status type-travel-list__item-status_disabled"
-                    />
+                    <a
+                      href=""
+                      class="type-travel-list__link type-travel-list__link_walk"
+                    ></a>
                   </li>
                 </ul>
                 <!-- /.filter-form__checkboxes -->
               </fieldset>
-              <fieldset class="filter-form__item">
-                <p class="filter-form__item-title">Левел:</p>
+              <fieldset class="filter-form__item filter-form__level">
+                <p class="filter-form__item-title">ЛЕВЕЛ:</p>
                 <button
-                  class="filter-form__item-show-button"
+                  class="filter-form__item-show-button filter-form__level-button"
                   type="button"
                 ></button>
                 <div class="filter-form__cost-controls">
@@ -1156,86 +1381,103 @@
                 <div class="filter-form__range-controls">
                   <div class="filter-form__cost-scale">
                     <div class="filter-form__cost-bar"></div>
-                    <button
-                      class="filter-form__cost-toggle toggle-min"
-                      aria-label="минимальная цена"
-                    ></button>
-                    <button
-                      class="filter-form__cost-toggle toggle-max"
-                      aria-label="максимальная цена"
-                    ></button>
                   </div>
+                  <button
+                    class="filter-form__cost-toggle filter-form__cost-toggle-min"
+                    aria-label="минимальная цена"
+                  ></button>
+                  <button
+                    class="filter-form__cost-toggle filter-form__cost-toggle-max"
+                    aria-label="максимальная цена"
+                  ></button>
                 </div>
               </fieldset>
-              <button class="show-button" type="submit">Показать</button>
+              <button
+                class="show-button filter-form__send-button"
+                type="submit"
+              >
+                Показать
+              </button>
             </form>
           </div>
           <div class="public-cards__box">
-            <div class="public-card-profile">
+            <div class="public-card-profile public-cards__public-card-profile">
               <a class="public-card-profile__photo-pofile"
                 ><img
                   src="img/user-firsova.png"
                   alt="Фото пользователя"
                   class="public-card-profile__photo-pofile-pic"
               /></a>
-              <div class="public-card-profile__photo-like"></div>
-              <!-- /.public-card-profile__photo-like -->
               <a class="public-card-profile__user-name">Таня Фирсова</a>
-              <span class="public-card-profile__subscribers">1,5 М</span>
-              <span class="public-card-profile__online-status"></span>
+              <p class="public-card-profile__subscribers">
+                <span class="public-card-profile__photo-like"></span>1,5 М
+              </p>
               <p class="public-card-profile__hashtags">
                 #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
               </p>
-              <p class="public-card-profile__text">Хочет посетить:</p>
+              <p class="public-card-profile__text">хочет посетить:</p>
               <ul class="public-card-profile__list">
                 <li class="public-card-profile__item">
+                  <img
+                    src="img/flag-sri-lanka-mobile.png"
+                    alt="Шри-ланка"
+                    class="public-card-profile__item-pic"
+                  />
                   <span class="public-card-profile__country-name"
                     >Шри-Ланка</span
                   >
                 </li>
                 <li class="public-card-profile__item">
+                  <img
+                    src="img/flag-thailand-mobile.png"
+                    alt="Тайланд"
+                    class="public-card-profile__item-pic"
+                  />
                   <span class="public-card-profile__country-name">Тайланд</span>
                 </li>
                 <li class="public-card-profile__item">
+                  <img
+                    src="img/flag-seychelles-mobile.png"
+                    alt="Сэйшелы"
+                    class="public-card-profile__item-pic"
+                  />
                   <span class="public-card-profile__country-name">Cейшелы</span>
                 </li>
               </ul>
               <div class="public-card-profile__transport">
-                <p class="public-card-profile__transport-title">Транспорт:</p>
-                <ul class="type-travel-list type-travel-list_vertical">
+                <p class="public-card-profile__transport-title">транспорт:</p>
+                <ul
+                  class="type-travel-list filter-form__type-travel-list filter-form__type-travel-list_vertical"
+                >
                   <li class="type-travel-list__item">
-                    <img
-                      src="https://via.placeholder.com/22x22"
-                      alt=""
-                      class="type-travel-list__item-status"
-                    />
+                    <a
+                      href=""
+                      class="type-travel-list__link type-travel-list__link_fly public-card-profile__travel-list__link"
+                    ></a>
                   </li>
                   <li class="type-travel-list__item">
-                    <img
-                      src="https://via.placeholder.com/22x22"
-                      alt=""
-                      class="type-travel-list__item-status type-travel-list__item-status_disabled"
-                    />
+                    <a
+                      href=""
+                      class="type-travel-list__link type-travel-list__link_bus public-card-profile__travel-list__link"
+                    ></a>
                   </li>
                   <li class="type-travel-list__item">
-                    <img
-                      src="https://via.placeholder.com/22x22"
-                      alt=""
-                      class="type-travel-list__item-status type-travel-list__item-status_disabled"
-                    />
+                    <a
+                      href=""
+                      class="type-travel-list__link type-travel-list__link_bicycle public-card-profile__travel-list__link"
+                    ></a>
                   </li>
                   <li class="type-travel-list__item">
-                    <img
-                      src="https://via.placeholder.com/22x22"
-                      alt=""
-                      class="type-travel-list__item-status type-travel-list__item-status_disabled"
-                    />
+                    <a
+                      href=""
+                      class="type-travel-list__link type-travel-list__link_walk public-card-profile__travel-list__link"
+                    ></a>
                   </li>
                 </ul>
               </div>
               <!-- /.public-card-profile__transport -->
               <div class="public-card-profile__level">
-                <p class="public-card-profile__level-title">Левел</p>
+                <p class="public-card-profile__level-title">level:</p>
                 <div class="public-card-profile__level-box">
                   <span class="public-card-profile__level-num">99</span>
                 </div>
@@ -1247,232 +1489,300 @@
               </button>
             </div>
             <!-- /.public-card-profile -->
-            <div class="public-card-profile">
+            <div class="public-card-profile public-cards__public-card-profile">
               <a class="public-card-profile__photo-pofile"
                 ><img
                   src="img/user-demin.png"
                   alt="Фото пользователя"
                   class="public-card-profile__photo-pofile-pic"
               /></a>
-              <div
-                class="public-card-profile__photo-like public-card-profile__photo-like_unlike"
-              ></div>
+
               <!-- /.public-card-profile__photo-like -->
-              <a class="public-card-profile__user-name">Петя Демин</a>
-              <span class="public-card-profile__subscribers">1500</span>
-              <span class="public-card-profile__online-status"></span>
+              <a
+                class="public-card-profile__user-name public-card-profile__user-name_demin"
+                >Петя Демин</a
+              >
+              <p
+                class="public-card-profile__subscribers public-card-profile__subscribers_demin"
+              >
+                <span class="public-card-profile__photo-like"></span>1500
+              </p>
               <p class="public-card-profile__hashtags">
                 #бургер #бар #футбол #концерт #крафт
               </p>
               <p class="public-card-profile__text">Хочет посетить:</p>
-              <ul class="public-card-profile__list">
+              <ul
+                class="public-card-profile__list public-card-profile__list_demin"
+              >
                 <li class="public-card-profile__item">
+                  <img
+                    src="img/flag-belgium-mobile.png"
+                    alt="Бельгия"
+                    class="public-card-profile__item-pic"
+                  />
                   <span class="public-card-profile__country-name">Бельгия</span>
                 </li>
                 <li class="public-card-profile__item">
+                  <img
+                    src="img/flag-czech-mobile.png"
+                    alt="Чехия"
+                    class="public-card-profile__item-pic"
+                  />
                   <span class="public-card-profile__country-name">Чехия</span>
                 </li>
               </ul>
-              <div class="public-card-profile__transport">
+              <div
+                class="public-card-profile__transport public-card-profile__transport_demin"
+              >
                 <p class="public-card-profile__transport-title">Транспорт:</p>
-                <ul class="type-travel-list">
+                <ul
+                  class="type-travel-list filter-form__type-travel-list filter-form__type-travel-list_vertical"
+                >
                   <li class="type-travel-list__item">
-                    <img
-                      src="https://via.placeholder.com/22x22"
-                      alt=""
-                      class="type-travel-list__item-status"
-                    />
+                    <a
+                      href=""
+                      class="type-travel-list__link type-travel-list__link_fly public-card-profile__travel-list__link"
+                    ></a>
                   </li>
                   <li class="type-travel-list__item">
-                    <img
-                      src="https://via.placeholder.com/22x22"
-                      alt=""
-                      class="type-travel-list__item-status type-travel-list__item-status_disabled"
-                    />
+                    <a
+                      href=""
+                      class="type-travel-list__link type-travel-list__link_bus public-card-profile__travel-list__link"
+                    ></a>
                   </li>
                   <li class="type-travel-list__item">
-                    <img
-                      src="https://via.placeholder.com/22x22"
-                      alt=""
-                      class="type-travel-list__item-status type-travel-list__item-status_disabled"
-                    />
+                    <a
+                      href=""
+                      class="type-travel-list__link type-travel-list__link_bicycle public-card-profile__travel-list__link"
+                    ></a>
                   </li>
                   <li class="type-travel-list__item">
-                    <img
-                      src="https://via.placeholder.com/22x22"
-                      alt=""
-                      class="type-travel-list__item-status type-travel-list__item-status_disabled"
-                    />
+                    <a
+                      href=""
+                      class="type-travel-list__link type-travel-list__link_walk public-card-profile__travel-list__link"
+                    ></a>
                   </li>
                 </ul>
               </div>
               <!-- /.public-card-profile__transport -->
-              <div class="public-card-profile__level">
-                <p class="public-card-profile__level-title">Левел</p>
+              <div
+                class="public-card-profile__level public-card-profile__level_demin"
+              >
+                <p class="public-card-profile__level-title">level</p>
                 <div class="public-card-profile__level-box">
                   <span class="public-card-profile__level-num">80</span>
                 </div>
                 <!-- ./ public-card-profile__level-box -->
               </div>
               <!-- /.public-card-profile__level -->
-              <button class="public-card-profile__signal-button" type="button">
+              <button
+                class="public-card-profile__signal-button public-card-profile__signal-button_demin"
+                type="button"
+              >
                 Позвать!
               </button>
             </div>
             <!-- /.public-card-profile -->
-            <div class="public-card-profile">
+            <div class="public-card-profile public-cards__public-card-profile">
               <a class="public-card-profile__photo-pofile"
                 ><img
                   src="img/user-smolov.png"
                   alt="Фото пользователя"
                   class="public-card-profile__photo-pofile-pic"
               /></a>
-              <div
-                class="public-card-profile__photo-like public-card-profile__photo-like_unlike"
-              ></div>
+
               <!-- /.public-card-profile__photo-like -->
-              <a class="public-card-profile__user-name">Марк Смолов</a>
-              <span class="public-card-profile__subscribers">170</span>
-              <span class="public-card-profile__online-status"></span>
+              <a
+                class="public-card-profile__user-name public-card-profile__user-name_smolov"
+                >Марк Смолов</a
+              >
+              <p
+                class="public-card-profile__subscribers public-card-profile__subscribers_smolov"
+              >
+                <span class="public-card-profile__photo-like"></span>170
+              </p>
               <p class="public-card-profile__hashtags">
                 #рэп #тату #хайпбист #кроссовки #суприм
               </p>
               <p class="public-card-profile__text">Хочет посетить:</p>
-              <ul class="public-card-profile__list">
+              <ul
+                class="public-card-profile__list public-card-profile__list_smolov"
+              >
                 <li class="public-card-profile__item">
+                  <img
+                    src="img/united-states-of-america.svg"
+                    alt="США"
+                    class="public-card-profile__item-pic"
+                  />
                   <span class="public-card-profile__country-name">США</span>
                 </li>
                 <li class="public-card-profile__item">
+                  <img
+                    src="img/australia.svg"
+                    alt="Австралия"
+                    class="public-card-profile__item-pic"
+                  />
                   <span class="public-card-profile__country-name"
                     >Австралия</span
                   >
                 </li>
                 <li class="public-card-profile__item">
+                  <img
+                    src="img/dominica.svg"
+                    alt="Доминикана"
+                    class="public-card-profile__item-pic"
+                  />
                   <span class="public-card-profile__country-name"
                     >Доминикана</span
                   >
                 </li>
               </ul>
-              <div class="public-card-profile__transport">
+              <div
+                class="public-card-profile__transport public-card-profile__transport_smolov"
+              >
                 <p class="public-card-profile__transport-title">Транспорт:</p>
-                <ul class="type-travel-list">
+                <ul
+                  class="type-travel-list filter-form__type-travel-list filter-form__type-travel-list_vertical"
+                >
                   <li class="type-travel-list__item">
-                    <img
-                      src="https://via.placeholder.com/22x22"
-                      alt=""
-                      class="type-travel-list__item-status"
-                    />
+                    <a
+                      href=""
+                      class="type-travel-list__link type-travel-list__link_fly public-card-profile__travel-list__link"
+                    ></a>
                   </li>
                   <li class="type-travel-list__item">
-                    <img
-                      src="https://via.placeholder.com/22x22"
-                      alt=""
-                      class="type-travel-list__item-status type-travel-list__item-status_disabled"
-                    />
+                    <a
+                      href=""
+                      class="type-travel-list__link type-travel-list__link_bus public-card-profile__travel-list__link"
+                    ></a>
                   </li>
                   <li class="type-travel-list__item">
-                    <img
-                      src="https://via.placeholder.com/22x22"
-                      alt=""
-                      class="type-travel-list__item-status type-travel-list__item-status_disabled"
-                    />
+                    <a
+                      href=""
+                      class="type-travel-list__link type-travel-list__link_bicycle public-card-profile__travel-list__link"
+                    ></a>
                   </li>
                   <li class="type-travel-list__item">
-                    <img
-                      src="https://via.placeholder.com/22x22"
-                      alt=""
-                      class="type-travel-list__item-status type-travel-list__item-status_disabled"
-                    />
+                    <a
+                      href=""
+                      class="type-travel-list__link type-travel-list__link_walk public-card-profile__travel-list__link"
+                    ></a>
                   </li>
                 </ul>
               </div>
               <!-- /.public-card-profile__transport -->
-              <div class="public-card-profile__level">
-                <p class="public-card-profile__level-title">Левел</p>
+              <div
+                class="public-card-profile__level public-card-profile__level_smolov"
+              >
+                <p class="public-card-profile__level-title">level</p>
                 <div class="public-card-profile__level-box">
                   <span class="public-card-profile__level-num">25</span>
                 </div>
                 <!-- ./ public-card-profile__level-box -->
               </div>
               <!-- /.public-card-profile__level -->
-              <button class="public-card-profile__signal-button" type="button">
+              <button
+                class="public-card-profile__signal-button public-card-profile__signal-button_smolov"
+                type="button"
+              >
                 Позвать!
               </button>
             </div>
             <!-- /.public-card-profile -->
-            <div class="public-card-profile">
+            <div class="public-card-profile public-cards__public-card-profile">
               <a class="public-card-profile__photo-pofile"
                 ><img
                   src="img/user-rogovaya.png"
                   alt="Фото пользователя"
                   class="public-card-profile__photo-pofile-pic"
               /></a>
-              <div
-                class="public-card-profile__photo-like public-card-profile__photo-like_unlike"
-              ></div>
+
               <!-- /.public-card-profile__photo-like -->
-              <a class="public-card-profile__user-name">Лариса Роговая</a>
-              <span class="public-card-profile__subscribers">23</span>
-              <span class="public-card-profile__online-status"></span>
+              <a
+                class="public-card-profile__user-name public-card-profile__user-name_larisa"
+                >Лариса Роговая</a
+              >
+              <p
+                class="public-card-profile__subscribers public-card-profile__subscribers_larisa"
+              >
+                <span class="public-card-profile__photo-like"></span>23
+              </p>
               <p class="public-card-profile__hashtags">
                 #образование #карьера #учеба #линкедин
               </p>
               <p class="public-card-profile__text">Хочет посетить:</p>
-              <ul class="public-card-profile__list">
+              <ul
+                class="public-card-profile__list public-card-profile__list_larisa"
+              >
                 <li class="public-card-profile__item">
-                  <span class="public-card-profile__country-name"
-                    >Австралия</span
-                  >
-                </li>
-                <li class="public-card-profile__item">
+                  <img
+                    src="img/united-kingdom.svg"
+                    alt="Великобритания"
+                    class="public-card-profile__item-pic"
+                  />
                   <span class="public-card-profile__country-name"
                     >Великобритания</span
                   >
                 </li>
+                <li class="public-card-profile__item">
+                  <img
+                    src="img/australia.svg"
+                    alt="Австралия"
+                    class="public-card-profile__item-pic"
+                  />
+                  <span class="public-card-profile__country-name"
+                    >Австралия</span
+                  >
+                </li>
               </ul>
-              <div class="public-card-profile__transport">
+              <div
+                class="public-card-profile__transport public-card-profile__transport_larisa"
+              >
                 <p class="public-card-profile__transport-title">Транспорт:</p>
-                <ul class="type-travel-list">
+                <ul
+                  class="type-travel-list filter-form__type-travel-list filter-form__type-travel-list_vertical"
+                >
                   <li class="type-travel-list__item">
-                    <img
-                      src="https://via.placeholder.com/22x22"
-                      alt=""
-                      class="type-travel-list__item-status"
-                    />
+                    <a
+                      href=""
+                      class="type-travel-list__link type-travel-list__link_fly public-card-profile__travel-list__link"
+                    ></a>
                   </li>
                   <li class="type-travel-list__item">
-                    <img
-                      src="https://via.placeholder.com/22x22"
-                      alt=""
-                      class="type-travel-list__item-status type-travel-list__item-status_disabled"
-                    />
+                    <a
+                      href=""
+                      class="type-travel-list__link type-travel-list__link_bus public-card-profile__travel-list__link"
+                    ></a>
                   </li>
                   <li class="type-travel-list__item">
-                    <img
-                      src="https://via.placeholder.com/22x22"
-                      alt=""
-                      class="type-travel-list__item-status type-travel-list__item-status_disabled"
-                    />
+                    <a
+                      href=""
+                      class="type-travel-list__link type-travel-list__link_bicycle public-card-profile__travel-list__link"
+                    ></a>
                   </li>
                   <li class="type-travel-list__item">
-                    <img
-                      src="https://via.placeholder.com/22x22"
-                      alt=""
-                      class="type-travel-list__item-status type-travel-list__item-status_disabled"
-                    />
+                    <a
+                      href=""
+                      class="type-travel-list__link type-travel-list__link_walk public-card-profile__travel-list__link"
+                    ></a>
                   </li>
                 </ul>
               </div>
               <!-- /.public-card-profile__transport -->
-              <div class="public-card-profile__level">
-                <p class="public-card-profile__level-title">Левел</p>
+              <div
+                class="public-card-profile__level public-card-profile__level_larisa"
+              >
+                <p class="public-card-profile__level-title">level</p>
                 <div class="public-card-profile__level-box">
                   <span class="public-card-profile__level-num">50</span>
                 </div>
                 <!-- ./ public-card-profile__level-box -->
               </div>
               <!-- /.public-card-profile__level -->
-              <button class="public-card-profile__signal-button" type="button">
+              <button
+                class="public-card-profile__signal-button public-card-profile__signal-button_larisa"
+                type="button"
+              >
                 Позвать!
               </button>
             </div>
@@ -1498,9 +1808,9 @@
                   <a href="" class="pagination-page-box__pages-link">4</a>
                 </li>
               </ul>
-              <div class="pagination-box">
-                <button class="pagination-button-prev"></button>
-                <button class="pagination-button-next"></button>
+              <div class="pagination-box public-card-profile__pagination-box">
+                <button class="pagination-box__button-prev"></button>
+                <button class="pagination-box__button-next"></button>
               </div>
             </div>
             <!-- /.pagination-page-box -->
@@ -1510,37 +1820,35 @@
         <!-- /.public-cards__content -->
       </section>
     </main>
-    <footer class="footer">
-      <a class="company-logo">
-        <img
-          src="https://via.placeholder.com/96x15"
-          alt="Логотип Погнали?"
-          class="company-logo__pic"
-        />
-      </a>
-      <ul class="social-list social-list_theme_yellow">
-        <li class="social-list__item">
-          <a href="https://facebook.com" class="social-list__link">
-            Ссылка на facebook
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a href="https://vk.com" class="social-list__link">
-            Ссылка на вконтакте
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a href="https://www.instagram.com" class="social-list__link">
-            Ссылка на instagram
-          </a>
-        </li>
-      </ul>
-      <!-- / footer__social -->
-      <div class="footer__author">
-        <p class="footer__author-text">Разработано</p>
-        <a href="https://htmlacademy.ru" class="footer__author-logo"></a>
+    <footer class="footer page__footer catalog-page__footer">
+      <div class="footer__content">
+        <a class="company-logo catalog-page__footer-logo"> </a>
+        <ul
+          class="social-list social-list_theme_yellow social-list__position catalog-page__footer-social-list"
+        >
+          <li class="social-list__item social-list__item-facebook">
+            <a href="https://facebook.com" class="social-list__link">
+              Ссылка на facebook
+            </a>
+          </li>
+          <li class="social-list__item social-list__item-vk">
+            <a href="https://vk.com" class="social-list__link">
+              Ссылка на вконтакте
+            </a>
+          </li>
+          <li class="social-list__item social-list__item-insta">
+            <a href="https://www.instagram.com" class="social-list__link">
+              Ссылка на instagram
+            </a>
+          </li>
+        </ul>
+        <!-- / footer__social -->
+        <div class="footer__author">
+          <p class="footer__author-text">Разработано</p>
+          <a href="https://htmlacademy.ru" class="footer__author-logo"></a>
+        </div>
+        <!-- /.footer__author -->
       </div>
-      <!-- /.footer__author -->
     </footer>
   </body>
 </html>
