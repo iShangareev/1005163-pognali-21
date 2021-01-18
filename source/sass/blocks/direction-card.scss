@@ -18,7 +18,7 @@
     position: absolute;
     width: 35px;
     height: 24px;
-    background-image: url(../img/thailand50.png);
+    background-image: url("../img/thailand50.png");
     top: -12px;
   }
 }
@@ -29,7 +29,7 @@
     position: absolute;
     width: 35px;
     height: 24px;
-    background-image: url(../img/france50.png);
+    background-image: url("../img/france50.png");
     top: -12px;
   }
 }
@@ -40,7 +40,7 @@
     position: absolute;
     width: 35px;
     height: 24px;
-    background-image: url(../img/czech50.png);
+    background-image: url("../img/czech50.png");
     top: -12px;
   }
 }
@@ -120,7 +120,7 @@
       content: "";
       width: 70px;
       height: 47px;
-      background-image: url(../img/thailand.png);
+      background-image: url("../img/thailand.png");
       top: 15px;
       right: -37px;
     }
@@ -130,7 +130,7 @@
     &::before {
       width: 70px;
       height: 47px;
-      background-image: url(../img/france.png);
+      background-image: url("../img/france.png");
       top: 15px;
       right: -37px;
     }
@@ -140,7 +140,7 @@
     &::before {
       width: 70px;
       height: 47px;
-      background-image: url(../img/czech.png);
+      background-image: url("../img/czech.png");
       top: 15px;
       right: -37px;
     }
@@ -181,7 +181,7 @@
     display: block;
     width: 587px;
     height: 82px;
-    margin-left: 0px;
+    margin-left: 0;
     padding-left: 34px;
     font-size: 24px;
     line-height: 78px;
