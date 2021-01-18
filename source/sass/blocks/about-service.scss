@@ -36,7 +36,7 @@
 
 @media (min-width: $desktop-width) {
   .about-service {
-    padding-bottom: 161px;
+    padding-bottom: 163px;
     border-radius: 0 0 60px 60px;
     background: url("../img/rectangle-212-212.png") 60px 5px,
       url("../img/about-desktop.png") 751px 17px;
@@ -45,10 +45,15 @@
   }
 
   .about-service__content {
-    padding: 66px 129px 0;
+    padding: 56px 266px 0 80px;
   }
 
   .about-service__text {
+    width: 617px;
     max-width: 617px;
+  }
+
+  .about-service__text-important {
+    width: 57%;
   }
 }

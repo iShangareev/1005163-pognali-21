@@ -32,7 +32,7 @@
   }
 
   .direction-travel__info {
-    padding-left: 14px;
+    padding-left: 0;
   }
 
   .direction-travel__info-text {
@@ -42,11 +42,15 @@
 
   .direction-travel__card-wrapper {
     width: 100%;
-    padding: 20px 0 37px 16px;
+    padding: 20px 0 34px 2px;
   }
 
   .direction-travel__card {
     margin-bottom: 10px;
+  }
+
+  .direction-travel__button {
+    margin-left: 0;
   }
 }
 

@@ -32,6 +32,10 @@
   background-image: url("../img/icon-run-active.png");
 }
 
+.type-travel-list__item-status_disabled {
+  opacity: 0.2;
+}
+
 @media (min-width: $tablet-width) {
   .type-travel-list {
     flex-direction: row;

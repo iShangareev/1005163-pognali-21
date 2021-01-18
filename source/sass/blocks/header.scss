@@ -52,6 +52,11 @@
     }
   }
 
+  .header__logo-image {
+    width: 166px;
+    height: 42px;
+  }
+
   .header__content {
     display: flex;
     flex-wrap: wrap;
@@ -71,6 +76,11 @@
     margin: 70px 0 0 66px;
     font-size: 60px;
     line-height: 60px;
+  }
+
+  .header__logo-image {
+    width: 200px;
+    height: 52px;
   }
 
   .header__content {
