@@ -70,6 +70,15 @@
     padding-top: 47px;
     padding-bottom: 50px;
   }
+
+  .page__footer-logo-image {
+    width: 166px;
+    height: 42px;
+  }
+
+  .page__footer-social-list {
+    margin-left: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -79,5 +88,14 @@
 
   .page__map {
     margin-bottom: -129px;
+  }
+
+  .page__footer-logo-image {
+    width: 200px;
+    height: 52px;
+  }
+
+  .page__footer-social-list {
+    margin-left: -35px;
   }
 }

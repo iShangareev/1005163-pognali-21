@@ -33,6 +33,11 @@
   padding-bottom: 15px;
   border-radius: 0 0 10px 10px;
 }
+.companion-card__user-photo {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
 
 .companion-card__country-list {
   display: flex;
@@ -62,6 +67,10 @@
   display: flex;
   justify-content: center;
   margin: 13px 46px 16px;
+}
+
+.companion-card__travel-list-item {
+  padding: 0 6px;
 }
 
 @media (min-width: $tablet-width) {

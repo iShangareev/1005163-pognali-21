@@ -12,13 +12,45 @@
   background-color: var(--basic-white);
 }
 
-.direction-card__country-flag {
-  position: absolute;
-  top: -11px;
+.direction-card__box_thai {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 24px;
+    background-image: url(../img/thailand50.png);
+    top: -12px;
+  }
+}
+
+.direction-card__box_france {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 24px;
+    background-image: url(../img/france50.png);
+    top: -12px;
+  }
+}
+
+.direction-card__box_czech {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 24px;
+    background-image: url(../img/czech50.png);
+    top: -12px;
+  }
 }
 
 .direction-card__link {
   text-decoration: none;
+}
+
+.direction-card__pic {
+  border-radius: 10px 10px 0 0;
 }
 
 .direction-card__country {
@@ -83,17 +115,41 @@
     border-radius: 20px 0 0 20px;
   }
 
-  .direction-card__pic {
-    width: 186px;
-    height: 140px;
-    border-radius: 0 20px 20px 0;
+  .direction-card__box_thai {
+    &::before {
+      content: "";
+      width: 70px;
+      height: 47px;
+      background-image: url(../img/thailand.png);
+      top: 15px;
+      right: -37px;
+    }
   }
 
-  .direction-card__country-flag {
-    width: 70px;
-    height: 47px;
-    right: -36px;
-    top: 16px;
+  .direction-card__box_france {
+    &::before {
+      width: 70px;
+      height: 47px;
+      background-image: url(../img/france.png);
+      top: 15px;
+      right: -37px;
+    }
+  }
+
+  .direction-card__box_czech {
+    &::before {
+      width: 70px;
+      height: 47px;
+      background-image: url(../img/czech.png);
+      top: 15px;
+      right: -37px;
+    }
+  }
+
+  .direction-card__pic {
+    width: 186px;
+    height: 137px;
+    border-radius: 0 20px 20px 0;
   }
 
   .direction-card__country {
@@ -125,7 +181,7 @@
     display: block;
     width: 587px;
     height: 82px;
-    margin-left: 25px;
+    margin-left: 0px;
     padding-left: 34px;
     font-size: 24px;
     line-height: 78px;
@@ -148,10 +204,6 @@
   .direction-card__box {
     padding-left: 30px;
     padding-top: 22px;
-  }
-
-  .direction-card__country-flag {
-    top: 23px;
   }
 
   .direction-card__button-more {
