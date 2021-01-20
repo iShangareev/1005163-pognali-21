@@ -10,12 +10,54 @@
     <header class="header catalog-page__header">
       <div class="page-margin header__content">
         <div class="navbar">
-          <a href="" class="company-logo">
-            <img
-              src="img/logo.svg"
-              alt="Логотип сервиса 'Погнали?'"
-              class="company-logo__image"
-            />
+          <a href="index.html" class="header__logo">
+            <picture>
+              <source
+                type="image/webp"
+                media="(min-width: 1440px)"
+                srcset="
+                  img/logo-desktop-white@1x.webp 1x,
+                  img/logo-desktop-white@2x.webp 2x
+                "
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="
+                  img/logo-tablet-white@1x.webp 1x,
+                  img/logo-tablet-white@2x.webp 2x
+                "
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  img/logo-mobile-white@1x.webp 1x,
+                  img/logo-mobile-white@2x.png  2x
+                "
+              />
+              <source
+                media="(min-width: 1440px)"
+                srcset="
+                  img/logo-desktop-white@1x.png 1x,
+                  img/logo-desktop-white@2x.png 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  img/logo-tablet-white@1x.png 1x,
+                  img/logo-tablet-white@2x.png 2x
+                "
+              />
+              <img
+                class="header__logo-image"
+                src="img/logo-mobile-white@1x.png"
+                srcset="img/logo-mobile-white@2x.png 2x"
+                width="100"
+                height="19"
+                alt="Погнали?"
+              />
+            </picture>
           </a>
           <button type="button" class="navbar__menu-button">Меню</button>
           <img src="img/white-line.svg" alt="" class="navbar__line" />
@@ -1402,12 +1444,55 @@
           </div>
           <div class="public-cards__box">
             <div class="public-card-profile public-cards__public-card-profile">
-              <a class="public-card-profile__photo-pofile"
-                ><img
-                  src="img/user-firsova.png"
-                  alt="Фото пользователя"
-                  class="public-card-profile__photo-pofile-pic"
-              /></a>
+              <a class="public-card-profile__photo-pofile">
+                <picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 1440px)"
+                    srcset="
+                      img/firsova-desktop@1x.webp 1x,
+                      img/firsova-destop@2x.webp  2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/firsova-tablet@1x.webp 1x,
+                      img/firsova-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/firsova-mobile@1x.webp 1x,
+                      img/firsova-mobile@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      img/firsova-desktop@1x.jpg 1x,
+                      img/firsova-destop@2x.jpg  2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/firsova-tablet@1x.jpg 1x,
+                      img/firsova-tablet@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="img/firsova-mobile@1x.jpg"
+                    srcset="img/firsova-mobile@2x.jpg 2x"
+                    width="70"
+                    height="70"
+                    alt="foto"
+                    class="public-card-profile__photo-pofile-pic"
+                  />
+                </picture>
+              </a>
               <a class="public-card-profile__user-name">Таня Фирсова</a>
               <p class="public-card-profile__subscribers">
                 <span class="public-card-profile__photo-like"></span>1,5 М
@@ -1419,7 +1504,7 @@
               <ul class="public-card-profile__list">
                 <li class="public-card-profile__item">
                   <img
-                    src="img/flag-sri-lanka-mobile.png"
+                    src="img/sri-lanka50.png"
                     alt="Шри-ланка"
                     class="public-card-profile__item-pic"
                   />
@@ -1429,7 +1514,7 @@
                 </li>
                 <li class="public-card-profile__item">
                   <img
-                    src="img/flag-thailand-mobile.png"
+                    src="img/thailand50.png"
                     alt="Тайланд"
                     class="public-card-profile__item-pic"
                   />
@@ -1437,7 +1522,7 @@
                 </li>
                 <li class="public-card-profile__item">
                   <img
-                    src="img/flag-seychelles-mobile.png"
+                    src="img/seychelles50.png"
                     alt="Сэйшелы"
                     class="public-card-profile__item-pic"
                   />
@@ -1458,25 +1543,27 @@
                   <li class="type-travel-list__item">
                     <a
                       href=""
-                      class="type-travel-list__link type-travel-list__link_bus public-card-profile__travel-list__link"
+                      class="type-travel-list__link type-travel-list__link_bus public-card-profile__travel-list__link type-travel-list__item-status_disabled"
                     ></a>
                   </li>
                   <li class="type-travel-list__item">
                     <a
                       href=""
-                      class="type-travel-list__link type-travel-list__link_bicycle public-card-profile__travel-list__link"
+                      class="type-travel-list__link type-travel-list__link_bicycle public-card-profile__travel-list__link type-travel-list__item-status_disabled"
                     ></a>
                   </li>
                   <li class="type-travel-list__item">
                     <a
                       href=""
-                      class="type-travel-list__link type-travel-list__link_walk public-card-profile__travel-list__link"
+                      class="type-travel-list__link type-travel-list__link_walk public-card-profile__travel-list__link type-travel-list__item-status_disabled"
                     ></a>
                   </li>
                 </ul>
               </div>
               <!-- /.public-card-profile__transport -->
-              <div class="public-card-profile__level">
+              <div
+                class="public-card-profile__level public-card-profile__level--firsova"
+              >
                 <p class="public-card-profile__level-title">level:</p>
                 <div class="public-card-profile__level-box">
                   <span class="public-card-profile__level-num">99</span>
@@ -1490,12 +1577,55 @@
             </div>
             <!-- /.public-card-profile -->
             <div class="public-card-profile public-cards__public-card-profile">
-              <a class="public-card-profile__photo-pofile"
-                ><img
-                  src="img/user-demin.png"
-                  alt="Фото пользователя"
-                  class="public-card-profile__photo-pofile-pic"
-              /></a>
+              <a class="public-card-profile__photo-pofile">
+                <picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 1440px)"
+                    srcset="
+                      img/demin-desktop@1x.webp 1x,
+                      img/demin-desktop@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/demin-tablet@1x.webp 1x,
+                      img/demin-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/demin-mobile@1x.webp 1x,
+                      img/demin-mobile@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      img/demin-desktop@1x.jpg 1x,
+                      img/demin-desktop@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/demin-tablet@1x.jpg 1x,
+                      img/demin-tablet@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="img/demin-mobile@1x.jpg"
+                    srcset="img/demin-mobile@2x.jpg 2x"
+                    width="70"
+                    height="70"
+                    alt="foto"
+                    class="public-card-profile__photo-pofile-pic"
+                  />
+                </picture>
+              </a>
 
               <!-- /.public-card-profile__photo-like -->
               <a
@@ -1505,7 +1635,10 @@
               <p
                 class="public-card-profile__subscribers public-card-profile__subscribers_demin"
               >
-                <span class="public-card-profile__photo-like"></span>1500
+                <span
+                  class="public-card-profile__photo-like public-card-profile__photo-like_disabled"
+                ></span
+                >1500
               </p>
               <p class="public-card-profile__hashtags">
                 #бургер #бар #футбол #концерт #крафт
@@ -1524,7 +1657,7 @@
                 </li>
                 <li class="public-card-profile__item">
                   <img
-                    src="img/flag-czech-mobile.png"
+                    src="img/czech50.png"
                     alt="Чехия"
                     class="public-card-profile__item-pic"
                   />
@@ -1553,7 +1686,7 @@
                   <li class="type-travel-list__item">
                     <a
                       href=""
-                      class="type-travel-list__link type-travel-list__link_bicycle public-card-profile__travel-list__link"
+                      class="type-travel-list__link type-travel-list__link_bicycle public-card-profile__travel-list__link type-travel-list__item-status_disabled"
                     ></a>
                   </li>
                   <li class="type-travel-list__item">
@@ -1584,12 +1717,55 @@
             </div>
             <!-- /.public-card-profile -->
             <div class="public-card-profile public-cards__public-card-profile">
-              <a class="public-card-profile__photo-pofile"
-                ><img
-                  src="img/user-smolov.png"
-                  alt="Фото пользователя"
-                  class="public-card-profile__photo-pofile-pic"
-              /></a>
+              <a class="public-card-profile__photo-pofile">
+                <picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 1440px)"
+                    srcset="
+                      img/smolov-desktop@1x.webp 1x,
+                      img/smolov-desktop@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/smolov-tablet@1x.webp 1x,
+                      img/smolov-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/smolov-mobile@1x.webp 1x,
+                      img/smolov-mobile@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      img/smolov-desktop@1x.jpg 1x,
+                      img/smolov-desktop@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/smolov-tablet@1x.jpg 1x,
+                      img/smolov-tablet@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="img/smolov-mobile@1x.jpg"
+                    srcset="img/smolov-mobile@2x.jpg 2x"
+                    width="70"
+                    height="70"
+                    alt="foto"
+                    class="public-card-profile__photo-pofile-pic"
+                  />
+                </picture>
+              </a>
 
               <!-- /.public-card-profile__photo-like -->
               <a
@@ -1599,7 +1775,10 @@
               <p
                 class="public-card-profile__subscribers public-card-profile__subscribers_smolov"
               >
-                <span class="public-card-profile__photo-like"></span>170
+                <span
+                  class="public-card-profile__photo-like public-card-profile__photo-like_disabled"
+                ></span
+                >170
               </p>
               <p class="public-card-profile__hashtags">
                 #рэп #тату #хайпбист #кроссовки #суприм
@@ -1653,7 +1832,7 @@
                   <li class="type-travel-list__item">
                     <a
                       href=""
-                      class="type-travel-list__link type-travel-list__link_bus public-card-profile__travel-list__link"
+                      class="type-travel-list__link type-travel-list__link_bus public-card-profile__travel-list__link type-travel-list__item-status_disabled"
                     ></a>
                   </li>
                   <li class="type-travel-list__item">
@@ -1665,7 +1844,7 @@
                   <li class="type-travel-list__item">
                     <a
                       href=""
-                      class="type-travel-list__link type-travel-list__link_walk public-card-profile__travel-list__link"
+                      class="type-travel-list__link type-travel-list__link_walk public-card-profile__travel-list__link type-travel-list__item-status_disabled"
                     ></a>
                   </li>
                 </ul>
@@ -1690,12 +1869,55 @@
             </div>
             <!-- /.public-card-profile -->
             <div class="public-card-profile public-cards__public-card-profile">
-              <a class="public-card-profile__photo-pofile"
-                ><img
-                  src="img/user-rogovaya.png"
-                  alt="Фото пользователя"
-                  class="public-card-profile__photo-pofile-pic"
-              /></a>
+              <a class="public-card-profile__photo-pofile">
+                <picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 1440px)"
+                    srcset="
+                      img/rogovaya-desktop@1x.webp 1x,
+                      img/rogovaya-desktop@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/rogovaya-tablet@1x.webp 1x,
+                      img/rogovaya-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/rogovaya-mobile@1x.webp 1x,
+                      img/rogovaya-mobile@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      img/rogovaya-desktop@1x.jpg      1x,
+                      img/rogovaya-back-desktop@2x.png 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/rogovaya-tablet@1x.jpg 1x,
+                      img/rogovaya-tablet@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="img/rogovaya-mobile@1x.jpg"
+                    srcset="img/rogovaya-mobile@2x.jpg 2x"
+                    width="70"
+                    height="70"
+                    alt="foto"
+                    class="public-card-profile__photo-pofile-pic"
+                  />
+                </picture>
+              </a>
 
               <!-- /.public-card-profile__photo-like -->
               <a
@@ -1705,7 +1927,10 @@
               <p
                 class="public-card-profile__subscribers public-card-profile__subscribers_larisa"
               >
-                <span class="public-card-profile__photo-like"></span>23
+                <span
+                  class="public-card-profile__photo-like public-card-profile__photo-like_disabled"
+                ></span
+                >23
               </p>
               <p class="public-card-profile__hashtags">
                 #образование #карьера #учеба #линкедин
@@ -1757,13 +1982,13 @@
                   <li class="type-travel-list__item">
                     <a
                       href=""
-                      class="type-travel-list__link type-travel-list__link_bicycle public-card-profile__travel-list__link"
+                      class="type-travel-list__link type-travel-list__link_bicycle public-card-profile__travel-list__link type-travel-list__item-status_disabled"
                     ></a>
                   </li>
                   <li class="type-travel-list__item">
                     <a
                       href=""
-                      class="type-travel-list__link type-travel-list__link_walk public-card-profile__travel-list__link"
+                      class="type-travel-list__link type-travel-list__link_walk public-card-profile__travel-list__link type-travel-list__item-status_disabled"
                     ></a>
                   </li>
                 </ul>
@@ -1822,7 +2047,53 @@
     </main>
     <footer class="footer page__footer catalog-page__footer">
       <div class="footer__content">
-        <a class="company-logo catalog-page__footer-logo"> </a>
+        <picture>
+          <source
+            type="image/webp"
+            media="(min-width: 1200px)"
+            srcset="
+              img/logo-desktop-blue@1x.webp 1x,
+              img/logo-desktop-blue@2x.webp 2x
+            "
+          />
+          <source
+            type="image/webp"
+            media="(min-width: 768px)"
+            srcset="
+              img/logo-tablet-blue@1x.webp 1x,
+              img/logo-tablet-blue@2x.webp 2x
+            "
+          />
+          <source
+            type="image/webp"
+            srcset="
+              img/logo-mobile-blue@1x.webp 1x,
+              img/logo-mobile-blue@2x.webp 2x
+            "
+          />
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              img/logo-desktop-blue@1x.png 1x,
+              img/logo-desktop-blue@2x.png 2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              img/logo-tablet-blue@1x.png 1x,
+              img/logo-tablet-blue@2x.png 2x
+            "
+          />
+          <img
+            class="page__footer-logo-image"
+            src="img/logo-mobile-blue@1x.png"
+            srcset="img/logo-mobile-blue@2x.png 2x"
+            width="100"
+            height="19"
+            alt="Погнали?"
+          />
+        </picture>
         <ul
           class="social-list social-list_theme_yellow social-list__position catalog-page__footer-social-list"
         >
