@@ -6,12 +6,13 @@
   }
 
   .profile-info__level {
-    width: 40%;
+    width: 100px;
     display: flex;
     flex-direction: column;
   }
 
   .profile-info__level-num {
+    margin-top: 25px;
     font-weight: 600;
     font-size: 38px;
     line-height: 38px;
