@@ -5,6 +5,8 @@
 }
 
 .card-profile__user-photo {
+  width: 99px;
+  height: 100px;
   border-radius: 50%;
 }
 
@@ -24,6 +26,8 @@
   flex-direction: column;
   justify-content: center;
   margin-right: 35px;
+  background-image: url("../img/subtract.svg");
+  background-repeat: no-repeat;
 }
 
 .card-profile__level-num {
@@ -128,6 +132,7 @@
     grid-area: user-photo;
     justify-self: flex-end;
     border-radius: 10px;
+    margin-left: 60px;
   }
 
   .card-profile__transport-title {
