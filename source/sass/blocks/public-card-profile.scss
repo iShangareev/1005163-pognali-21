@@ -154,6 +154,14 @@
   top: -11px;
 }
 
+.public-card-profile__photo-like_disabled {
+  background-color: var(--lilac-light);
+  background-image: url("../img/heartd.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 13px 11px;
+}
+
 .public-card-profile__item {
   display: flex;
   align-items: center;
@@ -172,6 +180,15 @@
 
 .public-card-profile__level-box {
   margin-left: 9px;
+}
+
+.public-card-profile__level--firsova,
+.public-card-profile__level_demin,
+.public-card-profile__level_smolov,
+.public-card-profile__level_larisa {
+  background-image: url("../img/sp.svg");
+  background-repeat: no-repeat;
+  background-position: 0 21px;
 }
 
 .public-card-profile__pagination-box {
@@ -262,7 +279,21 @@
     display: flex;
     flex-direction: column-reverse;
     grid-area: profile-level;
-    margin-left: 38px;
+    margin-left: 28px;
+    padding-left: 10px;
+    width: 55px;
+    height: 74px;
+  }
+
+  .public-card-profile__level--firsova,
+  .public-card-profile__level_demin,
+  .public-card-profile__level_smolov,
+  .public-card-profile__level_larisa {
+    position: relative;
+    z-index: 25;
+    background-image: url("../img/sp-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: 0 10px;
   }
 
   .public-card-profile__level-title {
