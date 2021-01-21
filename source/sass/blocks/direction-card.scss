@@ -71,6 +71,17 @@
   line-height: 20px;
   color: var(--basic-black);
   opacity: 0.3;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -18px;
+    top: 6px;
+    width: 11px;
+    height: 11px;
+    background: url("../img/user.svg") center no-repeat;
+    background-size: 11px 11px;
+  }
 }
 
 .direction-card__text {
