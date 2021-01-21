@@ -19,22 +19,24 @@
   background-color: var(--basic-yellow);
 }
 
-.social-list__item-facebook {
-  background: url("../img/icon_facebook.svg") no-repeat center;
-}
-
-.social-list__item-vk {
-  background: url("../img/icon_vkontakte.svg") no-repeat center;
-}
-
-.social-list__item-insta {
-  background: url("../img/icon_instagram.svg") no-repeat center;
+.social-list__link {
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
 }
 
 @media (min-width: $tablet-width) {
   .social-list__item {
     width: 62px;
     height: 62px;
+  }
+
+  .social-list__link {
+    width: 60px;
+    height: 60px;
   }
 
   .social-list__position {

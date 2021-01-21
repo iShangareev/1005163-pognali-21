@@ -39,6 +39,21 @@
   margin-top: 40px;
 }
 
+.footer__content-link-image_facebook {
+  width: 11px;
+  height: 21px;
+}
+
+.footer__content-link-image_vk {
+  width: 23px;
+  height: 12px;
+}
+
+.footer__content-link-image_insta {
+  width: 18px;
+  height: 18px;
+}
+
 @media (min-width: $tablet-width) {
   .footer {
     padding: 0 40px;
@@ -89,5 +104,20 @@
 
   .footer__social-list {
     margin-right: 35px;
+  }
+
+  .footer__content-link-image_facebook {
+    width: 14px;
+    height: 28px;
+  }
+
+  .footer__content-link-image_vk {
+    width: 31px;
+    height: 16px;
+  }
+
+  .footer__content-link-image_insta {
+    width: 24px;
+    height: 24px;
   }
 }

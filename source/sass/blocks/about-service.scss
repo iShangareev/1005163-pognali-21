@@ -13,7 +13,6 @@
 
 @media (min-width: $tablet-width) {
   .about-service {
-    // display: block;
     padding-bottom: 90px;
     border-radius: 0 0 60px 60px;
     background: url("../img/about-tablet.png") right;
@@ -22,8 +21,6 @@
   }
 
   .about-service__content {
-    // margin: 0 auto;
-
     margin-right: 305px;
     padding: 66px 75px 0;
   }
