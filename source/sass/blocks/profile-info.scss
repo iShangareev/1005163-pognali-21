@@ -6,9 +6,19 @@
   }
 
   .profile-info__level {
+    position: relative;
     width: 100px;
     display: flex;
     flex-direction: column;
+  }
+
+  .profile-info__stroke {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(-90deg);
   }
 
   .profile-info__level-num {
@@ -34,5 +44,9 @@
     text-transform: uppercase;
     color: var(--main-blue-title);
     background-color: var(--special-choose);
+  }
+
+  .profile-info__user-photo {
+    border-radius: 10px 10px 0 0;
   }
 }

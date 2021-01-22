@@ -20,14 +20,22 @@
 }
 
 .card-profile__level {
+  position: relative;
   width: 100px;
   height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-right: 35px;
-  background-image: url("../img/subtract.svg");
-  background-repeat: no-repeat;
+}
+
+.card-profile__stroke {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-90deg);
 }
 
 .card-profile__level-num {

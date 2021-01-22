@@ -36,6 +36,10 @@
   opacity: 0.2;
 }
 
+.type-travel-list__item_disabled {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .type-travel-list {
     flex-direction: row;
