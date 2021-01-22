@@ -93,6 +93,15 @@
   width: 20%;
 }
 
+.public-card-profile__stroke {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: -6px;
+  left: -9px;
+  transform: rotate(-90deg);
+}
+
 .public-card-profile__transport-title,
 .public-card-profile__level-title {
   font-size: 15px;
@@ -179,16 +188,8 @@
 }
 
 .public-card-profile__level-box {
+  position: relative;
   margin-left: 9px;
-}
-
-.public-card-profile__level_firsova,
-.public-card-profile__level_demin,
-.public-card-profile__level_smolov,
-.public-card-profile__level_larisa {
-  background-image: url("../img/sp.svg");
-  background-repeat: no-repeat;
-  background-position: 0 21px;
 }
 
 .public-card-profile__pagination-box {
@@ -285,15 +286,11 @@
     height: 74px;
   }
 
-  .public-card-profile__level_firsova,
-  .public-card-profile__level_demin,
-  .public-card-profile__level_smolov,
-  .public-card-profile__level_larisa {
-    position: relative;
-    z-index: 25;
-    background-image: url("../img/sp-tablet.svg");
-    background-repeat: no-repeat;
-    background-position: 0 10px;
+  .public-card-profile__stroke {
+    width: 60px;
+    height: 60px;
+    top: -7px;
+    left: -16px;
   }
 
   .public-card-profile__level-title {
@@ -419,6 +416,7 @@
 
   .public-card-profile__level {
     margin-top: -12px;
+    height: 54px;
   }
 
   .public-card-profile__user-name_demin {
