@@ -1,0 +1,57 @@
+.business-rates {
+  display: none;
+  width: 270px;
+  height: 443px;
+  border-radius: 20px;
+  background-color: var(--basic-white);
+  position: fixed;
+  z-index: 9999;
+  top: 21%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.business-rates_open {
+  display: block;
+}
+
+.business-rates__title {
+  margin-top: 32px;
+  margin-bottom: 38px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  color: var(--special-orange);
+}
+
+.business-rates__info-box {
+  margin-bottom: 23px;
+  padding-left: 25px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--special-grey);
+}
+
+.business-rates__info-title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.business-rates__info-cost {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.business-rates__close {
+  margin-left: 74px;
+  margin-top: 39px;
+  border: none;
+  background-color: var(--basic-white);
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: var(--light-blue);
+}

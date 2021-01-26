@@ -39,5 +39,13 @@
     font-size: 20px;
     line-height: 20px;
     color: var(--basic-white);
+
+    &:hover {
+      color: var(--basic-yellow);
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

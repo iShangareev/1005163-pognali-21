@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
     <title>HTML Academy: Погнали</title>
   </head>
   <body class="page__body form-page">
@@ -239,20 +239,61 @@
       </div>
       <!-- /.header__form-content -->
 
-      <div class="menu-box">
+      <div class="menu-box menu-box_no-js">
         <div class="navbar-menu">
-          <a href="" class="company-logo">
-            <img
-              src="https://via.placeholder.com/100x15"
-              alt="Логотип сервиса 'Погнали?"
-              class="company-logo__image"
-          /></a>
-          <a href="" class="navbar-menu__close">
-            <img
-              class="navbar-menu__close-image"
-              src="https://via.placeholder.com/19x19"
-              alt=""
-            />
+          <a class="header__logo navbar-menu_logo">
+            <picture>
+              <source
+                type="image/webp"
+                media="(min-width: 1440px)"
+                srcset="
+                  img/logo-desktop-blue@1x.webp 1x,
+                  img/logo-desktop-blue@2x.webp 2x
+                "
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="
+                  img/logo-tablet-blue@1x.webp 1x,
+                  img/logo-tablet-blue@2x.webp 2x
+                "
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  img/logo-mobile-blue@1x.webp 1x,
+                  img/logo-mobile-blue@2x.png  2x
+                "
+              />
+              <source
+                media="(min-width: 1440px)"
+                srcset="
+                  img/logo-desktop-blue@1x.png 1x,
+                  img/logo-desktop-blue@2x.png 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  img/logo-tablet-blue@1x.png 1x,
+                  img/logo-tablet-blue@2x.png 2x
+                "
+              />
+              <img
+                class="header__logo-image"
+                src="img/logo-mobile-white@1x.png"
+                srcset="img/logo-mobile-blue@2x.png 2x"
+                width="100"
+                height="19"
+                alt="Погнали?"
+              />
+            </picture>
+          </a>
+          <a
+            href=""
+            class="navbar-menu__close navbar__menu-button_close menu-box__close"
+          >
           </a>
         </div>
         <nav class="navbar-menu-navigation">
@@ -270,35 +311,85 @@
         </nav>
         <ul class="navbar-menu__list">
           <li class="navbar-menu__item">
-            <a href="" class="navbar-menu__authorization button">
+            <a
+              href=""
+              class="navbar-menu__authorization button menu-box__authorization"
+            >
               Авторизация
             </a>
           </li>
-          <li class="navbar-menu__item">
-            <a href="tel:88005558628" class="navbar-menu__phone">
+          <li class="navbar-menu__item menu-box__item-phone">
+            <a
+              href="tel:88005558628"
+              class="navbar-menu__phone menu-box__phone"
+            >
               8 800 555-86-28
             </a>
           </li>
-          <li class="navbar-menu__item">
-            <a href="mailto:mail@htmlacademy.ru" class="navbar-menu__mail"
+          <li class="navbar-menu__item menu-box__item-mail">
+            <a
+              href="mailto:mail@htmlacademy.ru"
+              class="navbar-menu__mail menu-box__mail"
               >mail@htmlacademy.ru</a
             >
           </li>
         </ul>
-        <ul class="social-list">
+        <ul class="social-list menu-box__social-list">
           <li class="social-list__item">
             <a href="https://facebook.com" class="social-list__link">
               Ссылка на facebook
+              <svg
+                fill="#192144"
+                class="footer__content-link-image footer__content-link-image_facebook"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                viewBox="0 0 11 21"
+                xml:space="preserve"
+                width="11"
+                height="21"
+              >
+                <use xlink:href="#icon-facebook"></use>
+              </svg>
             </a>
           </li>
           <li class="social-list__item">
             <a href="https://vk.com" class="social-list__link">
               Ссылка на вконтакте
+              <svg
+                fill="#192144"
+                class="footer__content-link-image footer__content-link-image_vk"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                viewBox="0 0 30 15.8"
+                xml:space="preserve"
+                width="23"
+                height="12"
+              >
+                <use xlink:href="#icon-vkontakte"></use>
+              </svg>
             </a>
           </li>
           <li class="social-list__item">
             <a href="https://www.instagram.com" class="social-list__link">
               Ссылка на instagram
+              <svg
+                fill="#192144"
+                class="footer__content-link-image footer__content-link-image_insta"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                viewBox="0 0 23 23"
+                xml:space="preserve"
+                width="18"
+                height="18"
+              >
+                <use xlink:href="#icon-instagram"></use>
+              </svg>
             </a>
           </li>
         </ul>
@@ -1187,11 +1278,15 @@
         <!-- / footer__social -->
         <div class="footer__author">
           <p class="footer__author-text">Разработано</p>
-          <a href="https://htmlacademy.ru" class="footer__author-logo"></a>
+          <a
+            href="https://htmlacademy.ru/intensive/adaptive"
+            class="footer__author-logo"
+          ></a>
         </div>
         <!-- /.footer__author -->
       </div>
       <!-- /.footer__content -->
     </footer>
+    <script src="js/menu.min.js"></script>
   </body>
 </html>
