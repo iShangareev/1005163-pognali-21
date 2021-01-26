@@ -33,6 +33,10 @@
   display: none;
 }
 
+.header__content_scroll {
+  background-color: var(--basic-white);
+}
+
 @media (min-width: $tablet-width) {
   .header {
     background-color: var(--main-blue);

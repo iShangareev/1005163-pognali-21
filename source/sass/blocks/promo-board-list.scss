@@ -10,6 +10,10 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .promo-board-list__contact-item {
@@ -55,6 +59,10 @@
   text-decoration: none;
   color: var(--main-blue-title);
   background-color: var(--basic-yellow);
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
