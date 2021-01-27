@@ -1,11 +1,3 @@
-.travel-plan-form__title {
-  margin: 0 0 28px 0;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 24px;
-  color: var(--light-blue);
-}
-
 .travel-plan-form__arrival {
   margin-bottom: 8px;
 }
@@ -50,11 +42,6 @@
     margin-bottom: 40px;
   }
 
-  .travel-plan-form__title {
-    font-size: 36px;
-    line-height: 36px;
-  }
-
   .travel-plan-form__route {
     padding-top: 45px;
     padding-bottom: 40px;
@@ -96,10 +83,6 @@
 @media (min-width: $desktop-width) {
   .travel-plan-form {
     position: relative;
-  }
-
-  .travel-plan-form__title {
-    margin-left: 69px;
   }
 
   .travel-plan-form__route {

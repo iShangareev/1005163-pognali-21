@@ -26,23 +26,7 @@
   opacity: 1;
 }
 
-.region-list__show-all {
-  display: none;
-}
-
 @media (min-width: $tablet-width) {
-  .region-list__show-all {
-    display: block;
-    margin-left: 47px;
-    color: var(--light-blue);
-    background-color: transparent;
-    border: none;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 20px;
-    text-transform: uppercase;
-  }
-
   .regions-list__region-name {
     font-weight: 600;
     font-size: 20px;
@@ -51,7 +35,4 @@
 }
 
 @media (min-width: $desktop-width) {
-  .region-list__show-all {
-    margin-right: 20px;
-  }
 }

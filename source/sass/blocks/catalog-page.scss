@@ -1,3 +1,9 @@
+.catalog-page {
+  font-family: "Bloggersans", "Arial", sans-serif;
+  font-style: normal;
+  margin: 0;
+}
+
 .catalog-page__header {
   position: relative;
   z-index: 10;
@@ -119,6 +125,8 @@
     margin-top: -40px;
     border-radius: 60px 60px 0 0;
     z-index: 10;
+    padding-bottom: 50px;
+    padding-top: 40px;
   }
 
   .catalog-page__footer-logo {

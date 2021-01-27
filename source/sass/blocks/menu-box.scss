@@ -91,6 +91,21 @@
   display: none;
 }
 
+.menu-box__content-link-image_facebook {
+  width: 11px;
+  height: 21px;
+}
+
+.menu-box__content-link-image_vk {
+  width: 23px;
+  height: 12px;
+}
+
+.menu-box__content-link-image_insta {
+  width: 18px;
+  height: 18px;
+}
+
 @media (min-width: $tablet-width) {
   .menu-box__authorization-top {
     width: 188px;
@@ -192,5 +207,20 @@
 @media (min-width: $desktop-width) {
   .menu-box {
     display: none;
+  }
+
+  .menu-box__content-link-image_facebook {
+    width: 14px;
+    height: 28px;
+  }
+
+  .menu-box__content-link-image_vk {
+    width: 31px;
+    height: 16px;
+  }
+
+  .menu-box__content-link-image_insta {
+    width: 24px;
+    height: 24px;
   }
 }

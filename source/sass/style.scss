@@ -10,8 +10,10 @@ $desktop-width: 1400px;
 // Блоки
 
 @import "blocks/page-margin.scss";
-@import "blocks/header.scss";
+@import "blocks/social-list.scss";
 @import "blocks/footer.scss";
+@import "blocks/index-page.scss";
+@import "blocks/header.scss";
 @import "blocks/form-page.scss";
 @import "blocks/card-pagination.scss";
 @import "blocks/promo-board-list.scss";
@@ -20,7 +22,6 @@ $desktop-width: 1400px;
 @import "blocks/company-logo.scss";
 @import "blocks/navbar-menu.scss";
 @import "blocks/navbar-menu-navigation.scss";
-@import "blocks/social-list.scss";
 @import "blocks/promo-board.scss";
 @import "blocks/number-companions.scss";
 @import "blocks/step-list.scss";
@@ -69,5 +70,6 @@ $desktop-width: 1400px;
 @import "blocks/page.scss";
 @import "blocks/count-buttons.scss";
 @import "blocks/catalog-page.scss";
-@import "blocks/menu-box.scss";
 @import "blocks/business-rates.scss";
+@import "blocks/navbar-menu-list.scss";
+@import "blocks/menu-box.scss";

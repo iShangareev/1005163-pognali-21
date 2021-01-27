@@ -17,6 +17,20 @@
   margin-bottom: 60px;
 }
 
+.direction-travel__button-more {
+  display: block;
+  width: 245px;
+  height: 62px;
+  border-radius: 10px;
+  padding-left: 25px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 58px;
+  color: var(--main-blue-title);
+  text-decoration: none;
+  background-color: var(--basic-yellow);
+}
+
 @media (min-width: $tablet-width) {
   .direction-travel {
     padding-bottom: 78px;
@@ -51,6 +65,24 @@
 
   .direction-travel__button {
     margin-left: 0;
+  }
+
+  .direction-travel__button-more {
+    display: block;
+    width: 587px;
+    height: 82px;
+    margin-left: 0;
+    padding-left: 34px;
+    font-size: 24px;
+    line-height: 78px;
+    border-radius: 20px 20px 20px 20px;
+
+    &::after {
+      content: url("../img/button-decor-triangle.svg");
+      position: relative;
+      top: 0;
+      left: 397px;
+    }
   }
 }
 
@@ -94,5 +126,16 @@
   .direction-travel__info-text {
     padding-left: 0;
     padding-top: 33px;
+  }
+
+  .direction-travel__button-more {
+    width: 240px;
+    display: block;
+    justify-self: left;
+    margin-left: 0;
+
+    &::after {
+      left: 53px;
+    }
   }
 }

@@ -192,8 +192,9 @@
   margin-left: 9px;
 }
 
-.public-card-profile__pagination-box {
-  margin: 0 auto;
+.public-card-profile__type-travel-list {
+  width: 130px;
+  padding-top: 5px;
 }
 
 @media (min-width: $tablet-width) {
@@ -315,10 +316,6 @@
     line-height: 20px;
   }
 
-  .public-card-profile__pagination-box {
-    margin-left: 340px;
-  }
-
   .public-card-profile {
     display: grid;
     grid-template-areas:
@@ -327,6 +324,12 @@
       "photo-pofile   signal-button       profile-subscribers     profile-level"
       "profile-text   profile-text        profile-text            profile-text"
       "card-list      card-list           card-list               card-list ";
+  }
+
+  .public-card-profile__type-travel-list_vertical {
+    width: 50px;
+    flex-direction: column;
+    margin-left: 45px;
   }
 }
 
@@ -520,7 +523,12 @@
     right: -37px;
   }
 
-  .public-card-profile__pagination-box {
-    margin-left: 580px;
+  .public-card-profile__type-travel-list {
+    margin-left: 44px;
+  }
+
+  .public-card-profile__type-travel-list_vertical {
+    display: flex;
+    flex-direction: row;
   }
 }

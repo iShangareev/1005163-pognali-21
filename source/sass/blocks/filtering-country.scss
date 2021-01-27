@@ -32,22 +32,6 @@
   }
 }
 
-.filtering-country__menu-close-top {
-  display: none;
-  width: 16px;
-  height: 16px;
-  border: none;
-  font-size: 0;
-
-  &::before {
-    content: url("../img/icon-close-blue.png");
-
-    position: absolute;
-    top: -15px;
-    right: 30px;
-  }
-}
-
 .filtering-country__menu-button {
   width: 17px;
   height: 17px;
@@ -59,29 +43,12 @@
   background-position: center;
 }
 
-.filtering-country__menu-close-bottom {
-  width: 270px;
-  height: 39px;
-  position: relative;
-  right: 25px;
-  top: 20px;
-  padding-left: 30px;
-  border-radius: 20px;
-  font-weight: 600;
-  font-size: 17px;
-  line-height: 43px;
-  text-transform: uppercase;
-  color: var(--light-blue);
-  background-color: var(--lilac-blue);
-  text-decoration: none;
-  border: none;
+.filtering-country__region-list {
+  margin-bottom: 20px;
+}
 
-  &::before {
-    position: absolute;
-    left: 83px;
-    top: 3px;
-    content: url("../img/icon-close-blue.png");
-  }
+.filtering-country__show-all {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -118,41 +85,24 @@
     background-image: url("../img/filter-expand-tablet.png");
   }
 
-  .filtering-country__menu-close-top {
-    position: absolute;
-    font-size: 20px;
-    bottom: 702px;
-    right: 237px;
-    background-color: transparent;
+  .filtering-country__show-all {
+    display: block;
+    margin-left: 15px;
     color: var(--light-blue);
+    background-color: transparent;
+    border: none;
     font-weight: 600;
+    font-size: 20px;
     line-height: 20px;
     text-transform: uppercase;
-
-    &::before {
-      top: 2px;
-      left: 162px;
-    }
   }
 
-  .filtering-country__menu-close-bottom {
-    width: 615px;
-    height: 100px;
-    right: -4px;
-    top: 82px;
-    padding-left: 46px;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 20px;
-
-    &::before {
-      left: 245px;
-      top: 41px;
-    }
+  .filtering-country__region-list {
+    display: none;
   }
 
-  .filtering-country__show-all {
-    margin-left: 15px;
+  .filtering-country__region-item {
+    margin-right: 30px;
   }
 }
 
@@ -206,5 +156,13 @@
     &.filtering-country__menu-close-bottom::before {
       left: 597px;
     }
+  }
+
+  .filtering-country__region-list {
+    display: none;
+  }
+
+  .filtering-country__show-all {
+    margin-right: 20px;
   }
 }

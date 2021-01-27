@@ -1,6 +1,10 @@
 .promo-board {
   background: url("../img/traveller-illustration-mobile.svg") 63% 148px,
-    linear-gradient(to bottom, var(--main-blue-title) 72%, var(--main-blue-text) 72%),
+    linear-gradient(
+      to bottom,
+      var(--main-blue-title) 72%,
+      var(--main-blue-text) 72%
+    ),
     url("../img/promo-bckg-mobile.png") 50% 0% / 320px 400px;
   background-repeat: no-repeat;
   color: var(--basic-white);
@@ -124,12 +128,12 @@
   }
 
   .promo-board__quote {
-    margin: 69px 40px 0 0;
+    margin: 64px 40px 0 0;
   }
 
   .promo-board__quote-author {
     text-align: left;
-    margin: 46px 42px 61px 0;
+    margin: 46px 58px 61px 0;
     justify-self: flex-end;
   }
 

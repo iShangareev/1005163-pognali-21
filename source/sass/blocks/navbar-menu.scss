@@ -7,34 +7,7 @@
   padding-left: 22px;
 }
 
-.navbar-menu__list {
-  max-width: 320px;
-  margin: 0 auto;
-  list-style-type: none;
-  padding: 0;
-}
-
-.navbar-menu__item {
-  text-align: center;
-}
-
-.navbar-menu__authorization,
-.navbar-menu__phone,
-.navbar-menu__mail {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 17px;
-  line-height: 30px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: var(--main-blue-text);
-}
-
-.navbar-menu__authorization {
-  background-color: var(--basic-yellow);
-}
-
-.navbar__menu-button_close {
+.navbar-menu__button_close {
   width: 19px;
   height: 19px;
   position: relative;
@@ -49,19 +22,6 @@
 @media (min-width: $tablet-width) {
   .navbar-menu {
     width: 100%;
-  }
-
-  .navbar-menu__item {
-    text-align: left;
-  }
-
-  .navbar-menu__authorization {
-    display: none;
-  }
-
-  .navbar-menu__list {
-    max-width: 100%;
-    margin-top: 155px;
   }
 }
 

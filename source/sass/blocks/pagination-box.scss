@@ -26,8 +26,21 @@
   background-repeat: no-repeat;
 }
 
+.pagination-page-box__pagination-box {
+  margin: 0 auto;
+}
 @media (min-width: $tablet-width) {
   .pagination-box {
     width: 100px;
+  }
+
+  .pagination-page-box__pagination-box {
+    margin-left: 340px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .public-card-profile__pagination-box {
+    margin-left: 580px;
   }
 }
