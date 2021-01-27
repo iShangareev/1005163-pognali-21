@@ -8,6 +8,8 @@
 }
 
 .navbar-menu__list {
+  max-width: 320px;
+  margin: 0 auto;
   list-style-type: none;
   padding: 0;
 }
@@ -55,6 +57,11 @@
 
   .navbar-menu__authorization {
     display: none;
+  }
+
+  .navbar-menu__list {
+    max-width: 100%;
+    margin-top: 155px;
   }
 }
 
