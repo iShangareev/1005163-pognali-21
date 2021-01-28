@@ -9,6 +9,7 @@
   background-color: var(--basic-yellow);
   border-radius: 0;
   padding-bottom: 4px;
+  max-height: 535px;
 }
 
 .form-page__user-travel-plan {
@@ -29,6 +30,7 @@
   .form-page__header {
     padding-bottom: 0;
     border-radius: 0 0 60px 60px;
+    max-height: 836px;
   }
 
   .form-page__footer {

@@ -187,7 +187,9 @@
             </ul>
           </div>
           <!-- navbar -->
+
           <h2 class="header__title form-page__header-title">Направления</h2>
+
           <div class="profile-info header__profile">
             <div
               class="profile-info__level profile-info__level_top header__profile-level"
@@ -237,9 +239,7 @@
           <!-- /.profile-info -->
         </div>
       </div>
-      <!-- /.header__form-content -->
-
-      <div class="menu-box menu-box_no-js">
+      <div class="menu-box menu-box_no-js menu-box_no-js-form">
         <div class="navbar-menu">
           <a class="header__logo navbar-menu_logo">
             <picture>
@@ -281,7 +281,7 @@
                 "
               />
               <img
-                class="header__logo-image"
+                class="header__logo-image menu-box__logo"
                 src="img/logo-mobile-white@1x.png"
                 srcset="img/logo-mobile-blue@2x.png 2x"
                 width="100"
@@ -295,17 +295,30 @@
             class="navbar-menu__close navbar-menu__button_close menu-box__close"
           >
           </a>
+          <a href="" class="menu-box__authorization-top"> Авторизация </a>
         </div>
-        <nav class="navbar-menu-navigation">
+        <nav class="navbar-menu-navigation menu-box__navbar">
           <ul class="navbar-menu-navigation__list">
-            <li class="navbar-menu-navigation__item">
-              <a href="" class="navbar-menu-navigation__link">О сервисе</a>
+            <li class="navbar-menu-navigation__item menu-box__navigation__item">
+              <a
+                href=""
+                class="navbar-menu-navigation__link menu-box__navigation__link"
+                >О сервисе</a
+              >
             </li>
-            <li class="navbar-menu-navigation__item">
-              <a href="" class="navbar-menu-navigation__link">Направления</a>
+            <li class="navbar-menu-navigation__item menu-box__navigation__item">
+              <a
+                href=""
+                class="navbar-menu-navigation__link menu-box__navigation__link"
+                >Направления</a
+              >
             </li>
-            <li class="navbar-menu-navigation__item">
-              <a href="" class="navbar-menu-navigation__link">Попутчики</a>
+            <li class="navbar-menu-navigation__item menu-box__navigation__item">
+              <a
+                href=""
+                class="navbar-menu-navigation__link menu-box__navigation__link"
+                >Попутчики</a
+              >
             </li>
           </ul>
         </nav>
@@ -323,14 +336,15 @@
               href="tel:88005558628"
               class="navbar-menu-list__phone menu-box__phone"
             >
-              8 800 555-86-28
-            </a>
+              8 800 555-86-28</a
+            >
           </li>
           <li class="navbar-menu-list__item menu-box__item-mail">
             <a
               href="mailto:mail@htmlacademy.ru"
               class="navbar-menu-list__mail menu-box__mail"
-              >mail@htmlacademy.ru</a
+            >
+              mail@htmlacademy.ru</a
             >
           </li>
         </ul>
@@ -356,8 +370,7 @@
           </li>
           <li class="social-list__item">
             <a href="https://vk.com" class="social-list__link">
-              Ссылка на вконтакте
-              <svg
+              Ссылка на вконтакте<svg
                 fill="#192144"
                 class="menu-box__content-link-image menu-box__content-link-image_vk"
                 version="1.1"
@@ -375,8 +388,7 @@
           </li>
           <li class="social-list__item">
             <a href="https://www.instagram.com" class="social-list__link">
-              Ссылка на instagram
-              <svg
+              Ссылка на instagram<svg
                 fill="#192144"
                 class="menu-box__content-link-image menu-box__content-link-image_insta"
                 version="1.1"
@@ -396,6 +408,7 @@
         <!-- /.navbar-menu -->
       </div>
       <!-- /.menu-box -->
+      <!-- /.header__form-content -->
     </header>
     <main>
       <section class="card-profile">
@@ -1287,6 +1300,6 @@
       </div>
       <!-- /.footer__content -->
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
