@@ -17,10 +17,6 @@
   top: -72px;
 }
 
-.menu-box_open {
-  display: block;
-}
-
 .menu-box_no-js-index .menu-box__social-list {
   margin-bottom: 0;
   padding-bottom: 29px;
@@ -134,6 +130,12 @@
   top: -144px;
 }
 
+.menu-box_open {
+  display: block;
+  position: fixed;
+  top: 0;
+}
+
 @media (min-width: $tablet-width) {
   .menu-box_no-js-index {
     top: -137px;
@@ -145,6 +147,10 @@
 
   .menu-box_no-js-catalog {
     top: -295px;
+  }
+
+  .menu-box_open {
+    top: 0;
   }
 
   .menu-box__authorization-top {
